@@ -1,0 +1,24 @@
+%%%%%%%%%%%%%%%%%%% - ANEXOS - %%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+\section*{ANEXOS} \label{sec:anexos} % Se añade un asterisco a \section para que el título no esté numerado.
+\addcontentsline{toc}{section}{ANEXOS} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
+\markright{ANEXOS} % Al utilizar \section* se ha de añadir manualmente el título del apartado al encabezado.
+
+\renewcommand{\thesubsection}{\Alph{subsection}} % Se numeran los anexos con letras del alphabeto en lugar de números.
+% Se indica que las tablas, figuras y códigos se numeran con el código del anexo (A, B, C, ...) seguido del número de tabla, figura o código dentro del anexo (tabla A.2, figura C.1, etc.)
+\renewcommand{\thetable}{\Alph{subsection}.\arabic{table}}
+\renewcommand{\thefigure}{\Alph{subsection}.\arabic{figure}}
+\renewcommand{\thecode}{\Alph{subsection}.\arabic{code}}
+
+% ---------------- Primer anexo ---------------- %
+\subsection{Primer anexo} \label{sec:anexo1}
+
+Contenido del primer anexo (texto, tablas, figuras, códigos, etc.)
+
+% ---------------- Segundo anexo --------------- %
+\newpage
+\subsection{Segundo anexo} \label{sec:anexo2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
