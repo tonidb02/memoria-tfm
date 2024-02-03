@@ -6,11 +6,10 @@
 
 \input{preamble}
 
+
 %%%%%%%%%%%% - INICIO DEL DOCUMENTO - %%%%%%%%%%%%
 
 \begin{document} 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%% - PORTADA - %%%%%%%%%%%%%%%%%%
@@ -26,8 +25,6 @@
 
 % Las páginas anteriores al contenido del TFG/TFM (previas a la introducción) suelen numerarse de forma distinta a las del cuerpo del informe, en este caso en números romanos:
 \pagenumbering{roman}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%$%%%%% - CITA - %%%%%%%%%%%%%%%%%%%%%
@@ -48,8 +45,6 @@
 
 \afterpage{\blankpage} % Se añade una página en blanco después de la cita.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 %%%%%%%%%%%%% - AGRADECIMIENTOS - %%%%%%%%%%%%%%%%
 
@@ -68,10 +63,8 @@ A \dots \ por \dots
 
 \afterpage{\blankpage} % Se añade una página en blanco después de los agradecimientos.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-%%%%%%%%%%%%%% - RESUMEN EJECUTIVO - %%%%%%%%%%%%%
+%%%%%%%%%%%%%% - RESUMEN - %%%%%%%%%%%%%
 
 \newpage
 \section*{RESUMEN} % Se añade un asterisco a \section para que el título no esté numerado.
@@ -83,8 +76,6 @@ Este documento constituye una guía (que sirve a su vez de plantilla) para la el
 \textbf{Nota:} se ha tratado de explicar con detalle la mayor parte de elementos presentes en el documento, ya sea por medio de los capítulos y apartados que lo conforman o mediante explicaciones bajo la forma de comentarios en el código \LaTeX. Es especialmente importante examinar con atención el preámbulo de dicho código, ya que en él se llevan a cabo muchas de las operaciones esenciales que dan forma al documento.
 
 \afterpage{\blankpage} % Se añade una página en blanco después del resumen.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%% - ÍNDICE - %%%%%%%%%%%%%%%%%%%
@@ -104,8 +95,7 @@ Este documento constituye una guía (que sirve a su vez de plantilla) para la el
 \newpage
 \pagenumbering{arabic}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%% - CONTENIDO - %%%%%%%%%%%%%%
 
 \input{sections/sections.tex}
 
@@ -118,8 +108,6 @@ Este documento constituye una guía (que sirve a su vez de plantilla) para la el
 \listoftables % Se genera automáticamente el índice con las distintas tablas del documento (entorno \table o \longtable).
 \addcontentsline{toc}{section}{ÍNDICE DE TABLAS} % Se añade manualmente el apartado al índice (Table Of Contents, TOC).
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 %%%%%%%%%%%%% - ÍNDICE DE FIGURAS - %%%%%%%%%%%%%%
 
@@ -129,27 +117,7 @@ Este documento constituye una guía (que sirve a su vez de plantilla) para la el
 \listoffigures % Se genera automáticamente el índice con las distintas figuras del documento (entorno \figure).
 \addcontentsline{toc}{section}{ÍNDICE DE FIGURAS} % Se añade manualmente el apartado al índice (Table Of Contents, TOC).
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%% - ÍNDICE DE CÓDIGOS - %%%%%%%%%%%%%
-
-\newpage
-
-\listofcodes % Se genera automáticamente el índice con los distintos códigos del documento (entorno \code).
-\addcontentsline{toc}{section}{ÍNDICE DE CÓDIGOS} % Se añade manualmente el apartado al índice (Table Of Contents, TOC).
-
-\afterpage{\blankpage} % Se añade una página en blanco después del índice de códigos.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 %%%%%%%%%%%%%% - FIN DEL DOCUMENTO - %%%%%%%%%%%%%
 
 \end{document}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
