@@ -1,35 +1,21 @@
-% ----------------- Documento ----------------- %
-% Se define el tipo de documento (en este caso un artículo), en hoja A4 con tamaño de fuente de 11pt, escrito en castellano, e indicando que el documento tendrá páginas distintas a izquierda y derecha ("twoside"):
 \documentclass[a4paper, 11pt, spanish, twoside]{article}
-% Los demás tipos de documentos así como sus características y opciones pueden consultarse en: https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Document_classes
-% ---------------------------------------------- %
 
 \input{content/preamble.tex}
-
-
-%%%%%%%%%%%% - INICIO DEL DOCUMENTO - %%%%%%%%%%%%
 
 \begin{document} 
 
 
 %%%%%%%%%%%%%%%%%%% - PORTADA - %%%%%%%%%%%%%%%%%%
-
-% Se comienza una página nueva sin formato (sin número de página y sin encabezado/pie de página), ya que sólo incorpora la la portada:
 \newpage
 \thispagestyle{empty}
-
-% La portada se inserta mediante el comando \includepdf seguido del archivo PDF correspondiente (que se ajusta automáticamente a las dimensiones de la página):
 \includepdf{content/Portada_TFG_Antonio_Dies.pdf}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Las páginas anteriores al contenido del TFG/TFM (previas a la introducción) suelen numerarse de forma distinta a las del cuerpo del informe, en este caso en números romanos:
+% Las páginas anteriores al contenido del TFG (previas a la introducción) suelen numerarse en números romanos:
 \pagenumbering{roman}
 
 
-%%%%%%%%%%%%%$%%%%% - CITA - %%%%%%%%%%%%%%%%%%%%%
- 
-% Se comienza una página nueva sin formato (sin número de página y sin encabezado/pie de página), ya que sólo incorpora la cita:
+%%%%%%%%%%%%%%%%%% - CITA - %%%%%%%%%%%%%%%%%%%%%
 \newpage
 \thispagestyle{empty}
 
@@ -47,10 +33,8 @@
 
 
 %%%%%%%%%%%%% - AGRADECIMIENTOS - %%%%%%%%%%%%%%%%
-
-% Se comienza una página nueva con formato plano (sin encabezado/pie de página pero con número de página):
 \newpage
-\thispagestyle{plain}
+\thispagestyle{plain} % Formato plano (sin encabezado/pie de página pero con número de página):
 
 \section*{AGRADECIMIENTOS} % Se añade un asterisco a \section para que el título no esté numerado.
 \addcontentsline{toc}{section}{AGRADECIMIENTOS} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
@@ -63,61 +47,53 @@ A \dots \ por \dots
 
 \afterpage{\blankpage} % Se añade una página en blanco después de los agradecimientos.
 
-
 %%%%%%%%%%%%%% - RESUMEN - %%%%%%%%%%%%%
-
 \newpage
 \section*{RESUMEN} % Se añade un asterisco a \section para que el título no esté numerado.
 \markright{RESUMEN} % Al utilizar \section* se ha de añadir manualmente el título del apartado al encabezado.
 \addcontentsline{toc}{section}{RESUMEN} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
 
-Este documento constituye una guía (que sirve a su vez de plantilla) para la elaboración de informes de TFG o TFM en \LaTeX. No pretende abarcar todas y cada una de las funcionalidades que ofrece \LaTeX \ (¡las posibilidades son prácticamente infinitas!) pero sí tratar los aspectos fundamentales para la elaboración de un documento utilizando esta indispensable herramienta. Además de los elementos básicos de cualquier informe (índice, tablas, ecuaciones, bibliografía, etc.), esta guía incluye ``tutoriales'' y plantillas para algunos de los elementos presentes en todo (o casi todo) informe de TFG o TFM (como son el diagrama de Gantt o la EDP). 
+Este resumen deberá tener una extensión máxima de cinco páginas y habrá de constituir una síntesis de los puntos más importantes del proyecto. El resumen debe permitir al lector: 
+\begin{itemize}
+    \item tener una visión general del trabajo realizado
+    \item lograr una comprensión global del proyecto. No importa cuán complejo sea el tema tratado, el resumen debe explicar lo más claramente posible en qué consiste
+\end{itemize}
 
-\textbf{Nota:} se ha tratado de explicar con detalle la mayor parte de elementos presentes en el documento, ya sea por medio de los capítulos y apartados que lo conforman o mediante explicaciones bajo la forma de comentarios en el código \LaTeX. Es especialmente importante examinar con atención el preámbulo de dicho código, ya que en él se llevan a cabo muchas de las operaciones esenciales que dan forma al documento.
+Además, el resumen debe crear interés en el lector para que éste lea todo el contenido del trabajo. Incluir al final Palabras clave y Códigos UNESCO.
 
 \afterpage{\blankpage} % Se añade una página en blanco después del resumen.
 
 
 %%%%%%%%%%%%%%%%%%% - ÍNDICE - %%%%%%%%%%%%%%%%%%%
-
 \newpage
-
 \renewcommand*\contentsname{ÍNDICE} % Se modifica el nombre por defecto de la "Table Of Contents" (tabla de contenidos, índice) para pasar a llamarla "ÍNDICE".
-
 \tableofcontents % Se genera el índice de contenidos del documento que incorpora todos los títulos de \section, \subsection y \subsubsection (y también \paragraph, ver capítulo 1), así como los títulos añadidos con \addcontentsline (como el resumen ejecutivo, por ejemplo).
-
 \afterpage{\blankpage} % Se añade una página en blanco después del índice.
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Se inicia una nueva página, y se restablece la numeración de las páginas, utilizando esta vez el sistema de numeración estándar (1, 2, 3, 4, ...)
 \newpage
 \pagenumbering{arabic}
 
-%%%%%%%%%%%%%% - CONTENIDO - %%%%%%%%%%%%%%
+%%%%%%%%%%%%%% - CONTENIDO PRINCIPAL - %%%%%%%%%%%%%%
 
-\input{content/sections/sections.tex}
-
+\input{content/sections/input_sections.tex}
 
 %%%%%%%%%%%%%% - ÍNDICE DE TABLAS - %%%%%%%%%%%%%%
-
 \newpage
-
 \renewcommand{\listtablename}{ÍNDICE DE TABLAS} % Se define el nombre del índice de tablas.
 \listoftables % Se genera automáticamente el índice con las distintas tablas del documento (entorno \table o \longtable).
 \addcontentsline{toc}{section}{ÍNDICE DE TABLAS} % Se añade manualmente el apartado al índice (Table Of Contents, TOC).
 
 
 %%%%%%%%%%%%% - ÍNDICE DE FIGURAS - %%%%%%%%%%%%%%
-
 \newpage
-
 \renewcommand{\listfigurename}{ÍNDICE DE FIGURAS} % Se define el nombre del índice de figuras.
 \listoffigures % Se genera automáticamente el índice con las distintas figuras del documento (entorno \figure).
 \addcontentsline{toc}{section}{ÍNDICE DE FIGURAS} % Se añade manualmente el apartado al índice (Table Of Contents, TOC).
 
+%%%%%%%%%%%%% - EJEMPLOS DE FUNCIONALIDADES DE LaTeX  - %%%%%%%%%%%%%%
+|\input{content/sections/ejemplos_plantilla.tex}
 
-%%%%%%%%%%%%%% - FIN DEL DOCUMENTO - %%%%%%%%%%%%%
 
 \end{document}
