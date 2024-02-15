@@ -1,20 +1,7 @@
-%%%%%%%%%%%%%%%% - BIBLIOGRAFÍA - %%%%%%%%%%%%%%%%
-
 \newpage
 
-El formato elegido para la bibliografía es APA (el recomendable para informes de TFG/TFM), tanto para las referencias a lo largo del documento como para el apartado de bibliografía. El conjunto de operaciones realizadas para establecer el formato de la bibliografía se puede consultar en el preámbulo del documento (en el que se describen algunos de sus parámetros básicos como el contenido de las referencias, el número de autores por cita, etc.).
+% Formato APA (el recomendado para TFG)
 
-Citar una referencia es sencillo, basta con utilizar el comando \textbackslash\texttt{cite} seguido del nombre de la referencia correspondiente (el nombre utilizado en el archivo \textit{.bib}, que es esencial cargar en el directorio de trabajo y cuyas principales características pueden consultarse en \url{https://en.wikipedia.org/wiki/BibTeX}), por ejemplo:
-
-\begin{itemize}
-    \item \textit{The Art of Electronics} constituye un fantástico manual (plagado de ejemplos prácticos y explicaciones tangibles) para aprender electrónica, siendo su tercera edición la versión más completa (\cite{horowitz2015}).
-    \item \textit{The Loudspeaker Design Cookbook} (\cite{dickson2007}) es probablemente la guía más completa en cuanto a acústica aplicada al diseño de sistemas de sonido, abarcando desde conceptos teóricos de electroacústica hasta planos para la construcción de sistemas de sonido caseros.
-    \item \textit{Les fous du son} (\cite{dewilde2016}) es un relato cuidadosamente escrito y documentado sobre la historia de los sintetizadores desde Edison hasta nuestros días, pasando por los inventos más inverosímiles como las Ondas Martenot o el Trautonium.
-    \item En su artículo de 2003 (\cite{wang2003}), el co-fundador de Shazam describe el funcionamiento de su algoritmo de búsqueda para archivos de audio.
-\end{itemize}
-
-% Se genera la bibliografía mediante el comando \printbibliography (en ella aparecen únicamente las referencias citadas a lo largo del documento):
 \appto{\bibsetup}{\sloppy}
-\printbibliography[heading=bibintoc, title=BIBLIOGRAFÍA] % el argumento "title" puede modificarse indicando el título que convenga (bibliografía, referencias, etc.).
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+\printbibliography[heading=bibintoc, title=BIBLIOGRAFÍA] % Aaparecen únicamente las referencias citadas a lo largo del documento

@@ -92,8 +92,12 @@ Además, el resumen debe crear interés en el lector para que éste lea todo el 
 \listoffigures % Se genera automáticamente el índice con las distintas figuras del documento (entorno \figure).
 \addcontentsline{toc}{section}{ÍNDICE DE FIGURAS} % Se añade manualmente el apartado al índice (Table Of Contents, TOC).
 
+%%%%%%%%%%%%% - ABREVIATURAS, UNIDADES Y ACRÓNIMOS - %%%%%%%%%%%%%%
+\newpage
+\printnoidxglossary[title={ABREVIATURAS, UNIDADES Y ACRÓNIMOS}] %Si no pongo este comando, no aparece el glosario
+
 %%%%%%%%%%%%% - EJEMPLOS DE FUNCIONALIDADES DE LaTeX  - %%%%%%%%%%%%%%
-|\input{content/sections/ejemplos_plantilla.tex}
+\input{content/sections/ejemplos_plantilla.tex}
 
 
 \end{document}

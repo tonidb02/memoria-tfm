@@ -33,6 +33,8 @@
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
 \usepackage{lmodern} % Soluciona el problema de la mala resolución
+\usepackage{url}
+
 % ---------------------------------------------- %
 
 
@@ -255,5 +257,19 @@
 
 \makeatother
 
-\addbibresource{content/biblio.bib}
+\addbibresource{content/sections/biblio.bib}
+
+% --------------- Abreviaturas, unidades y acrónimos ----------------- %
+
+\usepackage{glossaries}
+\makenoidxglossaries
+
+\newglossaryentry{simuladores}
+{
+    name=Simuladores,
+    text={simuladores},
+    description={Los simuladores son... Esto es un ejemplo para el glosario}
+}
+
+\newacronym{smr}{SMR}{Small Modular Reactors}
 % ---------------------------------------------- % 
