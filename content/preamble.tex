@@ -12,7 +12,7 @@
 % ------------- Paquetes generales ------------- %
 % Se importan distintos paquetes de propósito general:
 \usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
+\usepackage[spanish,es-tabla]{babel}
 \usepackage{float}
 \usepackage{caption}
 % ---------------------------------------------- %
@@ -34,7 +34,9 @@
 \usepackage{textcomp}
 \usepackage{lmodern} % Soluciona el problema de la mala resolución
 \usepackage{url}
-
+\usepackage{colortbl}
+\usepackage{longtable}
+\usepackage{array}
 % ---------------------------------------------- %
 
 
@@ -64,13 +66,13 @@
 % -------------- Título adicional -------------- %
 % Se añade una profundidad adicional a los títulos (profundidad 4):
 \usepackage{titlesec}
+\titlespacing{\subsubsection}{1.5pc}{1.5ex plus .1ex minus .2ex}{1.5ex plus .2ex} 
 \setcounter{secnumdepth}{4} % Se fija en 4 la profundidad de numeración de títulos.
 \setcounter{tocdepth}{4} % Se fija en 4 la profundidad de títulos incluidos en el índice.
 % Se modifica el formato de \paragraph (título de profundidad 4) para adaptarlo al formato del resto de títulos:
 \titleformat{\paragraph}
 {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
-\titlespacing*{\paragraph}
-{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex} 
+\titlespacing{\paragraph}{3pc}{1.5ex plus .1ex minus .2ex}{1.5ex plus .2ex} 
 % ---------------------------------------------- %    
 
 
@@ -103,118 +105,6 @@
 % Formato de la línea de separación horizontal:
 \renewcommand{\headrulewidth}{0.5pt} % Ancho de la línea del encabezado.
 \renewcommand{\footrulewidth}{0.5pt} % Ancho de la línea del pie de página.
-% ---------------------------------------------- % 
-
-
-% ----------- Fragmentos de código ------------- %
-% El paquete utilizado para insertar fragmentos de código en el documento es listings. En el presente bloque del preámbulo se definen ciertos parámetros de listings con el objetivo de adaptar dicho paquete a código escrito en Python.
-
-\usepackage{listings} % Paquete para insertar código. 
-\usepackage{xcolor} % Paquete para definir colores.
-
-% Se definen los distintos colores que se utilizan para resaltar ciertos elementos del código:
-\definecolor{codegreen}{rgb}{0.04314,0.6745,0.07843} % Verde.
-\definecolor{codegray}{rgb}{0.5,0.5,0.5} % Gris.
-\definecolor{codered}{rgb}{0.5373,0.02745,0.06275} % Rojo.
-\definecolor{codeblue}{rgb}{0.071,0.0258,0.9882} % Azul.
-\definecolor{codepurple}{rgb}{0.6,0.02745,0.5961} % Morado.
-
-% Se define el color de fondo:
-\definecolor{backcolour}{rgb}{0.95,0.95,0.92} % Gris oscuro.
-
-% Se define el valor de ciertos parámetros de listings para adaptar dicho paquete a código escrito en Python:
-\lstdefinestyle{mystyle}{
-    % - General:
-    language=Python, % Lenguaje de programación.
-    basicstyle=\ttfamily\footnotesize, % Tipografía y tamaño de fuente.
-    % - Colores de los distintos elementos del código:
-    backgroundcolor=\color{backcolour}, % Color de fondo.  
-    commentstyle=\color{codegray}, % Color de los comentarios.
-    keywordstyle=\color{codeblue}, % Color de las palabras clave por defecto.
-    stringstyle=\color{codegreen}, % Color de los "string"
-    % - Palabras clave:
-    deletekeywords={print}, % Se elimina "print" del conjunto de palabras clave para posteriormente asignarle el color morado.
-    keywordstyle={[2]\ttfamily\color{codeblue}},
-    keywords=[2]{as}, % Se añaden las palabras clave de color azul.
-    keywordstyle={[3]\ttfamily\color{codepurple}},
-    keywords=[3]{True, False, ttk, list, None, dict, zip, range, len, print, float, sum}, % Se añaden las palabras clave de color morado.
-    keywordstyle={[4]\bfseries\ttfamily},
-    keywords=[4]{_read_excel}, % Se añaden las palabras clave en negrita.
-    emph={MyClass,__init__}, % Se añaden las palabras clave enfatizadas.   
-    % - Números de línea:
-    numberstyle=\tiny\color{codegray}, % Tamaño de fuente y color de los números de línea.
-    numbers=left, % Se colocan los números de línea en el lado izquierdo.                 
-    numbersep=5pt, % Separación horizontal de los números de línea.
-    % - Saltos a la línea, espacios, indentación:
-    breaklines=true, % Permitir saltos a la línea. 
-    breakatwhitespace=true, % Saltar a la línea únicamente al encontrar espacios.
-    postbreak = \mbox{{$\hookrightarrow$}\space}, % Se añade una flecha al cambiar de línea.
-    showspaces=false, % No mostrar los espacios. 
-    showstringspaces=false, % No mostrar los espacios en los "string".
-    keepspaces=true, % Mantener los espacios presentes en el código. 
-    tabsize=2, % Tamaño de indentación.
-    % - Título:
-    captionpos=b % Posición del título del fragmento de código (b=bottom - abajo).
-} 
-\lstset{style=mystyle} % Se asocia el estilo de listings al estilo que acaba de definirse ("mystyle")
-
-% Se realizan una serie de operaciones complementarias con el paquete listings (su comprensión no es necesaria para manejar dicho paquete):
-\makeatletter
-\def\lst@OpLiteratekey#1\@nil@{\let\lst@ifxopliterate\lst@if
-                             \def\lst@opliterate{#1}}
-\lst@Key{opliterate}{}{\@ifstar{\lst@true \lst@OpLiteratekey}
-                             {\lst@false\lst@OpLiteratekey}#1\@nil@}
-\lst@AddToHook{SelectCharTable}
-    {\ifx\lst@opliterate\@empty\else
-         \expandafter\lst@OpLiterate\lst@opliterate{}\relax\z@
-     \fi}
-\def\lst@OpLiterate#1#2#3{%
-    \ifx\relax#2\@empty\else
-        \lst@CArgX #1\relax\lst@CDef
-            {}
-            {\let\lst@next\@empty
-             \lst@ifxopliterate
-                \lst@ifmode \let\lst@next\lst@CArgEmpty \fi
-             \fi
-             \ifx\lst@next\@empty
-                 \ifx\lst@OutputBox\@gobble\else
-                   \lst@XPrintToken \let\lst@scanmode\lst@scan@m
-                   \lst@token{#2}\lst@length#3\relax
-                   \lst@XPrintToken
-                 \fi
-                 \let\lst@next\lst@CArgEmptyGobble
-             \fi
-             \lst@next}%
-            \@empty
-        \expandafter\lst@OpLiterate
-    \fi}
-
-\lstset{ 
-    literate={á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
-  {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
-  {à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
-  {À}{{\`A}}1 {È}{{\'E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
-  {ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
-  {Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
-  {â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
-  {Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
-  {Ã}{{\~A}}1 {ã}{{\~a}}1 {Õ}{{\~O}}1 {õ}{{\~o}}1
-  {œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
-  {ű}{{\H{u}}}1 {Ű}{{\H{U}}}1 {ő}{{\H{o}}}1 {Ő}{{\H{O}}}1
-  {ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
-  {€}{{\euro}}1 {£}{{\pounds}}1 {«}{{\guillemotleft}}1
-  {»}{{\guillemotright}}1 {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {¿}{{?`}}1
-  {º}{{\textordmasculine}}1}
-
-\lstset{opliterate=
-   *{0}{{{\color{codered}0}}}1 {1}{{{\color{codered}1}}}1 
-   {2}{{{\color{codered}2}}}1 {3}{{{\color{codered}3}}}1 
-   {4}{{{\color{codered}4}}}1 {5}{{{\color{codered}5}}}1 
-   {6}{{{\color{codered}6}}}1 {7}{{{\color{codered}7}}}1 
-   {8}{{{\color{codered}8}}}1 {9}{{{\color{codered}9}}}1}
-
-\DeclareCaptionType{code}[Código][ÍNDICE DE CÓDIGOS] % Se define el entorno "Código" (de forma que al introducir un fragmento de código en el documento aparezca como: Código 1.1: ...), y la lista con los distintos códigos ("Índice de códigos").
-\counterwithin{code}{section} % Se numeran los códigos con respecto al capítulo en el que se encuentran.
 % ---------------------------------------------- % 
 
 
@@ -271,5 +161,21 @@
     description={Los simuladores son... Esto es un ejemplo para el glosario}
 }
 
-\newacronym{smr}{SMR}{Small Modular Reactors}
+\newacronym{smr}{SMR}{\emph{Small Modular Reactor}}
+\newacronym{sgiz}{SGIZ}{Simulador Gráfico Interactivo de Zorita}
+\newacronym{pwr}{PWR}{\emph{Pressure Water Reactor}}
+\newacronym{enresa}{Enresa}{Empresa Nacional de Residuos Radioactivos, S.A.}
+\newacronym{ati}{ATI}{Almacén Temporal Individualizado}
+\newacronym{oiea}{OIEA}{Organismo Internacional de Energía Atómica}
+\newacronym{idi}{I+D+I}{Investigación, Desarrollo e Innovación}
+\newacronym{svfc}{SVFC}{Sistema de Venteo Filtrado de Contención}
+\newacronym{nsss}{NSSS}{\emph{Nuclear Steam Supply System}}
+\newacronym{mmr}{MMR}{\emph{Micro Modular Reactor}}
+\newacronym{genIV}{Gen IV}{Generación IV}
+\newacronym{lwr}{LWR}{\emph{Light Water Reactor}}
+\newacronym{hwr}{HWR}{\emph{Heavy Water Reactor}}
+\newacronym{htgr}{HTGR}{\emph{Hight Temperature Gas-cooled Reactor}}
+\newacronym{triso}{TRISO}{Combustible tri-isotrópico}
+\newacronym{msr}{MSR}{\emph{Molten Salt Reactor}}
+\newacronym{olp}{OLP}{Operación a Largo Plazo}
 % ---------------------------------------------- % 
