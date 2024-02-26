@@ -22,107 +22,110 @@ Hoy en día \textbf{existen en todo el mundo más de 80 diseños y conceptos de 
 
 \subsection{Clasificación de los Small Modular Reactors}
 
-Pese a que existen diversos criterios para determinar los distintos tipos de \acrshortpl{smr}, en el presente proyecto se ha escogido la clasificación realizada por el \acrshort{oiea}, en la que se distinguen 6 grupos (\cite{iaea_smr_booklet_2022}):
+Pese a que existen diversos criterios para determinar los distintos tipos de \acrshortpl{smr}, en el presente proyecto se ha escogido la clasificación realizada por el \acrshort{oiea}, en la que se distinguen 6 grupos, de los cuales se ofrecen a continuación las características generales y las tecnologías concretas desarrolladas:
 
-\begin{enumerate}
+\subsubsection{\acrshortpl{smr} refrigerados por agua establecidos en tierra}
 
-\item \underline{\acrshortpl{smr} refrigerados por agua establecidos en tierra:} Utilizan varias configuraciones de reactores de agua ligera (del inglés, \acrshortpl{lwr}) y de reactores de agua pesada (del inglés, \acrshortpl{hwr}) para establecerse en tierra y con posibilidad de aplicaciones sin conexión a la red. Se trata de la tecnología de \acrshort{smr} más madura en la actualidad, ya que la mayoría de las centrales nucleares de gran potencia en operación actualmente también son refrigeradas por agua.
+ Utilizan varias configuraciones de reactores de agua ligera (del inglés, \acrshortpl{lwr}) y de reactores de agua pesada (del inglés, \acrshortpl{hwr}) para establecerse en tierra y con posibilidad de aplicaciones sin conexión a la red. Se trata de la tecnología de \acrshort{smr} más madura en la actualidad, ya que la mayoría de las centrales nucleares de gran potencia en operación actualmente también son refrigeradas por agua.
 
-\begin{table}[]
-    \resizebox{\textwidth}{!}{%
-    \begin{tabular}{
-    >{\columncolor[HTML]{FFCCC9}}l lllll}
-    \cellcolor[HTML]{ECF4FF}\textbf{Diseño} &
-      \cellcolor[HTML]{ECF4FF}\textbf{Potencia (MWe)} &
-      \cellcolor[HTML]{ECF4FF}\textbf{Tipo} &
-      \cellcolor[HTML]{ECF4FF}\textbf{Diseñador} &
-      \cellcolor[HTML]{ECF4FF}\textbf{País} &
-      \cellcolor[HTML]{ECF4FF}\textbf{Estado} \\
-    CAREM &
-      30 &
-      PWR &
-      CNEA &
-      Argentina &
-      En construcción \\
-    ACP100 &
-      125 &
-      PWR &
-      CNNC/NPIC &
-      China &
-      En construcción \\
-    CANDU SMRTM &
-      300 &
-      PHWR &
-      Candu Energy &
-      Canadá &
-      Diseño conceptual \\
-    CAP200 &
-      > 200 &
-      PWR &
-      SPIC/SNERDI &
-      China &
-      Diseño básico \\
-    DHR400 &
-      400 MW(t) &
-      PWR &
-      CNNC &
-      China &
-      Diseño básico \\
-    HAPPY200 &
-      200 MW(t) &
-      PWR &
-      SPIC &
-      China &
-      Diseño detallado \\
-    NHR200-II &
-      200 MW(t) &
-      PWR &
-      Tsinghua University &
-      China &
-      Diseño básico \\
-    TEPLATORTM &
-      < 150 MW(t) &
-      HWR &
-      \begin{tabular}[c]{@{}l@{}}UWB Pilsen \\ & CIIRC CTU\end{tabular} &
-      República checa &
-      Diseño conceptual \\
-    NUWARDTM &
-      2 × 170 &
-      PWR &
-      EDF &
-      Francia &
-      Diseño conceptual \\
-    IMR &
-      350 &
-      PWR &
-      MHI &
-      Japón &
-      \begin{tabular}[c]{@{}l@{}}Diseño conceptual\\ completado\end{tabular} \\
-    i-SMR &
-      170 &
-      PWR &
-      KHNP and KAERI &
-      República de Corea &
-      Diseño conceptual \\
-    SMART &
-      107 &
-      PWR &
-      KAERI and K.A.CARE &
-      \begin{tabular}[c]{@{}l@{}}República de Corea\\ y Arabia Saudí\end{tabular} &
-      Diseño detallado \\ \cline{4-4}
-    RITM-200N &
-      55 &
-      \multicolumn{1}{l|}{PWR} &
-      \multicolumn{1}{l|}{JSC Afrikantov, OKBM Rosatom} &
-      Rusia &
-      \begin{tabular}[c]{@{}l@{}}Diseño detallado\\ completado\end{tabular} \\ \cline{4-4}
-    \end{tabular}%
-    }
-    \caption{Catálogo de los SMRs refrigerados por agua establecidos en tierra.}
-    \label{tab:smrs_agua_tierra}
-    \end{table}
+\begin{table}[h]
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{|
+  >{\columncolor[HTML]{FFCCC9}}c |c|c|c|c|c|}
+  \hline
+  \cellcolor[HTML]{ECF4FF}\textbf{Diseño} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Potencia (MWe)} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Tipo} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Diseñador} &
+    \cellcolor[HTML]{ECF4FF}\textbf{País} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Estado} \\ \hline
+  CAREM &
+    30 &
+    PWR &
+    CNEA &
+    Argentina &
+    En construcción \\ \hline
+  ACP100 &
+    125 &
+    PWR &
+    CNNC/NPIC &
+    China &
+    En construcción \\ \hline
+  CANDU SMR$^{TM}$ &
+    300 &
+    PHWR &
+    Candu Energy &
+    Canadá &
+    Diseño conceptual \\ \hline
+  CAP200 &
+    \textgreater \space 200 &
+    PWR &
+    SPIC/SNERDI &
+    China &
+    Diseño básico \\ \hline
+  DHR400 &
+    400 MWt &
+    PWR &
+    CNNC &
+    China &
+    Diseño básico \\ \hline
+  HAPPY200 &
+    200 MWt &
+    PWR &
+    SPIC &
+    China &
+    Diseño detallado \\ \hline
+  NHR200-II &
+    200 MWt &
+    PWR &
+    Tsinghua University &
+    China &
+    Diseño básico \\ \hline
+  TEPLATOR$^{TM}$ &
+    \textless \space 150 MWt &
+    HWR &
+    \begin{tabular}[c]{@{}c@{}}UWB Pilsen \\  CIIRC CTU\end{tabular} &
+    República checa &
+    Diseño conceptual \\ \hline
+  NUWARD$^{TM}$ &
+    2 × 170 &
+    PWR &
+    EDF &
+    Francia &
+    Diseño conceptual \\ \hline
+  IMR &
+    350 &
+    PWR &
+    MHI &
+    Japón &
+    \begin{tabular}[c]{@{}c@{}}Diseño conceptual\\ completado\end{tabular} \\ \hline
+  i-SMR &
+    170 &
+    PWR &
+    \begin{tabular}[c]{@{}c@{}}KHNP \\ KAERI\end{tabular} &
+    Corea del Sur &
+    Diseño conceptual \\ \hline
+  SMART &
+    107 &
+    PWR &
+    \begin{tabular}[c]{@{}c@{}}KAERI \\ K.A.CARE\end{tabular} &
+    \begin{tabular}[c]{@{}c@{}}República de Corea\\ y Arabia Saudí\end{tabular} &
+    Diseño detallado \\ \hline
+  RITM-200N &
+    55 &
+    PWR &
+    \begin{tabular}[c]{@{}c@{}}JSC Afrikantov\\  OKBM Rosatom\end{tabular} &
+    Rusia &
+    \begin{tabular}[c]{@{}c@{}}Diseño detallado\\ completado\end{tabular} \\ \hline
+  \end{tabular}%
+  }
+  \caption{Diseños existentes de SMRs refrigerados por agua establecidos en tierra (\cite{iaea_smr_booklet_2022}).}
+  \label{tab:smrs_agua_tierra}
+  \end{table}
 
-\item \underline{\acrshortpl{smr} refrigerados por agua establecidos en el mar:} Instalaciones flotantes montadas en barcos o sumergidas bajo el mar. Ofrecen una gran versatilidad gracias a su capacidad de desplazamiento. A este grupo pertenecen los dos reactores KLT-40S pertenecientes a la \textbf{planta de energía nuclear flotante Akademik Lomonosov}, que comenzó su operación comercial en Pevek (Rusia) en mayo de 2020, siendo \textbf{el primer diseño de SMR conectado a la red}, con una potencia eléctrica total ---entre ambos reactores--- de 70 MWe y 300 MWt, proporcionando así electricidad a una ciudad de 100.000 habitantes.
+\subsubsection{\acrshortpl{smr} refrigerados por agua establecidos en el mar}
+
+Instalaciones flotantes montadas en barcos o sumergidas bajo el mar. Ofrecen una gran versatilidad gracias a su capacidad de desplazamiento. A este grupo pertenecen los dos reactores KLT-40S pertenecientes a la \textbf{planta de energía nuclear flotante Akademik Lomonosov}, que comenzó su operación comercial en Pevek (Rusia) en mayo de 2020, siendo \textbf{el primer diseño de SMR conectado a la red}, con una potencia eléctrica total ---entre ambos reactores--- de 70 MWe y 300 MWt, proporcionando así electricidad a una ciudad de 100.000 habitantes.
 
 \begin{figure}[h]
     \centering
@@ -131,22 +134,435 @@ Pese a que existen diversos criterios para determinar los distintos tipos de \ac
     \label{fig:akademik_lomonosov}
 \end{figure}
 
-\item \underline{\acrshortpl{smr} refrigerados por gas de alta temperatura (del inglés, \acrshort{htgr}):} Reactores de \acrshort{genIV} que proporcionan calor a elevada temperatura (superior a 750°C) y que pueden ser utilizados para generar electricidad de forma más eficiente y con una variedad de aplicaciones industriales. Dentro de esta categoría, hay múltiples diseños en desarrollo y alguno en operación, como el \textbf{HTR-PM de China, el primer \acrshort{htgr} en operación del mundo}. Con un reactor de lecho de bolas\footnote{Reactor de muy alta temperatura moderado con grafito y refrigerado por gas, cuyos elementos de combustible son esféricos (denominados ``bolas'') y contienen miles de partículas \acrshort{triso}. Estos combustibles tri-isotrópicos constan de carburo de uranio revestido con varias capas de carbón pirolítico y dióxido de silicio para retener los productos de fisión a altas temperaturas.}, una potencia eléctrica de 210 MWe y una potencia térmica de 500 MWt, se conectó a la red en diciembre de 2021 y comenzó a operar comercialmente a plena potencia en diciembre de 2023, con el objetivo de reemplazar las centrales de carbón presentes en el interior de China. También se incluyen en este grupo tres reactores de prueba \acrshort{htgr}, dos de los cuales han estado en operación durante más de veinte años para realizar pruebas en Japón y China.
+\begin{table}[h]
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{|
+  >{\columncolor[HTML]{FFCCC9}}c |c|c|c|c|c|}
+  \hline
+  \cellcolor[HTML]{ECF4FF}\textbf{Diseño} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Potencia (MWe)} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Tipo} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Diseñador} &
+    \cellcolor[HTML]{ECF4FF}\textbf{País} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Estado} \\ \hline
+  KLT-40S &
+    2 × 35 &
+    PWR &
+    JSC Afrikantov OKBM &
+    Rusia &
+    En operación \\ \hline
+  ACPR50S &
+    50 &
+    PWR &
+    CGNPC &
+    China &
+    Diseño detallado \\ \hline
+  ACP100S &
+    125 &
+    PWR &
+    CNNC/NPIC &
+    China &
+    Diseño básico \\ \hline
+  BANDI-60 &
+    60 &
+    PWR &
+    KEPCO E\&C &
+    Corea del Sur &
+    Diseño conceptual \\ \hline
+  ABV-6E &
+    6 – 9 &
+    PWR &
+    \begin{tabular}[c]{@{}c@{}}JSC Afrikantov\\ OKBM, Rosatom\end{tabular} &
+    Rusia &
+    Diseño final \\ \hline
+  RITM-200M &
+    50 &
+    PWR &
+    \begin{tabular}[c]{@{}c@{}}JSC Afrikantov\\ OKBM, Rosatom\end{tabular} &
+    Rusia &
+    \begin{tabular}[c]{@{}c@{}}Diseño básico\\ completado\end{tabular} \\ \hline
+  VBER-300 &
+    325 &
+    PWR &
+    \begin{tabular}[c]{@{}c@{}}JSC Afrikantov\\ OKBM, Rosatom\end{tabular} &
+    Rusia &
+    \begin{tabular}[c]{@{}c@{}}Fase de \\ licenciamiento\end{tabular} \\ \hline
+  SHELF-M &
+    \textgreater \space 10 &
+    PWR &
+    NIKIET &
+    Rusia &
+    Diseño básico \\ \hline
+  \end{tabular}%
+  }
+  \caption{Diseños existentes de SMRs refrigerados por agua establecidos en el mar (\cite{iaea_smr_booklet_2022}).}
+  \label{tab:smrs_agua_mar}
+  \end{table}
 
-\item \underline{\acrshortpl{smr} refrigerados por metal líquido de espectro rápido de neutrones:} Los metales líquidos que utilizan como regrigerantes incluyen sodio, plomo puro y eutéctico de plomo-bismuto. Hay grandes avances en el desarrollo y despliegue de esta tecnología de \acrshortpl{smr}. Prueba de ello es el BREST-OD-300, un reactor de neutrones rápidos refrigerado por plomo que se está construyendo en Seversk (Rusia) y se planea su puesta en marcha en 2026. Se trata de un proyecto prototipo para futuros diseños que empleen un ciclo combustible nuclear cerrado, en el cual pueda reutilizarse el combustible gastado mediante la separación del uranio, plutonio y actínidos minoritarios (Np, Am y Cm), para ser transmutados en estos reactores rápidos (\cite{apuntes_centrales}).
+\subsubsection{\acrshortpl{smr} refrigerados por gas de alta temperatura (del inglés, \acrshort{htgr})}
 
-\item \underline{\acrshortpl{smr} de sales fundidas (del inglés, \acrshortpl{msr}):} Reactores de \acrshort{genIV} alimentados y refrigerados por sales fundidas, propiedad que les confiere múltiples ventajas, incluida una seguridad mejorada debido a la propiedades de las sales, un sistema de refrirefrigeración de fase única a baja presión que elimina la necesidad de un gran contenedor, un sistema de alta temperatura con gran eficiencia y un ciclo de combustible flexible. Se están llevando a cabo actividades preliminares de licenciamiento con varios de estos diseños con reguladores de Canadá, Dinamarca, Países Bajos, Reino Unido y los Estados Unidos.
+Reactores de \acrshort{genIV} que proporcionan calor a elevada temperatura (superior a 750°C) y que pueden ser utilizados para generar electricidad de forma más eficiente y con una variedad de aplicaciones industriales. Dentro de esta categoría, hay múltiples diseños en desarrollo y alguno en operación, como el \textbf{HTR-PM de China, el primer \acrshort{htgr} en operación del mundo}. Con un reactor de lecho de bolas\footnote{Reactor de muy alta temperatura moderado con grafito y refrigerado por gas, cuyos elementos de combustible son esféricos (denominados ``bolas'') y contienen miles de partículas \acrshort{triso}. Estos combustibles tri-isotrópicos constan de carburo de uranio revestido con varias capas de carbón pirolítico y dióxido de silicio para retener los productos de fisión a altas temperaturas.}, una potencia eléctrica de 210 MWe y una potencia térmica de 500 MWt, se conectó a la red en diciembre de 2021 y comenzó a operar comercialmente a plena potencia en diciembre de 2023, con el objetivo de reemplazar las centrales de carbón presentes en el interior de China. También se incluyen en este grupo tres reactores de prueba \acrshort{htgr}, dos de los cuales han estado en operación durante más de veinte años para realizar pruebas en Japón y China.
 
-\item \underline{Microreactores modulares (del inglés, \acrshortpl{mmr}):} Diseños de \textbf{menos de 10 MWe de potencia}, con capacidad de opearción semi-autónoma y con una mejor transportabilidad que los \acrshortpl{smr} más grandes. Existen varios diseños punteros tecnológicamente ---incluidos de \acrshort{genIV}---, en los que el reactor utiliza diversos refrigerantes en cada caso: agua ligera, helio, sales fundidas o metal líquido. Los \acrshortpl{mmr} son especialmente adecuados para operar fuera de la red en ubicaciones remotas, en situaciones de necesidad de abastecimiento de emergencia en hospitales o comunidades afectadas por desastres naturales, para desalinizar agua del mar, etc. Estos microrreactores se encuentran en las primeras fases de desarrollo y, en las aplicaciones concretas anteriormente expuestas, se espera que sean muy competitivos frente a las fuentes de electricidad previamente utilizadas.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.65\textwidth]{content/figures/HTR_PM_china.jpg}
+  \caption{Primer reactor de \acrshort{genIV} en operación: HTR-PM de China (\cite{htr_pm_china}).}
+  \label{fig:htr_pm_china}
+\end{figure}
+
+\begin{table}[h]
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{|
+  >{\columncolor[HTML]{FFCCC9}}c |c|c|c|c|c|}
+  \hline
+  \cellcolor[HTML]{ECF4FF}\textbf{Diseño} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Potencia (MWe)} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Tipo} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Diseñador} &
+    \cellcolor[HTML]{ECF4FF}\textbf{País} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Estado} \\ \hline
+  HTR-PM &
+    210 &
+    \begin{tabular}[c]{@{}c@{}}HTGR\\ (lecho de bolas)\end{tabular} &
+    \begin{tabular}[c]{@{}c@{}}INET, Tsinghua\\ University\end{tabular} &
+    China &
+    En operación \\ \hline
+  STARCORE &
+    14/20/60 &
+    \begin{tabular}[c]{@{}c@{}}HTGR\\ (prismático)\end{tabular} &
+    StarCore Nuclear &
+    Canadá &
+    Diseño preconceptual \\ \hline
+  JIMMY &
+    \begin{tabular}[c]{@{}c@{}}10 – 20\\ MWt\end{tabular} &
+    \begin{tabular}[c]{@{}c@{}}HTGR\\ (prismático)\end{tabular} &
+    JIMMY ENERGY SAS &
+    Francia &
+    Diseño detallado \\ \hline
+  GTHTR300 &
+    100 – 300 &
+    \begin{tabular}[c]{@{}c@{}}HTGR\\ (prismático)\end{tabular} &
+    JAEA Consortium &
+    Japón &
+    Diseño básico \\ \hline
+  GT-MHR &
+    288 &
+    \begin{tabular}[c]{@{}c@{}}HTGR\\ (prismático)\end{tabular} &
+    JSC Afrikantov OKBM &
+    Rusia &
+    \begin{tabular}[c]{@{}c@{}}Diseño preliminar\\ completado\end{tabular} \\ \hline
+  MHR-T &
+    4 × 205,5 &
+    HTGR &
+    JSC Afrikantov OKBM &
+    Rusia &
+    Diseño conceptual \\ \hline
+  MHR-100 &
+    25 – 87 &
+    HTGR &
+    JSC Afrikantov OKBM &
+    Rusia &
+    Diseño conceptual \\ \hline
+  AHTR-100 &
+    50 &
+    \begin{tabular}[c]{@{}c@{}}HTGR\\ (lecho de bolas)\end{tabular} &
+    Eskom Holdings SOC &
+    Sudáfrica &
+    \begin{tabular}[c]{@{}c@{}}Diseño conceptual\\ completado\end{tabular} \\ \hline
+  PBMR-400 &
+    165 &
+    \begin{tabular}[c]{@{}c@{}}HTGR\\ (lecho de bolas)\end{tabular} &
+    PBMR SOC &
+    Sudáfrica &
+    \begin{tabular}[c]{@{}c@{}}Diseño preliminar\\ completado\end{tabular} \\ \hline
+  HTMR100 &
+    35 &
+    \begin{tabular}[c]{@{}c@{}}HTGR\\ (lecho de bolas)\end{tabular} &
+    STL Nuclear (Pty) &
+    Sudáfrica &
+    Diseño básico \\ \hline
+  EM$^2$ &
+    265 &
+    GFR &
+    General Atomics &
+    EEUU &
+    Diseño conceptual \\ \hline
+  FMR &
+    50 &
+    GFR &
+    General Atomics &
+    EEUU &
+    Diseño conceptual \\ \hline
+  Xe-100 &
+    82,5 &
+    \begin{tabular}[c]{@{}c@{}}HTGR\\ (lecho de bolas)\end{tabular} &
+    X-Energy LLC &
+    EEUU &
+    Diseño básico \\ \hline
+  SC-HTGR &
+    272 &
+    \begin{tabular}[c]{@{}c@{}}HTGR\\ (prismático)\end{tabular} &
+    Framatome &
+    EEUU &
+    Diseño preliminar \\ \hline
+  PeLUIt / RDE &
+    40 MWt &
+    \begin{tabular}[c]{@{}c@{}}HTGR\\ (lecho de bolas)\end{tabular} &
+    BRIN &
+    Indonesia &
+    Diseño conceptual \\ \hline
+  HTR-10 &
+    2,5 &
+    \begin{tabular}[c]{@{}c@{}}HTGR\\ (lecho de bolas)\end{tabular} &
+    \begin{tabular}[c]{@{}c@{}}INET, Tsinghua\\ University\end{tabular} &
+    China &
+    Operable \\ \hline
+  HTTR &
+    30 MWt &
+    \begin{tabular}[c]{@{}c@{}}HTGR\\ (prismático)\end{tabular} &
+    JAEA &
+    Japón &
+    En operación \\ \hline
+  \end{tabular}%
+  }
+  \caption{Diseños existentes de SMRs refrigerados por gas de alta temperatura (\cite{iaea_smr_booklet_2022}).}
+  \label{tab:smrs_gas_alta_temp}
+  \end{table}
+
+\subsubsection{\acrshortpl{smr} refrigerados por metal líquido de espectro rápido de neutrones (del inglés, \acrshort{lmfr})}
+
+Los metales líquidos que utilizan como regrigerantes incluyen sodio, plomo puro y eutéctico de plomo-bismuto. Hay grandes avances en el desarrollo y despliegue de esta tecnología de \acrshortpl{smr}. Prueba de ello es el BREST-OD-300, un reactor de neutrones rápidos refrigerado por plomo que se está construyendo en Seversk (Rusia) y se planea su puesta en marcha en 2026. Se trata de un proyecto prototipo para futuros diseños que empleen un ciclo combustible nuclear cerrado, en el cual pueda reutilizarse el combustible gastado mediante la separación del uranio, plutonio y actínidos minoritarios (Np, Am y Cm), para ser transmutados en estos reactores rápidos (\cite{apuntes_centrales}).
+
+\begin{table}[h]
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{|
+  >{\columncolor[HTML]{FFCCC9}}c |c|c|c|c|c|}
+  \hline
+  \cellcolor[HTML]{ECF4FF}\textbf{Diseño} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Potencia (MWe)} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Tipo} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Diseñador} &
+    \cellcolor[HTML]{ECF4FF}\textbf{País} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Estado} \\ \hline
+  BREST-OD-300 &
+    300 &
+    LMFR &
+    NIKIET &
+    Rusia &
+    En construcción \\ \hline
+  ARC-100 &
+    100 &
+    LMFR &
+    ARC Clean Energy &
+    Canadá &
+    Diseño preliminar \\ \hline
+  4S &
+    10 &
+    LMFR &
+    \begin{tabular}[c]{@{}c@{}}Toshiba Energy\\ Systems \&\\ Solutions Corporation\end{tabular} &
+    Japón &
+    Diseño detallado \\ \hline
+  MicroURANUS &
+    20 &
+    LBE-cooled Reactor &
+    UNIST &
+    Corea del Sur &
+    Diseño conceptual \\ \hline
+  LFR-AS-200 &
+    200 &
+    LMFR &
+    newcleo srl &
+    Italia &
+    Diseño conceptual \\ \hline
+  SVBR &
+    100 &
+    LMFR &
+    \begin{tabular}[c]{@{}c@{}}JSC AKME\\ Engineering\end{tabular} &
+    Rusia &
+    Diseño detallado \\ \hline
+  SEALER-55 &
+    55 &
+    LMFR &
+    LeadCold &
+    Suiza &
+    Diseño conceptual \\ \hline
+  Westinghouse LFR &
+    450 &
+    LMFR &
+    Westinghouse &
+    EEUU &
+    Diseño conceptual \\ \hline
+  \end{tabular}%
+  }
+  \caption{Diseños existentes de SMRs refrigerados por metal líquido de espectro rápido de neutrones (\cite{iaea_smr_booklet_2022}).}
+  \label{tab:smrs_metal_liquido_rapidos}
+  \end{table}
+
+\newpage
+
+\subsubsection{\acrshortpl{smr} de sales fundidas (del inglés, \acrshortpl{msr})}
+
+Reactores de \acrshort{genIV} alimentados y refrigerados por sales fundidas, propiedad que les confiere múltiples ventajas, incluida una seguridad mejorada debido a la propiedades de las sales, un sistema de refrirefrigeración de fase única a baja presión que elimina la necesidad de un gran contenedor, un sistema de alta temperatura con gran eficiencia y un ciclo de combustible flexible. Se están llevando a cabo actividades preliminares de licenciamiento con varios de estos diseños con reguladores de Canadá, Dinamarca, Países Bajos, Reino Unido y los Estados Unidos.
+
+\begin{table}[h]
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{|
+  >{\columncolor[HTML]{FFCCC9}}c |c|c|c|c|c|}
+  \hline
+  \cellcolor[HTML]{ECF4FF}\textbf{Diseño} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Potencia (MWe)} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Tipo} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Diseñador} &
+    \cellcolor[HTML]{ECF4FF}\textbf{País} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Estado} \\ \hline
+  IMSR400 &
+    2 × 195 &
+    MSR &
+    Terrestrial Energy &
+    Canadá &
+    Diseño detallado \\ \hline
+  SSR-W &
+    300 &
+    MSR &
+    Moltex Energy &
+    Canadá &
+    Diseño conceptual \\ \hline
+  smTMSR-400 &
+    168 &
+    MSR &
+    CAS/SINAP &
+    China &
+    Diseño pre-conceptual \\ \hline
+  CMSR &
+    100 &
+    MSR &
+    \begin{tabular}[c]{@{}c@{}}Seaborg Technologies\\ ApS\end{tabular} &
+    Dinamarca &
+    Diseño conceptual \\ \hline
+  \begin{tabular}[c]{@{}c@{}}Copenhagen Atomics\\ Waste Burner\end{tabular} &
+    20 MWt &
+    MSR &
+    Copenhagen Atomics &
+    Dinamarca &
+    Diseño detallado \\ \hline
+  FUJI &
+    200 &
+    MSR &
+    ITMSF &
+    Japón &
+    \begin{tabular}[c]{@{}c@{}}Diseño preliminar\\ completado\end{tabular} \\ \hline
+  THORIZON &
+    40 – 120 &
+    MSR &
+    THORIZON &
+    Holanda &
+    Diseño conceptual \\ \hline
+  SSR-U &
+    16 &
+    MSR &
+    Moltex Energy &
+    Reino Unido &
+    Diseño básico \\ \hline
+  KP-FHR &
+    140 &
+    FHR &
+    KAIROS Power &
+    EEUU &
+    Diseño conceptual \\ \hline
+  Mk1 PB-FHR &
+    100 &
+    FHR &
+    UC Berkeley &
+    EEUU &
+    Diseño pre-conceptual \\ \hline
+  MCSFR &
+    \begin{tabular}[c]{@{}c@{}}50 / 200 /\\ 400 / 1200\end{tabular} &
+    MSR &
+    Elysium Industries &
+    EEUU &
+    Diseño conceptual \\ \hline
+  LFTR &
+    250 &
+    MSR &
+    Flibe Energy &
+    EEUU &
+    Diseño conceptual \\ \hline
+  ThorCon &
+    250 &
+    MSR &
+    ThorCon International &
+    \begin{tabular}[c]{@{}c@{}}EEUU\\ e Indonesia\end{tabular} &
+    \begin{tabular}[c]{@{}c@{}}Diseño preliminar\\ completado\end{tabular} \\ \hline
+  \end{tabular}%
+  }
+  \caption{Diseños existentes de SMRs de sales fundidas (\cite{iaea_smr_booklet_2022}).}
+  \label{tab:smrs_sales_fundidas}
+  \end{table}
+
+\subsubsection{Microreactores modulares (del inglés, MMR}
+
+Diseños de \textbf{menos de 10 MWe de potencia}, con capacidad de opearción semi-autónoma y con una mejor transportabilidad que los \acrshortpl{smr} más grandes. Existen varios diseños punteros tecnológicamente ---incluidos de \acrshort{genIV}---, en los que el reactor utiliza diversos refrigerantes en cada caso: agua ligera, helio, sales fundidas o metal líquido. Los \acrshortpl{mmr} son especialmente adecuados para operar fuera de la red en ubicaciones remotas, en situaciones de necesidad de abastecimiento de emergencia en hospitales o comunidades afectadas por desastres naturales, para desalinizar agua del mar, etc. Estos microrreactores se encuentran en las primeras fases de desarrollo y, en las aplicaciones concretas anteriormente expuestas, se espera que sean muy competitivos frente a las fuentes de electricidad previamente utilizadas.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.6\textwidth]{content/figures/evinci.jpg}
+    \includegraphics[width=0.7\textwidth]{content/figures/evinci.jpg}
     \caption{Render del \emph{eVinci$^{TM}$ Microreactor} de Westinghouse, con una potencia de 5 MWe y 13 MWt (\cite{evinci}).}
     \label{fig:evinci}
 \end{figure}
 
-\end{enumerate}
+\begin{table}[]
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{|
+  >{\columncolor[HTML]{FFCCC9}}c |c|c|c|c|c|}
+  \hline
+  \cellcolor[HTML]{ECF4FF}\textbf{Diseño} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Potencia (MWe)} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Tipo} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Diseñador} &
+    \cellcolor[HTML]{ECF4FF}\textbf{País} &
+    \cellcolor[HTML]{ECF4FF}\textbf{Estado} \\ \hline
+  Energy Well & 8        & FHTR & Centrum výzkumu Řež & República Checa & Diseño pre-conceptual \\ \hline
+  MoveluX &
+    3 – 4 &
+    \begin{tabular}[c]{@{}c@{}}Tubos de\\ disipación de calor\end{tabular} &
+    \begin{tabular}[c]{@{}c@{}}Toshiba Energy\\ Systems \& Solutions\\ Corporation\end{tabular} &
+    Japón &
+    Diseño conceptual \\ \hline
+  ELENA &
+    0,068 &
+    PWR &
+    \begin{tabular}[c]{@{}c@{}}National Research\\ Centre\\ “Kurchatov Institute”\end{tabular} &
+    Rusia &
+    Diseño conceptual \\ \hline
+  UNITHERM    & 6,6      & PWR  & NIKIET              & Rusia           & Diseño conceptual     \\ \hline
+  AMR         & 3        & HTGR & STL Nuclear (Pty)   & Sudáfrica       & Diseño pre-conceptual \\ \hline
+  LFR-TL-30   & 30       & LMFR & newcleo             & Reino Unido     & Diseño conceptual     \\ \hline
+  U-Battery   & 4        & HTGR & Urenco              & Reino Unido     & Diseño conceptual     \\ \hline
+  Aurora      & 1,5 – 50 & LMFR & OKLO                & EEUU            & Diseño detallado      \\ \hline
+  HOLOS-QUAD  & 10       & HTGR & HolosGen LLC        & EEUU            & Diseño detallado      \\ \hline
+  MARVEL &
+    0,015 – 0,027 &
+    LMFR &
+    \begin{tabular}[c]{@{}c@{}}Idaho National\\ Laboratory\end{tabular} &
+    EEUU &
+    \begin{tabular}[c]{@{}c@{}}Fabricación de equipos\\ en proceso\end{tabular} \\ \hline
+  MMR$^{TM}$ &
+    \textgreater 5 y \textgreater 10 &
+    HTGR &
+    \begin{tabular}[c]{@{}c@{}}Ultra Safe Nuclear\\ Corporation\end{tabular} &
+    EEUU &
+    Diseño básico \\ \hline
+  \begin{tabular}[c]{@{}c@{}}Westinghouse\\ eVinci$^{TM}$\end{tabular} &
+    2 – 3,5 &
+    \begin{tabular}[c]{@{}c@{}}Tubos de\\ disipación de calor\end{tabular} &
+    Westinghouse &
+    EEUU &
+    \begin{tabular}[c]{@{}c@{}}Diseño conceptual\\ completado\end{tabular} \\ \hline
+  \end{tabular}%
+  }
+  \caption{Diseños existentes de MMRs (\cite{iaea_smr_booklet_2022}).}
+  \label{tab:mmrs}
+  \end{table}
 
 \subsection{Características generales}
 
