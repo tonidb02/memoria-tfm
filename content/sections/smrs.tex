@@ -20,15 +20,113 @@ No fue, sin embargo, hasta más adelante cuando empezaron a desarrollarse los pe
 
 Hoy en día \textbf{existen en todo el mundo más de 80 diseños y conceptos de \acrshort{smr}} en diversas etapas de desarrollo, cuatro de los cuales se encuentran en etapas avanzadas de construcción en Argentina, China y Rusia.
 
+\subsection{Características generales}
+
+Los diseños de \acrshortpl{smr} están progresando rápidamente, partiendo del objetivo de integrar sistemas para conseguir modulizar los reactores al mismo tiempo que se introducen mejoras significativas para el funcionamiento eficaz y seguro de los mismos. De esta manera, se están desarrollando prototipos con muy buenas prestaciones en lo que a seguridad, flexibilidad, costes, gestión de residuos y variedad de aplicaciones se refiere.
+
+\subsubsection{Seguridad}
+
+Debido a la experiencia de más de 60 años de operación de las centrales nucleares, se han llevado a cabo gradualmente grandes mejoras de seguridad y control de las mismas. Los reactores nucleares avanzados que se están desarrollando en los últimos años, incluidos los \acrshortpl{smr}, incorporan estos avances tecnológicos. Entre las múltiples mejoras incorporadas, cabe destacar el empleo de innovadores \textbf{sistemas de seguridad pasiva}. Los sistemas pasivos son aquellos que no requieren de la acción de un operador o de realimentación electrónica para funcionar, sino que su actuación se asegura por principios físicos independientes de energía externa. Son, por tanto, especialmente útiles en casos de emergencia en los que, aunque se perdiera el suministro eléctrico de la central, los sistemas de seguridad deberían funcionar sin ningún problema (\cite{glosario_seguridad_oiea}). Algunos ejemplos de este tipo de sistemas son los recombinadores autocatalíticos pasivos\footnote{Eliminan los posibles gases combustibles generados dentro de la contención en accidentes severos mediante la recombinación o combustión de una manera gradual, minimizando así el riesgo de una explosión de hidrógeno.}, el \acrfull{svfc}\footnote{Posibilita la despresurización controlada del Edificio de Contención en caso de fusión del núcleo y la reducción de la cantidad de material radiactivo que podría ser liberado al exterior.} o el sistema de sellado pasivo de las bombas del circuito primario\footnote{Permite reducir significativamente o, incluso, eliminar la fuga de refrigerante a través de los sellos sin requerir operación manual. Se activan por temperatura y bloquean automáticamente
+el paso de agua.}. Todos estos nuevos sistemas se han ido implementando en las centrales nucleares actualmente en operación y se han incorporado, junto con muchos otros avances, en los diseños de los reactores avanzados.
+
+En el caso de los \acrshortpl{smr}, la mayor dependencia de los mecanismos de seguridad pasiva, al reducir la necesidad de sistemas activos ---como las bombas de refrigeración del reactor---, simplifica las evaluaciones de seguridad y reduce las posibilidades de fallo de la instalación. La menor potencia de salida y la mayor relación superficie-volumen ofrecida por núcleos más pequeños aumentan la eficiencia de los sistemas de seguridad pasiva tanto para condiciones de operación normales como para transitorios indeseados. Por ejemplo, muchos diseños de tipo \acrshortpl{lwr} disponen de grandes depósitos de agua para enfriar pasivamente los sistemas de reactor incluso en circunstancias extremas (por ejemplo, en caso de pérdida de suministro eléctrico exterior). Una mayor dependencia de los sistemas de enfriamiento pasivo permite \textbf{diseños más simplificados y una operación y mantenimiento más eficientes}. 
+
+Por otro lado, su \textbf{diseño integral} incorpora todos los componentes del sistema de suministro de vapor nuclear (del inglés, \acrshort{nsss})\footnote{Incluye los principales sistemas y componentes de una central nuclear: todo el sistema del refrigerante del reactor (el circuito primario), los sistemas fluidos auxiliares y los principales sistemas eléctricos, de instrumentación y control requeridos para la operación de la planta.} en un solo recipiente. Consecuentemente, la mayor relación superfície-volumen de estos reactores mejora la disipación del calor residual. Esto implica que la cantidad de refrigerante contenido en la vasija del reactor es considerablemente mayor que en las configuraciones tradicionales de bucle externo, lo cual aumenta la capacidad calorífica\footnote{Cantidad de energía necesaria para aumentar la temperatura de un sistema en una unidad de temperatura.} y la inercia térmica\footnote{Capacidad que tiene un sistema de almacenar calor. Es directamente proporcional a la capacidad calorífica, por lo que a mayor inercia térmica, mayor cantidad de energía se requiere para elevar la temperatura de un cuerpo.} del sistema. Además, para la extracción del calor residual se han desarrollado nuevas metodologías, como apoyar la refrigeración convencional con la convección natural de aire.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.62\textwidth]{content/figures/carem.jpeg}
+  \caption{Vasija del reactor CAREM (ver tabla \ref{tab:smrs_agua_tierra}) que alberga de forma integral los componentes del \acrshort{nsss}: el núcleo, los generadores de vapor, el refrigerante primario, etc. junto con otros elementos fundamentales, como las barras de control (\cite{iaea_smr_booklet_2022}).}
+  \label{fig:carem}
+\end{figure}
+
+La compacta configuración de los \acrshortpl{smr} \textbf{reduce la probabilidad de accidentes y la gravedad de los mismos}. Por ejemplo, un diseño más compacto reduce considerablemente el número de penetraciones en la vasija de reactor para la instalación de tubos, lo cual se traduce en una disminución del número de puntos con probabilidad de fuga, haciendo así más resistente al reactor frente a un accidente de pérdida de refrigerante (del inglés, \acrshort{loca}). Otro ejemplo es que la integración de las barras de control dentro de la vasija del reactor elimina el riesgo de accidentes por eyección de las mismas, suceso que puede ocurrir en un reactor convencional y que provoca un súbito incremento de reactividad y, por tanto, un aumento incontrolado de la potencia del reactor. Cabe mencionar, por último, que al trabajar con mayor inercia térmica y menor densidad de potencia\footnote{Cantidad de potencia generada por unidad de volumen. En los \acrshortpl{smr}, al ser mucho menor la potencia generada, la potencia densidad específica es baja.}, la respuesta frente a transitorios de temperatura es más lenta, lo cual aumenta los márgenes de seguridad y ralentiza el posible descontrol del reactor en situaciones adversas.
+
+Además, la reducción del inventario del núcleo del reactor hace que se requiera \textbf{menos blindaje} para la protección del mismo y que las dosis de exposición de los trabajadores sean menores. Tal y como se ha comentado en el párrafo anterior, el hecho de tener un núcleo más pequeño reduce la probabilidad de accidente e implica menor energía en la posible expulsión de emisiones radiactivas. De esta manera, \textbf{se reduce la extensión necesaria de las zonas de planificación de emergencia (\acrshortpl{epz})}\footnote{Zonas que rodean a la central nuclear que se proveen, en base al plan de emergencia correspondiente, de las necesarias medidas de protección de cara a un posible accidente}. Esto último implica que estas plantas podrían ubicarse más cerca de los consumidores finales, ofreciendo un servicio más directo y reduciendo los problemas derivados del transporte de electricidad a grandes distancias.
+
+Por último, las características de los \acrshortpl{smr} hacen posible su \textbf{ubicación subterránea}, que proporciona una mayor protección frente a posibles peligros naturales ---terremotos, inundaciones, huracanes, etc.--- o provocados por el ser humano ---como podría ser el impacto de un avión---. Múltiples diseños desarrollados en los últimos años, como el que se muestra en la figura \ref{fig:ultra_safe_nuclear_mmr}, están optando por ubicar de esta manera los principales componentes de la planta (\cite{nea_smrs_2021}).
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.65\textwidth]{content/figures/ultra_safe_nuclear_mmr.jpg}
+  \caption{\emph{\acrshort{mmr} Energy System} de entre 3,5 y 15 MWe de potencia, diseñado por la \emph{Ultra Safe Nuclear Corporation} (\cite{ultra_safe_nuclear_corporation}).}
+  \label{fig:ultra_safe_nuclear_mmr}
+\end{figure}
+
+\subsubsection{Modularidad}
+
+La \emph{modularización} es una forma de simplificar la construcción de un equipo mediante su división en módulos más pequeños que pueden construirse en fábrica, para ser posteriormente transportados a su destino y finalmente ensamblados allí mismo. En el ámbito nuclear, aunque esta técnica ya ha sido empleada para la construcción de algunas centrales nucleares de gran escala, los \acrlongpl{smr} aprovechan aún más las \textbf{ventajas} que confiere este tipo de construcción en cuanto a eficiencia, coste y seguridad.
+
+\begin{itemize}
+  \item El hecho de realizar la fabricación o el pre-ensamblaje de los módulos en una fábrica preparada para ello ---fuera del sitio de construcción--- con una metodología estandarizada aumenta la productividad laboral, asegura un mejor control de calidad de todos los componentes y reduce los riesgos derivados de la gestión del proyecto, al ser más predecible la evolución material y temporal del mismo.
+  \item El pequeño tamaño de los módulos ---al tratarse de reactores de escala reducida--- permite una buena transportabilidad y maniobrabilidad de los mismos. Varios desarrolladores de \acrshort{smr} han estudiado y garantizado la posibilidad de transportar el módulo completo del sistema de suministro de vapor nuclear (\acrshort{nsss}) usando camiones convencionales, barcos o por ferrocarril.
+  \item Actualmente, la modularización y producción en fábrica ya aplica aproximadamente al 30\% de la construcción de los reactores nucleares. Sin embargo, se prevee una capacidad de modularización de hasta el 60 - 80\% en el proceso de construcción de los pequeños reactores modulares (\cite{nea_unlocking_2020}).
+  \item La manufactura en fábrica permite emplear técnicas avanzadas de fabricación ---como, por ejemplo, la soldadura láser o la fabricación aditiva--- que serían muy difíciles de implementar si se tratase de fabricación \emph{in situ}. Este tipo de técnicas avanzadas reduce el número de soldaduras necesarias y elimina las costosas inspecciones de calidad en servicio. Asimismo, las tecnologías punteras de digitalización y automatización de las cadenas de producción implican una disminución adicional del coste y del tiempo de entrega de los componentes.
+  \item Finalmente, estas reducciones en la duración de la construcción de los \acrshortpl{smr} implica una mayor velocidad para llegar al mercado, ya que hace más predecibles los tiempos y elimina la incertidumbre temporal que a veces se da en los proyectos de las grandes centrales nucleares.
+\end{itemize}
+
+Sin embargo, la construcción modular presenta también ciertos \textbf{inconvenientes}:
+
+\begin{itemize}
+  \item El diseño adecuado de los módulos que compondrán la instalación es un verdadero desafío tecnológico e ingenieril, lo cual supone mayores esfuerzos en la concepción constructiva de los mismos.
+  \item Los materiales y componentes de los distintos módulos deben ser adquiridos antes de comenzar la construcción, lo que supone un aumento de la inversión inicial.
+\end{itemize}
+
+
+\subsubsection{Costes y competitividad}
+
+Tal y como se ha mencionado en el apartado anterior, la modularización simplifica, agiliza y abarata la construcción de los reactores nucleares, haciéndolos
+
+
+
+Los SMR están basados en la economía de producción en serie con varios factores clave de costes: simplificación del diseño, estandarización y modularización, maximizando al mismo tiempo la fabricación en fábrica y minimizando la construcción en el destino final.
+
+La mayor integración del diseño ofrece nuevas oportunidades para la simplificación de los sistemas SMR. Algunos componentes activos, por ejemplo, bombas de refrigeración del reactor y sus sistemas auxiliares ya no son necesarios en los nuevos diseños, abaratando los costes.
+
+La posibilidad de construir SMR bajo tierra y el uso de sistemas de aislamiento sísmico reduciría la necesidad de adaptar los diseños a la sismología local. La modularización simplifica la construcción y también baja los costes, como ocurre en la construcción naval y aeronáutica.
+
+En definitiva, los \acrlongpl{smr} se están convirtiendo gradualmente en una opción de inversión muy atractiva en comparación con los grandes \acrshortpl{lwr}: menor desembolso de capital, menor riesgo, recuperación más rápida de la inversión, reducción de costes por la fabricación en serie y mayor flexibilidad.
+
+\subsubsection{Mejora en la gestión de residuos}
+
+Una MENOR CANTIDAD DE COMBUSTIBLE requiere menos protección y reduce la dosis radiactiva a trabajadores, el riesgo de accidente y las zonas de planificación de emergencia. Algunos SMR pueden estar ubicados más cerca de donde se necesita energía.
+
+COMBUSTIBLE
+Se espera que los LWR-SMR desarrollen ciclos de combustible compatibles con los actuales, con enriquecimientos por debajo del 5\%. No se descarta que los SMR utilicen óxido mixto de uranio (MOX). Se esperan ciclos de operación más largos que en los LWR existentes.
+
+Los microrreactores y SMR de IV Generación se espera que tengan periodos de operación entre recargas de combustible de hasta 20 años. Los reactores que funcionan con combustible triestructural-isotrópico (TRISO) o con sales fundidas pueden recargar sin dejar de funcionar.
+
+Varios diseños están considerando el uso de combustible de uranio poco enriquecido (entre el 5 y el 19,75\%) de alto rendimiento: HALEU.
+
+Tabla con el ciclo de combustible de cada uno de los grupos de SMR.
+\subsubsection{Flexibilidad y diversidad de aplicaciones}
+
+HABLAR AQUÍ DE LA PARTE "SOCIAL" DE LOS SMRs
+
+APLICACIONES
+Los SMR podrían apoyar la descarbonización de otros sectores energéticos, como la calefacción urbana, que requiere temperaturas de salida entre 80 y 200°C. Arabia Saudí también tiene interés en los SMR para cumplir sus necesidades de desalación del agua del mar.
+
+Las temperaturas más altas proporcionadas por algunos SMR de IV Generación (450-850°C) puede servir para descarbonizar sectores industriales difíciles de sustituir hasta ahora, como refinado de petróleo, reformado con vapor para gas natural y producción de hidrógeno termoquímico.
+
+Los SMR tienen características inherentes de seguimiento de carga que los hacen capaces de realizar una operación flexible en redes con una gran penetración de energías renovables variables, como eólica y solar fotovoltaica.
+
+Los SMR se pueden implementar en áreas remotas y aisladas que no están conectadas a la red, en regiones con pequeñas redes eléctricas o en regiones con sitios adecuados limitados para grandes instalaciones nucleares.
+
+En la Hoja de ruta de los SMR canadienses de 2018 se identificaron varias comunidades remotas fuera de la red e instalaciones mineras, donde los SMR podrían ser rentables como reemplazo de generadores diésel.
+
+Flexibilidad mejorada: al aprovechar las capacidades de maniobrabilidad de los reactores existentes de la Generación II (NEA, 2012), los SMRs podrían lograr modos de seguimiento de carga mejorados resultantes de características de diseño inherentes, así como a través de la optimización de la operación de unidades multinúcleo (Ingersoll et al., 2015). Más generalmente, la flexibilidad de los SMRs también cubre las capacidades de despliegue (por ejemplo, menores requisitos de ubicación).
+
+\newpage
+
 \subsection{Clasificación de los Small Modular Reactors}
 
-Pese a que existen diversos criterios para determinar los distintos tipos de \acrshortpl{smr}, en el presente proyecto se ha escogido la clasificación realizada por el \acrshort{oiea}, en la que se distinguen 6 grupos, de los cuales se ofrecen a continuación las características generales y las tecnologías concretas desarrolladas:
+Pese a que existen diversos criterios para determinar los distintos tipos de \acrshortpl{smr}, en el presente proyecto se ha escogido la clasificación realizada por el \acrshort{oiea}, en la que se distinguen 6 grupos, de los cuales se ofrece a continuación una descripción y las tecnologías concretas desarrolladas:
 
-\subsubsection{\acrshortpl{smr} refrigerados por agua establecidos en tierra}
+\subsubsection{SMRs refrigerados por agua establecidos en tierra}
 
  Utilizan varias configuraciones de reactores de agua ligera (del inglés, \acrshortpl{lwr}) y de reactores de agua pesada (del inglés, \acrshortpl{hwr}) para establecerse en tierra y con posibilidad de aplicaciones sin conexión a la red. Se trata de la tecnología de \acrshort{smr} más madura en la actualidad, ya que la mayoría de las centrales nucleares de gran potencia en operación actualmente también son refrigeradas por agua.
 
-\begin{table}[h]
+ \begin{table}[h]
   \resizebox{\textwidth}{!}{%
   \begin{tabular}{|
   >{\columncolor[HTML]{FFCCC9}}c |c|c|c|c|c|}
@@ -58,7 +156,7 @@ Pese a que existen diversos criterios para determinar los distintos tipos de \ac
     Canadá &
     Diseño conceptual \\ \hline
   CAP200 &
-    \textgreater \space 200 &
+    \textgreater 200 &
     PWR &
     SPIC/SNERDI &
     China &
@@ -82,9 +180,9 @@ Pese a que existen diversos criterios para determinar los distintos tipos de \ac
     China &
     Diseño básico \\ \hline
   TEPLATOR$^{TM}$ &
-    \textless \space 150 MWt &
+    \textless 150 MWt &
     HWR &
-    \begin{tabular}[c]{@{}c@{}}UWB Pilsen \\  CIIRC CTU\end{tabular} &
+    \begin{tabular}[c]{@{}c@{}}UWB Pilsen \\ \& CIIRC CTU\end{tabular} &
     República checa &
     Diseño conceptual \\ \hline
   NUWARD$^{TM}$ &
@@ -102,28 +200,100 @@ Pese a que existen diversos criterios para determinar los distintos tipos de \ac
   i-SMR &
     170 &
     PWR &
-    \begin{tabular}[c]{@{}c@{}}KHNP \\ KAERI\end{tabular} &
-    Corea del Sur &
+    \begin{tabular}[c]{@{}c@{}}KHNP \&\\ KAERI\end{tabular} &
+    República de Corea &
     Diseño conceptual \\ \hline
   SMART &
     107 &
     PWR &
-    \begin{tabular}[c]{@{}c@{}}KAERI \\ K.A.CARE\end{tabular} &
+    \begin{tabular}[c]{@{}c@{}}KAERI \\ \& K.A.CARE\end{tabular} &
     \begin{tabular}[c]{@{}c@{}}República de Corea\\ y Arabia Saudí\end{tabular} &
     Diseño detallado \\ \hline
   RITM-200N &
     55 &
     PWR &
-    \begin{tabular}[c]{@{}c@{}}JSC Afrikantov\\  OKBM Rosatom\end{tabular} &
+    \begin{tabular}[c]{@{}c@{}}JSC Afrikantov\\ \& OKBM Rosatom\end{tabular} &
     Rusia &
     \begin{tabular}[c]{@{}c@{}}Diseño detallado\\ completado\end{tabular} \\ \hline
+  VK-300 &
+    250 &
+    BWR &
+    NIKIET &
+    Rusia &
+    Diseño detallado \\ \hline
+  KARAT-45 &
+    45 – 50 &
+    BWR &
+    NIKIET &
+    Rusia &
+    Diseño conceptual \\ \hline
+  KARAT-100 &
+    100 &
+    BWR &
+    NIKIET &
+    Rusia &
+    Diseño conceptual \\ \hline
+  RUTA-70 &
+    70 MWt &
+    PWR &
+    NIKIET &
+    Rusia &
+    Diseño conceptual \\ \hline
+  STAR &
+    10 &
+    PWR &
+    STAR ENERGY &
+    Suiza &
+    Diseño básico \\ \hline
+  Rolls-Royce SMR &
+    470 &
+    PWR &
+    Rolls-Royce &
+    Reino Unido &
+    Diseño detallado \\ \hline
+  VOYGR$^{TM}$ &
+    4/6/12 × 77 &
+    PWR &
+    NuScale Power &
+    EEUU &
+    \begin{tabular}[c]{@{}c@{}}Fabricación de\\ equipos en proceso\end{tabular} \\ \hline
+  BWRX-300 &
+    270 – 290 &
+    BWR &
+    Hitachi &
+    EEUU y Japón &
+    Diseño detallado \\ \hline
+  SMR-160 &
+    160 &
+    PWR &
+    Holtec International &
+    EEUU &
+    \begin{tabular}[c]{@{}c@{}}Diseño preliminar\\ completado\end{tabular} \\ \hline
+  Westinghouse SMR &
+    \textgreater 225 &
+    PWR &
+    Westinghouse &
+    EEUU &
+    \begin{tabular}[c]{@{}c@{}}Diseño conceptual\\ completado\end{tabular} \\ \hline
+  mPower &
+    2 × 195 &
+    PWR &
+    BWX Technologies &
+    EEUU &
+    Diseño conceptual \\ \hline
+  OPEN20 &
+    22 &
+    PWR &
+    Last Energy &
+    EEUU &
+    Diseño detallado \\ \hline
   \end{tabular}%
   }
   \caption{Diseños existentes de SMRs refrigerados por agua establecidos en tierra (\cite{iaea_smr_booklet_2022}).}
   \label{tab:smrs_agua_tierra}
   \end{table}
 
-\subsubsection{\acrshortpl{smr} refrigerados por agua establecidos en el mar}
+\subsubsection{SMRs refrigerados por agua establecidos en el mar}
 
 Instalaciones flotantes montadas en barcos o sumergidas bajo el mar. Ofrecen una gran versatilidad gracias a su capacidad de desplazamiento. A este grupo pertenecen los dos reactores KLT-40S pertenecientes a la \textbf{planta de energía nuclear flotante Akademik Lomonosov}, que comenzó su operación comercial en Pevek (Rusia) en mayo de 2020, siendo \textbf{el primer diseño de SMR conectado a la red}, con una potencia eléctrica total ---entre ambos reactores--- de 70 MWe y 300 MWt, proporcionando así electricidad a una ciudad de 100.000 habitantes.
 
@@ -199,7 +369,7 @@ Instalaciones flotantes montadas en barcos o sumergidas bajo el mar. Ofrecen una
   \label{tab:smrs_agua_mar}
   \end{table}
 
-\subsubsection{\acrshortpl{smr} refrigerados por gas de alta temperatura (del inglés, \acrshort{htgr})}
+\subsubsection{SMRs refrigerados por gas de alta temperatura (del inglés, HTGR)}
 
 Reactores de \acrshort{genIV} que proporcionan calor a elevada temperatura (superior a 750°C) y que pueden ser utilizados para generar electricidad de forma más eficiente y con una variedad de aplicaciones industriales. Dentro de esta categoría, hay múltiples diseños en desarrollo y alguno en operación, como el \textbf{HTR-PM de China, el primer \acrshort{htgr} en operación del mundo}. Con un reactor de lecho de bolas\footnote{Reactor de muy alta temperatura moderado con grafito y refrigerado por gas, cuyos elementos de combustible son esféricos (denominados ``bolas'') y contienen miles de partículas \acrshort{triso}. Estos combustibles tri-isotrópicos constan de carburo de uranio revestido con varias capas de carbón pirolítico y dióxido de silicio para retener los productos de fisión a altas temperaturas.}, una potencia eléctrica de 210 MWe y una potencia térmica de 500 MWt, se conectó a la red en diciembre de 2021 y comenzó a operar comercialmente a plena potencia en diciembre de 2023, con el objetivo de reemplazar las centrales de carbón presentes en el interior de China. También se incluyen en este grupo tres reactores de prueba \acrshort{htgr}, dos de los cuales han estado en operación durante más de veinte años para realizar pruebas en Japón y China.
 
@@ -211,7 +381,8 @@ Reactores de \acrshort{genIV} que proporcionan calor a elevada temperatura (supe
 \end{figure}
 
 \begin{table}[h]
-  \resizebox{\textwidth}{!}{%
+  \centering
+  \resizebox{0.91\textwidth}{!}{%
   \begin{tabular}{|
   >{\columncolor[HTML]{FFCCC9}}c |c|c|c|c|c|}
   \hline
@@ -329,9 +500,11 @@ Reactores de \acrshort{genIV} que proporcionan calor a elevada temperatura (supe
   \label{tab:smrs_gas_alta_temp}
   \end{table}
 
-\subsubsection{\acrshortpl{smr} refrigerados por metal líquido de espectro rápido de neutrones (del inglés, \acrshort{lmfr})}
+\newpage
 
-Los metales líquidos que utilizan como regrigerantes incluyen sodio, plomo puro y eutéctico de plomo-bismuto. Hay grandes avances en el desarrollo y despliegue de esta tecnología de \acrshortpl{smr}. Prueba de ello es el BREST-OD-300, un reactor de neutrones rápidos refrigerado por plomo que se está construyendo en Seversk (Rusia) y se planea su puesta en marcha en 2026. Se trata de un proyecto prototipo para futuros diseños que empleen un ciclo combustible nuclear cerrado, en el cual pueda reutilizarse el combustible gastado mediante la separación del uranio, plutonio y actínidos minoritarios (Np, Am y Cm), para ser transmutados en estos reactores rápidos (\cite{apuntes_centrales}).
+\subsubsection{SMRs refrigerados por metal líquido de espectro rápido de neutrones (del inglés, LMFR)}
+
+Los metales líquidos que utilizan como regrigerantes incluyen sodio, plomo puro y eutéctico de plomo-bismuto. Hay grandes avances en el desarrollo y despliegue de esta tecnología de \acrshortpl{lmfr}. Prueba de ello es el BREST-OD-300, un reactor de neutrones rápidos refrigerado por plomo que se está construyendo en Seversk (Rusia) y se planea su puesta en marcha en 2026. Se trata de un proyecto prototipo para futuros diseños que empleen un ciclo combustible nuclear cerrado, en el cual pueda reutilizarse el combustible gastado mediante la separación del uranio, plutonio y actínidos minoritarios (Np, Am y Cm), para ser transmutados en estos reactores rápidos (\cite{apuntes_centrales}).
 
 \begin{table}[h]
   \resizebox{\textwidth}{!}{%
@@ -394,15 +567,13 @@ Los metales líquidos que utilizan como regrigerantes incluyen sodio, plomo puro
     Diseño conceptual \\ \hline
   \end{tabular}%
   }
-  \caption{Diseños existentes de SMRs refrigerados por metal líquido de espectro rápido de neutrones (\cite{iaea_smr_booklet_2022}).}
+  \caption{Diseños existentes de SMRs rápidos refrigerados por metal líquido (\cite{iaea_smr_booklet_2022}).}
   \label{tab:smrs_metal_liquido_rapidos}
   \end{table}
 
-\newpage
+\subsubsection{SMRs de sales fundidas (del inglés, MSR)}
 
-\subsubsection{\acrshortpl{smr} de sales fundidas (del inglés, \acrshortpl{msr})}
-
-Reactores de \acrshort{genIV} alimentados y refrigerados por sales fundidas, propiedad que les confiere múltiples ventajas, incluida una seguridad mejorada debido a la propiedades de las sales, un sistema de refrirefrigeración de fase única a baja presión que elimina la necesidad de un gran contenedor, un sistema de alta temperatura con gran eficiencia y un ciclo de combustible flexible. Se están llevando a cabo actividades preliminares de licenciamiento con varios de estos diseños con reguladores de Canadá, Dinamarca, Países Bajos, Reino Unido y los Estados Unidos.
+Reactores de \acrshort{genIV} alimentados y refrigerados por sales fundidas, propiedad que les confiere múltiples ventajas, incluida una seguridad mejorada debido a la propiedades de las sales, un sistema de refrirefrigeración de fase única a baja presión que elimina la necesidad de un gran contenedor, un sistema de alta temperatura con gran eficiencia y un ciclo de combustible flexible. Se están llevando a cabo actividades preliminares de licenciamiento con varios de estos diseños de \acrshortpl{msr} con reguladores de Canadá, Dinamarca, Países Bajos, Reino Unido y los Estados Unidos.
 
 \begin{table}[h]
   \resizebox{\textwidth}{!}{%
@@ -499,7 +670,7 @@ Reactores de \acrshort{genIV} alimentados y refrigerados por sales fundidas, pro
   \label{tab:smrs_sales_fundidas}
   \end{table}
 
-\subsubsection{Microreactores modulares (del inglés, MMR}
+\subsubsection{Microreactores modulares (del inglés, MMR)}
 
 Diseños de \textbf{menos de 10 MWe de potencia}, con capacidad de opearción semi-autónoma y con una mejor transportabilidad que los \acrshortpl{smr} más grandes. Existen varios diseños punteros tecnológicamente ---incluidos de \acrshort{genIV}---, en los que el reactor utiliza diversos refrigerantes en cada caso: agua ligera, helio, sales fundidas o metal líquido. Los \acrshortpl{mmr} son especialmente adecuados para operar fuera de la red en ubicaciones remotas, en situaciones de necesidad de abastecimiento de emergencia en hospitales o comunidades afectadas por desastres naturales, para desalinizar agua del mar, etc. Estos microrreactores se encuentran en las primeras fases de desarrollo y, en las aplicaciones concretas anteriormente expuestas, se espera que sean muy competitivos frente a las fuentes de electricidad previamente utilizadas.
 
@@ -564,75 +735,10 @@ Diseños de \textbf{menos de 10 MWe de potencia}, con capacidad de opearción se
   \label{tab:mmrs}
   \end{table}
 
-\subsection{Características generales}
+\subsection{El reactor AP300}
 
-Los diseños de \acrshortpl{smr} están progresando gradualmente, partiendo del objetivo de integrar sistemas para conseguir modulizar los reactores al mismo tiempo que se introducen mejoras significativas para el funcionamiento eficaz y seguro de los mismos. De esta manera, se están desarrollando prototipos con muy buenas prestaciones en lo que a seguridad, flexibilidad, costes, gestión de residuos y variedad de aplicaciones se refiere.
+Pendiente\dots
 
-\subsubsection{Seguridad}
+\subsection{NuScale Power}
 
-Debido a la experiencia de más de 60 años de operación de las centrales nucleares, se han llevado a cabo gradualmente grandes mejoras de seguridad y control de las mismas. Los reactores nucleares avanzados que se están desarrollando en los últimos años, incluidos los \acrshortpl{smr}, incorporan estos avances tecnológicos. Entre las múltiples mejoras incorporadas, cabe destacar el empleo de innovadores \textbf{sistemas de seguridad pasiva}. Los sistemas pasivos son aquellos que no requieren de la acción de un operador o de realimentación electrónica para funcionar, sino que su actuación se asegura por principios físicos independientes de energía externa. Son, por tanto, especialmente útiles en casos de emergencia en los que, aunque se perdiera el suministro eléctrico de la central, los sistemas de seguridad deberían funcionar sin ningún problema (\cite{glosario_seguridad_oiea}). Algunos ejemplos de este tipo de sistemas son los recombinadores autocatalíticos pasivos\footnote{Eliminan los posibles gases combustibles generados dentro de la contención en accidentes severos mediante la recombinación o combustión de una manera gradual, minimizando así el riesgo de una explosión de hidrógeno.}, el \acrfull{svfc}\footnote{Posibilita la despresurización controlada del Edificio de Contención en caso de fusión del núcleo y la reducción de la cantidad de material radiactivo que podría ser liberado al exterior.} o el sistema de sellado pasivo de las bombas del circuito primario\footnote{Permite reducir significativamente o, incluso, eliminar la fuga de refrigerante a través de los sellos sin requerir operación manual. Se activan por temperatura y bloquean automáticamente
-el paso de agua.}. Todas estas nuevas implementaciones ya forman parte de los sistemas de seguridad de los reactores avanzados.
-
-En el caso de los \acrshortpl{smr}, su diseño integral incorpora todos los componentes del sistema de suministro de vapor nuclear (del inglés, \acrshort{nsss}) en un solo recipiente, aumentando así la capacidad calorífica e inercia térmica, la seguridad inherente, así como una operación y mantenimiento más simples.
-
-La menor potencia de salida y mayor relación superficie-volumen de núcleos más pequeños aumenta la eficiencia de los sistemas de SEGURIDAD pasiva. Los sistemas de refrigeración pasivos permiten diseños más simplificados y una operación y mantenimiento optimizados.
-
-\subsubsection{Flexibilidad y modularidad}
-
-El tamaño más pequeño de los diseños SMR permite la adopción de más ambiciosos esquemas de MODULARIZACIÓN, así como nuevas técnicas de fabricación. Los distintos componentes se pueden fabricar, transportar e izar con mucha mayor facilidad que en los reactores convencionales.
-
-Los SMR incorporan FLEXIBILIDAD con modos de seguimiento de carga mejorados incorporados en el diseño, así como a través de la optimización de operación de unidades de múltiples módulos. La flexibilidad también permite la producción combinada de calor y electricidad.
-
-\subsubsection{Reducción de costes y competitividad}
-ECONOMÍA
-Los SMR están basados en la economía de producción en serie con varios factores clave de costes: simplificación del diseño, estandarización y modularización, maximizando al mismo tiempo la fabricación en fábrica y minimizando la construcción en el destino final.
-
-La mayor integración del diseño ofrece nuevas oportunidades para la simplificación de los sistemas SMR. Algunos componentes activos, por ejemplo, bombas de refrigeración del reactor y sus sistemas auxiliares ya no son necesarios en los nuevos diseños, abaratando los costes.
-
-La posibilidad de construir SMR bajo tierra y el uso de sistemas de aislamiento sísmico reduciría la necesidad de adaptar los diseños a la sismología local. La modularización simplifica la construcción y también baja los costes, como ocurre en la construcción naval y aeronáutica.
-
-La construcción en fábrica también puede presentar beneficios adicionales, en particular en términos de aplicación de técnicas de fabricación avanzadas, como soldadura láser, lo que permitirá reducir costes y eliminar costosas inspecciones en servicio.
-
-Los diseños SMR podrían presentar una opción de inversión atractiva en comparación con grandes LWR: menor desembolso de capital, menor riesgo, recuperación más rápida de la inversión, menor coste con la fabricación en serie, mayor flexibilidad y servicios auxiliares a la red.
-
-\subsubsection{Mejora en la gestión de residuos}
-Una MENOR CANTIDAD DE COMBUSTIBLE requiere menos protección y reduce la dosis radiactiva a trabajadores, el riesgo de accidente y las zonas de planificación de emergencia. Algunos SMR pueden estar ubicados más cerca de donde se necesita energía.
-
-COMBUSTIBLE
-Se espera que los LWR-SMR desarrollen ciclos de combustible compatibles con los actuales, con enriquecimientos por debajo del 5\%. No se descarta que los SMR utilicen óxido mixto de uranio (MOX). Se esperan ciclos de operación más largos que en los LWR existentes.
-
-Los microrreactores y SMR de IV Generación se espera que tengan periodos de operación entre recargas de combustible de hasta 20 años. Los reactores que funcionan con combustible triestructural-isotrópico (TRISO) o con sales fundidas pueden recargar sin dejar de funcionar.
-
-Varios diseños están considerando el uso de combustible de uranio poco enriquecido (entre el 5 y el 19,75\%) de alto rendimiento: HALEU.
-
-Tabla con el ciclo de combustible de cada uno de los grupos de SMR.
-\subsubsection{Diversdidad de aplicaciones}
-
-APLICACIONES
-Los SMR podrían apoyar la descarbonización de otros sectores energéticos, como la calefacción urbana, que requiere temperaturas de salida entre 80 y 200°C. Arabia Saudí también tiene interés en los SMR para cumplir sus necesidades de desalación del agua del mar.
-
-Las temperaturas más altas proporcionadas por algunos SMR de IV Generación (450-850°C) puede servir para descarbonizar sectores industriales difíciles de sustituir hasta ahora, como refinado de petróleo, reformado con vapor para gas natural y producción de hidrógeno termoquímico.
-
-Los SMR tienen características inherentes de seguimiento de carga que los hacen capaces de realizar una operación flexible en redes con una gran penetración de energías renovables variables, como eólica y solar fotovoltaica.
-
-Los SMR se pueden implementar en áreas remotas y aisladas que no están conectadas a la red, en regiones con pequeñas redes eléctricas o en regiones con sitios adecuados limitados para grandes instalaciones nucleares.
-
-En la Hoja de ruta de los SMR canadienses de 2018 se identificaron varias comunidades remotas fuera de la red e instalaciones mineras, donde los SMR podrían ser rentables como reemplazo de generadores diésel.
-
-
-\subsection{Tecnologías en fase avanzada de diseño}
-
-En todo el mundo existen más de 80 diseños y conceptos de SMR. La mayoría de ellos están en diversas etapas de desarrollo y de algunos se afirma que podrán desplegarse a corto plazo.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.7\textwidth]{content/figures/global_smr_projects.png}
-    \caption{Número de proyectos de \acrshortpl{smr} en el mundo por estados de desarrollo (\cite{iea_global_smr_projects}).}
-    \label{fig:global_smr_projects}
-\end{figure}
-
-Actualmente existen cuatro SMR en etapas avanzadas de construcción en Argentina, China y Rusia, y varios países en el ámbito de la energía nuclear y en fase de incorporación están llevando a cabo actividades de investigación y desarrollo de SMR.
-
-\subsection{Tecnologías en operación}
-
-\subsection{Reactor AP300}
+Pendiente\dots
