@@ -53,12 +53,12 @@ Por último, las características de los \acrshortpl{smr} hacen posible su \text
   \label{fig:ultra_safe_nuclear_mmr}
 \end{figure}
 
-\subsubsection{Modularidad}
+\subsubsection{Modularidad} \label{modularidad}
 
-La \emph{modularización} es una forma de simplificar la construcción de un equipo mediante su división en módulos más pequeños que pueden construirse en fábrica, para ser posteriormente transportados a su destino y finalmente ensamblados allí mismo. En el ámbito nuclear, aunque esta técnica ya ha sido empleada para la construcción de algunas centrales nucleares de gran escala, los \acrlongpl{smr} aprovechan aún más las \textbf{ventajas} que confiere este tipo de construcción en cuanto a eficiencia, coste y seguridad.
+La \emph{modularización} es una forma de simplificar la construcción de un equipo mediante su división en módulos más pequeños que pueden construirse en fábrica, para ser posteriormente transportados a su destino y finalmente ensamblados allí mismo. En el ámbito nuclear, aunque esta técnica ya ha sido empleada para la construcción de algunas centrales nucleares de gran escala, los \acrlongpl{smr} aprovechan aún más las \textbf{ventajas} que confiere este tipo de construcción en cuanto a eficiencia, coste y seguridad:
 
 \begin{itemize}
-  \item El hecho de realizar la fabricación o el pre-ensamblaje de los módulos en una fábrica preparada para ello ---fuera del sitio de construcción--- con una metodología estandarizada aumenta la productividad laboral, asegura un mejor control de calidad de todos los componentes y reduce los riesgos derivados de la gestión del proyecto, al ser más predecible la evolución material y temporal del mismo.
+  \item El hecho de realizar la fabricación o el pre-ensamblaje de los módulos en una fábrica preparada para ello ---fuera del sitio de construcción--- con una metodología en serie estandarizada, aumenta la productividad laboral, asegura un mejor control de calidad de todos los componentes y reduce los riesgos derivados de la gestión del proyecto, al ser más predecible la evolución material y temporal del mismo.
   \item El pequeño tamaño de los módulos ---al tratarse de reactores de escala reducida--- permite una buena transportabilidad y maniobrabilidad de los mismos. Varios desarrolladores de \acrshort{smr} han estudiado y garantizado la posibilidad de transportar el módulo completo del sistema de suministro de vapor nuclear (\acrshort{nsss}) usando camiones convencionales, barcos o por ferrocarril.
   \item Actualmente, la modularización y producción en fábrica ya aplica aproximadamente al 30\% de la construcción de los reactores nucleares. Sin embargo, se prevee una capacidad de modularización de hasta el 60 - 80\% en el proceso de construcción de los pequeños reactores modulares (\cite{nea_unlocking_2020}).
   \item La manufactura en fábrica permite emplear técnicas avanzadas de fabricación ---como, por ejemplo, la soldadura láser o la fabricación aditiva--- que serían muy difíciles de implementar si se tratase de fabricación \emph{in situ}. Este tipo de técnicas avanzadas reduce el número de soldaduras necesarias y elimina las costosas inspecciones de calidad en servicio. Asimismo, las tecnologías punteras de digitalización y automatización de las cadenas de producción implican una disminución adicional del coste y del tiempo de entrega de los componentes.
@@ -72,33 +72,168 @@ Sin embargo, la construcción modular presenta también ciertos \textbf{inconven
   \item Los materiales y componentes de los distintos módulos deben ser adquiridos antes de comenzar la construcción, lo que supone un aumento de la inversión inicial.
 \end{itemize}
 
+\subsubsection{Combustible y gestión de residuos}
 
-\subsubsection{Costes y competitividad}
+En lo que se refiere al \emph{front end} o fase pre-reactor del ciclo de combustible de los \acrlongpl{smr} de tipo \acrshort{lwr}, se prevee un desarrollo compatible con la tecnlogoía empleada en los ciclos de combustible actuales, con enriquecimientos  por debajo del 5\%.
 
-Tal y como se ha mencionado en el apartado anterior, la modularización simplifica, agiliza y abarata la construcción de los reactores nucleares, haciéndolos
+Por otro lado, muchas empresas desarrolladoras no descartan la posibilidad de emplear óxido mixto de uranio (del inglés, \acrshort{MOX}) en sus reactores.
 
-
-
-Los SMR están basados en la economía de producción en serie con varios factores clave de costes: simplificación del diseño, estandarización y modularización, maximizando al mismo tiempo la fabricación en fábrica y minimizando la construcción en el destino final.
-
-La mayor integración del diseño ofrece nuevas oportunidades para la simplificación de los sistemas SMR. Algunos componentes activos, por ejemplo, bombas de refrigeración del reactor y sus sistemas auxiliares ya no son necesarios en los nuevos diseños, abaratando los costes.
-
-La posibilidad de construir SMR bajo tierra y el uso de sistemas de aislamiento sísmico reduciría la necesidad de adaptar los diseños a la sismología local. La modularización simplifica la construcción y también baja los costes, como ocurre en la construcción naval y aeronáutica.
-
-En definitiva, los \acrlongpl{smr} se están convirtiendo gradualmente en una opción de inversión muy atractiva en comparación con los grandes \acrshortpl{lwr}: menor desembolso de capital, menor riesgo, recuperación más rápida de la inversión, reducción de costes por la fabricación en serie y mayor flexibilidad.
-
-\subsubsection{Mejora en la gestión de residuos}
-
-Una MENOR CANTIDAD DE COMBUSTIBLE requiere menos protección y reduce la dosis radiactiva a trabajadores, el riesgo de accidente y las zonas de planificación de emergencia. Algunos SMR pueden estar ubicados más cerca de donde se necesita energía.
-
-COMBUSTIBLE
-Se espera que los LWR-SMR desarrollen ciclos de combustible compatibles con los actuales, con enriquecimientos por debajo del 5\%. No se descarta que los SMR utilicen óxido mixto de uranio (MOX). Se esperan ciclos de operación más largos que en los LWR existentes.
+Se esperan ciclos de operación más largos que en los LWR existentes.
 
 Los microrreactores y SMR de IV Generación se espera que tengan periodos de operación entre recargas de combustible de hasta 20 años. Los reactores que funcionan con combustible triestructural-isotrópico (TRISO) o con sales fundidas pueden recargar sin dejar de funcionar.
 
 Varios diseños están considerando el uso de combustible de uranio poco enriquecido (entre el 5 y el 19,75\%) de alto rendimiento: HALEU.
 
 Tabla con el ciclo de combustible de cada uno de los grupos de SMR.
+
+
+
+La menor eficiencia térmica observada en los diseños LWR-SMR significa que los requisitos de uranio por kilovatio hora (kWh) de energía producida serán más altos y afectarán directamente los costos del ciclo de combustible. También cabe destacar que se espera que el ciclo de recarga sea más largo que el de los LWR existentes.
+
+
+Estrategias del ciclo de combustible para SMRs y micro reactores de la Generación IV
+
+Si bien la mayoría de los SMRs y micro reactores de la Generación IV están considerando combustible basado en uranio, no obstante se requerirá el desarrollo de nuevas instalaciones de ciclo de combustible. Una característica clave compartida por varios de estos conceptos de reactor es que ofrecerán ciclos de recarga mucho más largos. Los microreactores de tubo de calor son un ejemplo primario, con períodos de recarga de hasta 20 años. Los SMRs de la Generación IV que operan con combustible tristructural-isotrópico (TRISO) o con combustible de sal fundida pueden aprovechar enfoques de recarga en línea. 
+
+Varios diseños están considerando el uso de combustible de uranio de bajo enriquecimiento de alto ensayo (HALEU). El combustible HALEU tiene niveles de enriquecimiento entre el 5 y el 19.75\%. Sus aplicaciones se limitan actualmente a la producción de pequeños lotes para reactores de investigación y producción de radioisótopos médicos. El combustible HALEU no se produce actualmente a escala comercial en los países miembros de la AEN, ya que el ciclo de combustible nuclear comercial existente no excede el 6\% de enriquecimiento. Por lo tanto, el material HALEU actual se reduce de las existencias de uranio altamente enriquecido (HEU) estadounidenses o rusas (Agencia de Suministro de Euratom, 2019). Sin embargo, como ya ha informado el Departamento de Energía de Estados Unidos (DOE), las existencias de HEU podrían agotarse completamente para 2030-2040. Sin el desarrollo de capacidades de producción de HALEU, el desarrollo de tecnologías avanzadas de SMR podría estar severamente limitado. Aunque algunos conceptos de combustible tolerante a accidentes (ATF) para LWRs también pueden requerir HALEU, este problema debería tener menos impacto en los LWR-SMRs.
+
+Un suministro seguro y futuro de combustible HALEU requiere mejoras en la infraestructura actual del ciclo de combustible nuclear para cumplir con posibles límites de seguridad crítica, en particular el desarrollo de instalaciones de enriquecimiento, des-conversión y fabricación. Además, se necesitarán nuevas soluciones de embalaje y transporte, especialmente para el transporte de las mayores cantidades de HALEU que pueden ser necesarias para el despliegue global de SMRs avanzados. El diseño y la certificación de nuevos contenedores de transporte es un proceso complejo y costoso que requiere el cumplimiento de normas de la Organización Internacional de Normalización/Instituto Nacional Estadounidense de Estándares (ISO/ANSI) y la aprobación de las autoridades de transporte competentes.
+
+El impacto del combustible HALEU en la parte posterior del ciclo de combustible puede necesitar ser evaluado más a fondo. El manejo a largo plazo del combustible nuclear usado y los desechos radiactivos de alto nivel generados por el combustible HALEU pueden requerir ajustes en términos de enfoques actuales, incluyendo mejoras en las instalaciones de reprocesamiento y nuevos diseños de contenedores para el almacenamiento intermedio del combustible usado.
+
+Por otro lado, pocos de los SMRs de la Generación IV con reactores de neutrones rápidos están considerando actualmente combustible basado en plutonio. Una notable excepción es el Reactor de Sal Estable de Moltex, que está desarrollando su concepto de reactor en parte para ofrecer una solución para países que enfrentan problemas específicos con el manejo de plutonio.
+
+
+
+
+
+
+
+
+Debido a los mayores ciclos de operación permitidos\dots  [7] señala que los SMR presentan una extensión del ciclo de combustible (de 18-24 meses de las plantas existentes a 36–40 meses), lo que determina un ahorro de costos de capital del 2–5\% y un ahorro de costos operativos anuales del 3\%. 
+
+
+
+
+Una MENOR CANTIDAD DE COMBUSTIBLE requiere menos protección y reduce la dosis radiactiva a trabajadores, el riesgo de accidente y las zonas de planificación de emergencia. Algunos SMR pueden estar ubicados más cerca de donde se necesita energía.
+
+
+
+
+
+\subsubsection{Costes y competitividad}
+
+Tal y como se ha mencionado en el apartado anterior, la modularización y estandarización simplifica, agiliza y abarata la construcción de los reactores nucleares, pudiéndolos hacer más atractivos económicamente. A continuación se presentan las principales consideraciones a tener en cuenta a la hora de analizar la viabilidad económica los pequeños reactores modulares:
+
+\begin{itemize}
+  \item Por una parte, el \textbf{diseño integral} y la \textbf{simplificación de la arquitectura general} de la planta y de los componentes conlleva un consecuente abaratamiento en la fabricación de los mismos por la reducción del capital material y humano requerido. Por ejemplo, el hecho de integrar los distintos sistemas del \acrshort{nsss} en un único recipiente implica la eliminación del presionador. Cabe destacar que algunos desarrolladores están considerando la simplificación adicional que supondría el diseño de infraestructuras de la planta compartidas, teniendo, por ejemplo, las salas de control dentro del edificio de turbinas.
+  
+  Por otra parte, el hecho de emplear \textbf{sistemas de seguridad pasiva} hace que algunos componentes activos ya no sean necesarios, reduciendo de nuevo los costes por la minimización de componentes, pero también por la disminución de la electricidad que estos consumen. Por ejemplo, las bombas de refrigeración del reactor y sus sistemas auxiliares son innecesarios cuando el núcleo puede refrigerarse por circulación natural de agua. 
+  
+  De esta manera, los diseñadores estiman una reducción de costes del 15\% debida a la simplificación en el diseño para los \acrshortpl{smr} de tipo \acrshort{pwr}. Además, se estiman ahorros ligeramente inferiores debidos a la menor cantidad de material ---hormigón, acero, etc.--- requerida. Por otro lado, estos ahorros se ven contrarrestados por los elevados costes de las pruebas y la validación de esta nueva tecnología (\cite{nea_market_potential}).
+
+  \item La \textbf{producción en serie} conlleva grandes mejoras en lo que se refiere a la gestión del proyecto. Al trabajar en un entorno mejor controlado, aumenta la calidad de los componentes, reduciendo errores de construcción y la necesidad de retrabajos ---repetición de algún proceso debido a fallos detectados---. De esta manera, los procesos de construcción, operación, mantenimiento y posterior desmantelamiento son más eficientes y rápidos que en los reactores de gran escala. De hecho, el tiempo de construcción esperado para los \acrlongpl{smr} es de entre 4 - 5 años para la primera unidad de su tipo y entre 3 - 4 años para las unidades posteriores del mismo tipo (\cite{VEGEL2017395}). Comparado con los 6 años de construcción que, de media, requiere una central nuclear de gran escala, supone un avance importante. 
+  
+  Sin embargo, tal y como se ha mencionado en el apartado \ref{modularidad}, la producción en serie hace que se espere que el precio inicial de la puesta en marcha de la cadena de suministro sea muy elevado. Existen estudios que establecen un número mínimo necesario de \acrshortpl{smr} a un cierto precio de venta para recuperar el coste de establecer una cadena de suministro para la fabricación de los componentes modulares de la planta. En particular, en el caso de \acrshortpl{smr} de 180 MWe y una fábrica con costes fijos de mil millones de dólares, deberían venderse 4 \acrshortpl{smr} a 1.500 millones de dólares para recuperar la inversión (\cite{overview_smrs}).
+
+  \item El \textbf{impacto de la modularización} en el coste de capital de los \acrshortpl{smr} depende del grado de modularización en la construcción de los mismos. Según los estudios realizados, una ``modularización completa'' y una tasa de interés del 15\% implican una reducción de costes de construcción del 39\% con respecto al método convencional de construcción \emph{in situ}. Asimismo, se ha calculado que es necesario un grado de modularización del 60\% para obtener una reducción significativa de los gastos (\cite{maronati2016total}).
+  
+  \item La \textbf{posibilidad de construir varios \acrlongpl{smr} en un mismo emplazamiento} presenta múltiples ventajas económicas:
+  
+  \begin{itemize}
+    \item El incremento gradual del número de módulos independientes en un mismo emplazamiento permite que un \acrshort{smr} pueda comenzar a generar ingresos mientras que los demás módulos se están construyendo. Los ingresos generados por esta primera unidad ---o unidades--- permite reducir la inversión inicial ---disminuyendo, por tanto, el capital de riesgo--- y la necesidad de préstamos para la construcción de las siguientes.
+    \item Se reduce el impacto en el suministro eléctrico al realizar una parada, ya que las demás unidades pueden permanecer en servicio mientras tanto.
+    \item Supone un ahorro de ciertos costes fijos, como los de las licencias, seguros, recursos humanos, planes de evacuación\dots, que podrán ser comunes a los diversos módulos.
+    \item Permite la compartición de personal, de repuestos o, incluso, de software entre las múltiples unidades, reduciendo así los costes operativos.
+  \end{itemize}
+  De esta manera, a mayor número de unidades, menor será el coste de cada una.
+  
+  \item La \textbf{posibilidad de construcción subterránea} de los \acrshortpl{smr} resulta económicamente favorable, ya que reduce la necesidad de adaptar los edificios que se encuentran en la superfíce a la sismología local del emplazamiento. Esto se debe a que las partes más delicadas de la planta se encontrarían bajo tierra, con una capa geológica adicional de protección que reduciría el coste del acondicionamiento seguro del \acrshort{nsss}.
+  
+  \item Sin embargo, uno de los grandes desafíos que presentan es la \textbf{obtención de las licencias necesarias}, ya que se trata de una tecnología relativamente nueva y modificar el marco legal actual para la aprobación de operación es complicado. Por tanto, se prevee que el coste a corto plazo para la aprobación legal por parte del regulador será superior al requerido en las plantas convencionales (\cite{uxc2015historical}).
+
+  \item Debido a los mayores ciclos de operación y a la reducción de la probabilidad de fallo de los componentes y sistemas fruto de un diseño más compacto y simple, los \acrshortpl{smr} presentan un \textbf{elevado factor de carga}\footnote{Relación entre la energía eléctrica producida por un dispositivo generador en un período de tiempo y la que se hubiera podido producir en ese período si operara a potencia nominal.}, lo cual mejora drásticamente la economía de la planta. 
+  
+  Algunos estudios realizados afirman que es necesario que el factor de carga de los \acrshortpl{smr} sea igual o superior al de los \acrshortpl{lwr} de gran escala actuales para que sean competitivos (\cite{SHROPSHIRE2011299}). Según un informe de la \emph{World Nuclear Association}, el factor de carga global medio de todos los reactores nucleares del mundo fue de un 80,3\% en el año 2020 (\cite{wna_report_2021}). Teniendo en cuenta que los proveedores de \acrshortpl{smr} apuestan por un factor de carga igual o superior al 95\%, puede decirse ---atendiendo al requisito previamente establecido--- que estos reactores avanzados serán competititivos en el mercado.
+  
+\end{itemize}
+
+En definitiva, tal y como puede observase en la figura \ref{fig:economy}, pese a la principal desventaja ecónomica que supone la menor escala de los \acrshortpl{smr} en lo que se refiere a la cantidad de energía eléctrica producida, los aspectos anteriormente analizados hacen que el coste del MWh producido ---\acrfull{lcoe}--- se equilibre e, incluso, mejore considerablemente con respecto a los grandes reactores. De esta manera, al final se consigue un menor desembolso de capital necesario, menor riesgo, una recuperación más rápida de la inversión, una reducción de costes de fabricación y mayor flexibilidad.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{content/figures/economy.png}
+  \caption{Principales impulsores económicos para compensar las desventajas de la pequeña escala de los \acrshortpl{smr} (\cite{nea_smrs_2021}).}
+  \label{fig:economy}
+\end{figure}
+
+Por último, vale la pena tener en mente los órdenes de magnitud del coste total de un \acrlong{smr}. Para ello, se emplean los resultados detallados a continuación de un estudio económico realizado por la \emph{Energy Policy Institute} de la Universidad de Chicago sobre el VOYGR-12 \acrshort{smr} de la empresa NuScale Power. 
+
+\begin{table}[h]
+  \centering
+  \resizebox{0.7\textwidth}{!}{%
+  \begin{tabular}{|c|c|}
+  \hline
+  \rowcolor[HTML]{ECF4FF} 
+  \textbf{GENERAL DESCRIPTION}                      & \textbf{VOYGR-12 COSTS}  \\ \hline
+  \rowcolor[HTML]{9698ED} 
+  \textbf{Capitalized Direct Costs}                 & \textbf{\$1,805,616,142} \\ \hline
+  \rowcolor[HTML]{CBCEFB} 
+  Structures and Improvements                       & \$612,136,797            \\ \hline
+  \rowcolor[HTML]{CBCEFB} 
+  Reactor Plant Equipment                           & \$869,360,876            \\ \hline
+  \rowcolor[HTML]{CBCEFB} 
+  Turbine Plant Equipment                           & \$196,121,808            \\ \hline
+  \rowcolor[HTML]{CBCEFB} 
+  Electric Plant Equipment                          & \$34,982,052             \\ \hline
+  \rowcolor[HTML]{CBCEFB} 
+  Heat Rejection Systems                            & \$62,934,255             \\ \hline
+  \rowcolor[HTML]{CBCEFB} 
+  Miscellaneous Plant Equipment                     & \$30,080,354             \\ \hline
+  \rowcolor[HTML]{FD6864} 
+  \textbf{Capitalized Indirect Costs}               & \textbf{\$663,710,610}   \\ \hline
+  \rowcolor[HTML]{FFCCC9} 
+  Design Services at Home Office                    & \$130,978,572            \\ \hline
+  \rowcolor[HTML]{FFCCC9} 
+  Field Construction Management                     & \$60,906,859             \\ \hline
+  \rowcolor[HTML]{FFCCC9} 
+  Field Construction Supervision                    & \$246,930,385            \\ \hline
+  \rowcolor[HTML]{FFCCC9} 
+  Field Indirect Costs                              & \$224,894,794            \\ \hline
+  \rowcolor[HTML]{FFCE93} 
+  \textbf{Total Manufacture and Construction Costs} & \textbf{\$2,469,326,752} \\ \hline
+  \end{tabular}%
+  }
+  \caption{Costes estimados de la fabricación y construcción del VOYGR-12 (\cite{cost_evaluation_nuscale}).}
+  \label{tab:costes_voygr-12}
+  \end{table}
+
+  El VOYGR-12 \acrshort{smr} es una planta de 924 MWe constituida por 12 módulos de 77 MWe cada uno, por lo que el coste total por unidad de energía generada es de 2.672,43 \$/KWh. Por otro lado, el coste total estimado del reactor AP-1000 de Westinghouse ---con una potencia de 1.110 MWe--- es de \$6,8 mil millones (\cite{cost_ap1000}), resultando un coste total por unidad de energía producida de 6.126,13 \$/KWh, 2,3 veces superior que en el caso anterior. En la siguiente tabla se exponen los resultados recopilados, poniéndose de manifiesto la competitividad económica de los reactores modulares pequeños frente a los de gran escala:
+
+  \begin{table}[h]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{
+    >{\columncolor[HTML]{FFCCC9}}c |
+    >{\columncolor[HTML]{FFFFFF}}c |c|}
+    \cline{2-3}
+    \cellcolor[HTML]{FFFFFF}\textbf{} &
+      \cellcolor[HTML]{ECF4FF}\textbf{AP-1000} &
+      \cellcolor[HTML]{ECF4FF}\textbf{VOYGR-12 SMR} \\ \hline
+    \multicolumn{1}{|c|}{\cellcolor[HTML]{FFCCC9}\textbf{Coste total estimado (\$)}} &
+      6.800.000.000 &
+      2.469.326.752 \\ \hline
+    \multicolumn{1}{|c|}{\cellcolor[HTML]{FFCCC9}\textbf{Coste total por unidad de energía producida (\$/KWh)}} &
+      6.126,13 &
+      \cellcolor[HTML]{FFFFFF}2.672,43 \\ \hline
+    \end{tabular}%
+    }
+    \caption{Comparación de costes entre una central nuclear de gran escala de generación III+ y un SMR en fase avanzada de desarrollo (\cite{cost_ap1000} y \cite{cost_evaluation_nuscale}).}
+    \label{tab:comparacion_voygr_ap1000}
+    \end{table}
+
+\newpage
+
 \subsubsection{Flexibilidad y diversidad de aplicaciones}
 
 HABLAR AQUÍ DE LA PARTE "SOCIAL" DE LOS SMRs
@@ -502,7 +637,7 @@ Reactores de \acrshort{genIV} que proporcionan calor a elevada temperatura (supe
 
 \newpage
 
-\subsubsection{SMRs refrigerados por metal líquido de espectro rápido de neutrones (del inglés, LMFR)}
+\subsubsection{SMRs rápidos refrigerados por metal líquido (del inglés, LMFR)}
 
 Los metales líquidos que utilizan como regrigerantes incluyen sodio, plomo puro y eutéctico de plomo-bismuto. Hay grandes avances en el desarrollo y despliegue de esta tecnología de \acrshortpl{lmfr}. Prueba de ello es el BREST-OD-300, un reactor de neutrones rápidos refrigerado por plomo que se está construyendo en Seversk (Rusia) y se planea su puesta en marcha en 2026. Se trata de un proyecto prototipo para futuros diseños que empleen un ciclo combustible nuclear cerrado, en el cual pueda reutilizarse el combustible gastado mediante la separación del uranio, plutonio y actínidos minoritarios (Np, Am y Cm), para ser transmutados en estos reactores rápidos (\cite{apuntes_centrales}).
 
