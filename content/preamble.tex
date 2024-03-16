@@ -39,6 +39,7 @@
 \usepackage{array}
 \usepackage{tablefootnote}
 \usepackage{wrapfig}
+\usepackage{multirow}
 % ---------------------------------------------- %
 
 
@@ -154,19 +155,82 @@
 % --------------- Abreviaturas, unidades y acrónimos ----------------- %
 
 \usepackage{glossaries}
+
+\newglossary[ch1]{formel}{ch2}{ch3}{GLOSARIO}
+
 \makenoidxglossaries
 
-\newglossaryentry{simuladores}
+\newglossaryentry{NSSS}
 {
-    name=Simuladores,
-    text={simuladores},
-    description={Los simuladores son... Esto es un ejemplo para el glosario}
+    name=\emph{Nuclear Steam Supply System} (NSSS),
+    text={NSSS},
+    description={Incluye los principales sistemas y componentes de una central nuclear: todo el sistema del refrigerante del reactor (el circuito primario), los sistemas fluidos auxiliares y los principales sistemas eléctricos, de instrumentación y control requeridos para la operación de la planta.},
+    type=formel
 }
+
+\newglossaryentry{grado de quemado}
+{
+    name=Grado de quemado:,
+    text={grado de quemado},
+    description={Energía extraída por unidad de masa de combustible presente en el reactor},
+    type=formel
+}
+
+\newglossaryentry{tubos de calor}
+{
+    name=Microrreactores de tubos de calor:,
+    text={tubos de calor},
+    description={Del inglés, \acrfull{hpr}, son microrreactores refrigerados pasivamente con tubos de calor. Estos tubos son dispositivos pasivos de transferencia de calor que usan la fuerza capilar de su estructura interna y juegan con los cambios de fase. El tubo de calor contiene un fluido de trabajo que transfiere calor al evaporarse en la sección evaporadora y se condensa en la sección condensadora. Se trata de reactores con un diseño compacto, gran facilidad de transporte y una elevada confiabilidad y estabilidad del sistema},
+    type=formel
+}
+
+\newglossaryentry{combustible}
+{
+    name=Combustible TRISO:,
+    text={combustible},
+    description={Combustible tri-isotrópico empleado en reactores de alta temperatura formado por carburo de uranio revestido con varias capas de carbón pirolítico y dióxido de silicio para retener los productos de fisión a elevadas temperaturas},
+    type=formel
+}
+
+\newglossaryentry{factor de carga}
+{
+    name=Factor de carga:,
+    text={factor de carga},
+    description={Relación entre la energía eléctrica producida por un dispositivo generador en un período de tiempo y la que se hubiera podido producir en ese período si operara a potencia nominal},
+    type=formel
+}
+
+\newglossaryentry{reactor de lecho de bolas}
+{
+    name=Reactor de lecho de bolas:,
+    text={reactor de lecho de bolas},
+    description={Reactor de muy alta temperatura moderado con grafito y refrigerado por gas, cuyos elementos de combustible son esféricos (denominados ``bolas'') y contienen miles de partículas \acrshort{triso}},
+    type=formel
+}
+
+\newglossaryentry{sistema de suministro de vapor nuclear}
+{
+    name=Sistema de suministro de vapor nuclear:,
+    text={sistema de suministro de vapor nuclear},
+    description={Del inglés, \acrshort{nsss}, es la parte de una central nuclear que incluye los principales sistemas y componentes: todo el sistema del refrigerante del reactor (el circuito primario), los sistemas fluidos auxiliares y los principales sistemas eléctricos, de instrumentación y control requeridos para la operación de la planta},
+    type=formel
+}
+
+\newglossaryentry{no prolifera}
+{
+    name=No proliferación nuclear:,
+    text={no prolifera},
+    description={Consiste en un programa promovido principalmente por la \acrshort{onu} para la cooperación entre países con el fin de emplear la energía nuclear con fines pacíficos e impulsar el desarme nuclear},
+    type=formel
+}
+
 
 \newacronym{smr}{SMR}{\emph{Small Modular Reactor}}
 \newacronym{sgiz}{SGIZ}{Simulador Gráfico Interactivo de Zorita}
 \newacronym{pwr}{PWR}{\emph{Pressure Water Reactor}}
-\newacronym{enresa}{Enresa}{Empresa Nacional de Residuos Radioactivos, S.A.}
+\newacronym{bwr}{BWR}{\emph{Boiling Water Reactor}}
+\newacronym{phwr}{PHWR}{\emph{Pressurized Heavy Water Reactor}}
+\newacronym{enresa}{Enresa}{Empresa Nacional de Residuos Radioactivos, SA}
 \newacronym{ati}{ATI}{Almacén Temporal Individualizado}
 \newacronym{oiea}{OIEA}{Organismo Internacional de Energía Atómica}
 \newacronym{idi}{I+D+I}{Investigación, Desarrollo e Innovación}
@@ -177,13 +241,28 @@
 \newacronym{lwr}{LWR}{\emph{Light Water Reactor}}
 \newacronym{hwr}{HWR}{\emph{Heavy Water Reactor}}
 \newacronym{htgr}{HTGR}{\emph{Hight Temperature Gas-cooled Reactor}}
+\newacronym{gfr}{GFR}{\emph{Gas-cooled Fast Reactor}}
+\newacronym{fhr}{FHR}{\emph{Fluoride salt-cooled High-temperature Reactor}}
 \newacronym{triso}{TRISO}{Combustible tri-isotrópico}
 \newacronym{msr}{MSR}{\emph{Molten Salt Reactor}}
 \newacronym{lmfr}{LMFR}{\emph{Liquid Metal cooled Fast Reactor}}
+\newacronym{lbr}{LBR}{\emph{Lead-Bismuth cooled Reactor}}
 \newacronym{olp}{OLP}{Operación a Largo Plazo}
 \newacronym{loca}{LOCA}{\emph{Loss-Of-Coolant Accident}}
 \newacronym{epz}{EPZ}{\emph{Emergency Planning Zone}}
 \newacronym{lcoe}{LCOE}{\emph{Levelised Cost of Electricity}}
-\newacronym{mox}{MOX}{\emph{Mixed OXide}}
+\newacronym{mox}{MOX}{\emph{Mixed OXide Fuel}}
+\newacronym{onu}{ONU}{Organización de las Naciones Unidas}
+\newacronym{haleu}{HALEU}{\emph{High-Assay Low-Enriched Uranium}}
+\newacronym{nrc}{NRC}{\emph{Nuclear Regulatory Comission}}
+\newacronym{rgpu}{RGPu}{\emph{Reactor-Grade Plutonium}}
+\newacronym{heu}{HEU}{\emph{Highly Enriched Uranium}}
+\newacronym{leu}{LEU}{\emph{Low Enriched Uranium}}
+\newacronym{ssr}{SSR}{\emph{Stable Salt Reactor}}
+\newacronym{hpr}{HPR}{\emph{Heat Pipe cooled Reactor}}
+\newacronym{ntp}{NTP}{\emph{Nuclear Thermal Propulsion}}
+\newacronym{nep}{NEP}{\emph{Nuclear Electric Propulsion}}
+\newacronym{nerva}{NERVA}{\emph{Nuclear Engine for Rocket Vehicle Application}}
+\newacronym{nasa}{NASA}{\emph{National Aeronautics and Space Administration}}
 
 % ---------------------------------------------- % 
