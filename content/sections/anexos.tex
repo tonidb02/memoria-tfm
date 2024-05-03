@@ -1,7 +1,6 @@
 %%%%%%%%%%%%%%%%%%% - ANEXOS - %%%%%%%%%%%%%%%%%%%
 
 \newpage
-
 \section*{ANEXOS} \label{sec:anexos} % Se añade un asterisco a \section para que el título no esté numerado.
 \addcontentsline{toc}{section}{ANEXOS} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
 \markright{ANEXOS} % Al utilizar \section* se ha de añadir manualmente el título del apartado al encabezado.
@@ -12,13 +11,16 @@
 \renewcommand{\thefigure}{\Alph{subsection}.\arabic{figure}}
 
 % ---------------- Primer anexo ---------------- %
+\setcounter{subsection}{0}
+\setcounter{table}{0}
+\setcounter{figure}{0}
 \subsection{Anexo I: Guión de la práctica de seguimiento de carga} \label{sec:anexo1}
 
 \begin{itemize}
     \item \textbf{Título:} Simulación de una maniobra de seguimiento de carga de un \acrshort{smr} con el \acrshort{sgiz}.
     \item \textbf{Duración aproximada:} 2 horas.
     \item \textbf{Lugar de realización:} \acrfull{sgiz} de la Escuela Técnica Superior de Ingenieros Industriales (UPM).
-    \item \textbf{Impartición:} Alumnos de la asignatura de \textit{Tecnologías Avanzadas En Reactores Nucleares} del \textit{Máster en Ciencia y Tecnología Nuclear}.
+    \item \textbf{Impartición:} Alumnos de la asignatura de \textit{Tecnologías Avanzadas en Reactores Nucleares} del \textit{Máster en Ciencia y Tecnología Nuclear}.
 \end{itemize}
 
 \subsubsection{Introducción}
@@ -77,14 +79,14 @@ Los \textbf{\acrfullpl{smr}}, debido a la incorporación de técnicas de modulac
     \frac{\partial \rho}{\partial P}=\frac{\partial \rho}{\partial T_c} \frac{\partial T_c}{\partial P}+\frac{\partial \rho}{\partial T_{\mathrm{mod}}} \frac{\partial T_{\mathrm{mod}}}{\partial P}=\alpha_{T c} \frac{\partial T_c}{\partial P}+\alpha_{\mathrm{mod}} \frac{\partial T_{\mathrm{mod}}}{\partial P}<0
   \end{equation}
 
-  Para ello, es necesario que el coeficiente Doppler ($\alpha_{T_{c}}$) y el coeficiente de temperatura del moderador ($\alpha_{mod}$) sean negativos. En un reactor submoderado con coeficiente de temperatura del moderador negativo, un aumento de temperatura del moderador conlleva una disminución de la \gls{reactividad} y, por la ecuación \ref{coeficiente_potencia}, una consecuente disminución de la potencia. De esta manera, aumentando la temperatura del moderador o sobrerefrigerando el núcleo se disminuye o aumenta, respectivamente, la potencia de la planta (\cite{apuntes_centrales}).
+  Para ello, es necesario que el coeficiente Doppler ($\alpha_{T_{c}}$) y el coeficiente de temperatura del moderador ($\alpha_{mod}$) sean negativos. En un reactor submoderado con coeficiente de temperatura del moderador negativo, un aumento de temperatura del moderador conlleva una disminución de la \gls{reactividad} y, por la ecuación \ref{coeficiente_potencia2}, una consecuente disminución de la potencia. De esta manera, aumentando la temperatura del moderador o sobrerrefrigerando el núcleo se disminuye o aumenta, respectivamente, la potencia de la planta (\cite{apuntes_centrales}).
   
   Las ventajas que presenta este método es que no hace uso de materiales que puedan desgastarse y que proporciona una potencia homogénea en todo el reactor. Sin embargo, si los cambios de potencia ---y, por tanto, de temparatura--- son muy bruscos, será necesario un presionador lo suficientemente grande como para adaptar la presión del circuito primario a los cambios del nivel de agua producidos (\cite{seguimiento_carga_josep_rey}).
 \end{itemize}
 
 \subsubsection{Objetivo de la simulación}
 
-El objetivo de esta práctica es simular una maniobra de seguimiento de carga con el fin de adaptarse a las fluctuaciones de la energía eólica y solar en un período de tiempo concreto. Una vez realizada la simulación, el simulador ofrece las gráficas y tablas de datos necesarias para analizar el funcionamiento de la planta durante ese modo de operación. Por último, debido a que la Central Nuclear de Zorita es de un solo lazo y de 150 MWe de potencia ---características típicas de algunos \acrshortpl{smr}---, se pretende analizar la capacidad de seguimiento de carga de esta central y compararla con la que puede tener un \acrshort{smr}.
+El objetivo de esta práctica es simular una maniobra de seguimiento de carga con el fin de adaptarse a las fluctuaciones de la energía eólica y solar en un período de tiempo concreto. Una vez realizada la simulación, el simulador ofrece las gráficas y tablas de datos necesarias para analizar el funcionamiento de la planta durante ese modo de operación. Por último, debido a que la Central Nuclear de Zorita es de un solo lazo y produce 150 MWe de potencia ---características típicas de algunos \acrshortpl{smr}---, se pretende analizar la capacidad de seguimiento de carga de esta central y compararla con la que puede tener un \acrshort{smr}.
 
 \subsubsection{Contextualización}
 
@@ -171,12 +173,13 @@ A continuación se detallan los pasos a seguir en el transcurso de la simulació
     \item \underline{Cuestión gráficas 7 y 8:} Razonar en un breve párrafo el comportamiento de los distintos parámetros graficados del generador de vapor y del presionador.
   \end{itemize}
 
-  \item Completar la siguiente tabla y contestar a la cuestión planteada:
+  \item Completar la siguiente tabla, observar la figura \ref{fig:sim2_potencias} y contestar a la cuestión planteada:
   \begin{itemize}
-    \item \underline{Cuestión \acrshortpl{smr}:} ¿Crees que la capacidad de seguimiento de carga de la Central Nuclear de Zorita es similar a la de algunos \acrshortpl{smr}?
+    \item \underline{Cuestión \acrshortpl{smr}:} ¿Se puede decir que la capacidad de seguimiento de carga de la Central Nuclear de Zorita es similar a la de algunos \acrshortpl{smr}?
   \end{itemize}
   \begin{table}[h]
     \centering
+    \vspace{-0.5cm}
     \resizebox{1\textwidth}{!}{%
     \begin{tabular}{|c|c|c|c|c|c|c|}
       \hline
@@ -200,15 +203,24 @@ A continuación se detallan los pasos a seguir en el transcurso de la simulació
     \caption{Principales resultados de la maniobra de seguimiento de carga.}
     \label{tab:resultados_simulacion1}
     \end{table}
+
+    \begin{figure}[h]
+      \centering
+      \includegraphics[width=0.97\textwidth]{content/figures/sim2_potencias.pdf}
+      \vspace{-0.3cm}
+      \caption{Variación de potencias durante una maniobra de  seguimiento de carga (100 - 25 - 100\%) de 6h y 40 mins realizada en el \acrshort{sgiz} simulando la adaptación a las horas de máxima producción solar de un día de invierno. Tasa de variación de carga empleada: 3\%/min.}
+      \label{fig:sim2_potencias}
+    \end{figure} 
+
 \end{enumerate}
 
 \subsubsection{Respuestas a las cuestiones planteadas}
 
 A continuación se muestran las gráficas obtenidas en la simulación, junto con las respuestas a las cuestiones planteadas. El objetivo de las cuestiones es apoyar el análisis de las gráficas. 
 
-\begin{figure}[h]
+\begin{figure}[!h]
   \centering
-  \includegraphics[width=0.66\textwidth]{content/figures/sim1_potencias.pdf}
+  \includegraphics[width=0.7\textwidth]{content/figures/sim1_potencias.pdf}
   \vspace{-0.3cm}
   \caption{\textit{Gráfica 1} - Variaciones de potencia.}
   \label{fig:sim1_potencias}
@@ -216,17 +228,18 @@ A continuación se muestran las gráficas obtenidas en la simulación, junto con
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.65\textwidth]{content/figures/sim1_temperaturas.pdf}
+  \includegraphics[width=0.7\textwidth]{content/figures/sim1_temperaturas.pdf}
   \vspace{-0.3cm}
   \caption{\textit{Gráfica 2} - Variaciones de temperatura.}
   \label{fig:sim1_temperaturas}
 \end{figure}
 
+\newpage
 \underline{Cuestión gráficas 1 y 2:} Al cerrar las válvulas de control de la turbina para disminuir la potencia, se reduce el gasto de vapor y el foco frío de la planta se hace menos eficiente. Esto provoca ``saturaciones'' en el circuito primario que originan picos de aumento de temperatura. Como el coeficiente de temperatura del moderador es negativo, estos aumentos de temperatura conllevan picos de disminución de la potencia. Cuando se aumenta la potencia en la turbina sucede lo contrario. Cabe destacar que estos picos se amplifican cuando trabajamos a potencias bajas ---en este caso, alrededor del 50\%--- ya que se trata de una zona de menor estabilidad para el sistema de control del reactor.
 
 \underline{Observación adicional:} La \textit{gráfica 1} muestra perfectamente el comportamiento \textit{reactor sigue a turbina}. Primero disminuye la potencia de la turbia y, pasados unos instantes, disminuye la potencia nuclear, y así sucesivamente.
 
-\begin{figure}[h]
+\begin{figure}[!h]
   \centering
   \includegraphics[width=0.75\textwidth]{content/figures/sim1_valvulas_control.pdf}
   \caption{\textit{Gráfica 3} - Posición de las válvulas de admisión de vapor a la turbina.}
@@ -242,9 +255,9 @@ A continuación se muestran las gráficas obtenidas en la simulación, junto con
 
 \underline{Observaciones:} Al cerrar las válvulas de regulación, disminuye el caudal ---y, por tanto, el gasto másico--- de vapor que entra en la turbina. La gran influencia del caudal de vapor sobre la potencia generada por la turbina se pone de manifiesto al observar que el comportamiento de las curvas de \textit{caudal de vapor} y de \textit{potencia del generador} es idéntico.
 
-\begin{figure}[h]
+\begin{figure}[!h]
   \centering
-  \includegraphics[width=0.8\textwidth]{content/figures/sim1_barras_control.pdf}
+  \includegraphics[width=0.75\textwidth]{content/figures/sim1_barras_control.pdf}
   \caption{\textit{Gráfica 5} - Inserción de las barras de control en el núcleo de reactor.}
   \label{fig:sim1_barras_control}
 \end{figure}
@@ -261,10 +274,9 @@ A continuación se muestran las gráficas obtenidas en la simulación, junto con
 \end{figure}
 
 \underline{Cuestión gráfica 6:} La inserción de barras de  control es muy efectiva, pero provoca una distorsión en la distribución del flujo neutrónico y, por tanto, de la potencia, ya que se agota más el combustible en la parte inferior del reactor que en la parte superior, por donde se insertan dichas barras en el caso de los \acrshortpl{pwr}. La inyección de ácido bórico es especialmente interesante para compensar estos desequilibrios en la distribución del flujo a lo largo del núcleo del reactor.
-
 \underline{Observación adicional:} La curva demuestra el lento aumento en la concentración de boro cuando así se requiere, pues tarda una cantidad considerable de tiempo en aumentar muy ligeramente su concentración.
 
-\begin{figure}[h]
+\begin{figure}[!h]
   \centering
   \includegraphics[width=0.96\textwidth]{content/figures/sim1_gen_vapor_camara_imp.pdf}
   \caption{\textit{Gráfica 7} - Propiedades del generador de vapor y la cámara de impulsos.}
@@ -273,7 +285,7 @@ A continuación se muestran las gráficas obtenidas en la simulación, junto con
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.7\textwidth]{content/figures/sim1_presionador.pdf}
+  \includegraphics[width=0.8\textwidth]{content/figures/sim1_presionador.pdf}
   \caption{\textit{Gráfica 8} - Propiedades del presionador.}
   \label{fig:sim1_presionador}
 \end{figure}
@@ -297,7 +309,7 @@ Estos aumentos y disminuciones de la presión del presionador pueden provocar la
 
 Por último, es importante remarcar que el análisis realizado para responder a esta cuestión se ha hecho para el caso de la bajada de carga, pero todos los fenómenos descritos ocurren exactamente al revés cuando se produce una subida de potencia, tal y como se observa en las gráficas obtenidas.
 
-\underline{Tabla de resultados y cuestión SMRs}: Tal y como se ha comentado en el \textit{procedimiento} de la simulación (apartado \ref{procedimiento}), la Central Nuclear de Zorita permite una correcta adaptación automática a variaciones de potencia entre el 15 y el 100\% cuando se emplean tasas de variación de carga de alrededor del 3\%/min, permitiendo llevar a cabo una maniobra considerablemente rápida de seguimiento de carga. Los resultados obtenidos en la tabla \ref{tab:resultados_simulacion1_solucion} lo demuestran. De hecho, tal y como se observa en la tabla \ref{tab:capacidad_seguimiento_de_carga_smrs2}, los \acrlongpl{smr} de tipo \acrshort{pwr} tienen aproximadamente el mismo rango permitido y las mismas rampas de potencias, por lo que se puede decir que \textbf{el \acrshort{sgiz} permite realizar una aproximación realista de lo que sería una operación de seguimiento de carga en un \acrshort{smr} de tipo \acrshort{pwr}}, como lo es el AP300, por ejemplo. Aún así, es importante destacar que, a diferencia de las centrales nucleares convencionales ---o de la misma central de José Cabrera---, destinadas prinicpalmente a operar como centrales base, los \acrshortpl{smr} se diseñan con el objetivo de facilitar la adaptación a redes eléctricas con fuertes penetraciones de energías renovables intermitentes. Por tanto, se puede decir que una maniobra de seguimiento de carga como esta supone forzar considerablemente a la central nuclear en cuestión, mientras que los pequeños reactores modulares se conciben para realizar a menudo esta operación con la mayor sin que ello supongo ninguna desestabilización del sistema ni ningún daño para sus equipos.
+\underline{Tabla de resultados y cuestión SMRs}: Tal y como se ha comentado en el \textit{procedimiento} de la simulación (apartado \ref{procedimiento}), la Central Nuclear de Zorita permite una correcta adaptación automática a variaciones de potencia entre el 15 y el 100\% cuando se emplean tasas de variación de carga de alrededor del 3\%/min, permitiendo llevar a cabo una maniobra considerablemente rápida de seguimiento de carga. Los valores obtenidos en la \textit{tabla de resultados} (tabla \ref{tab:resultados_simulacion1_solucion}) y las curvas de potencia de la \textit{gráfica de la simulación de larga duración} (figura \ref{fig:sim2_potencias}) lo demuestran. De hecho, tal y como se observa en la tabla de \textit{capacidad de seguimiento de carga de los \acrshortpl{smr}} (tabla \ref{tab:capacidad_seguimiento_de_carga_smrs2}), los \acrlongpl{smr} de tipo \acrshort{pwr} tienen aproximadamente el mismo rango permitido y las mismas rampas de potencias, por lo que se puede decir que \textbf{el \acrshort{sgiz} permite realizar una aproximación realista de lo que sería una operación de seguimiento de carga en un \acrshort{smr} de tipo \acrshort{pwr}}, como lo es el AP300, por ejemplo. Aún así, es importante destacar que, a diferencia de las centrales nucleares convencionales ---o de la misma central de José Cabrera---, destinadas prinicpalmente a operar como centrales base, los \acrshortpl{smr} se diseñan con el objetivo de facilitar la adaptación a redes eléctricas con fuertes penetraciones de energías renovables intermitentes. Por tanto, una maniobra de seguimiento de carga como esta supone forzar considerablemente la central nuclear en cuestión ---tal y como demuestran las inestabilidades de la gráfica \ref{fig:sim2_potencias} a potencias muy bajas---, mientras que los pequeños reactores modulares se conciben para realizar a menudo esta operación sin que ello supongo ninguna desestabilización del sistema ni ningún daño para sus equipos.
 
 \begin{table}[h]
   \centering
@@ -312,7 +324,7 @@ Por último, es importante remarcar que el análisis realizado para responder a 
       \textbf{\begin{tabular}[c]{@{}c@{}}Potencia final\\ (MWe \\ generados\\  y \% nuclear)\end{tabular}} &
       \textbf{\begin{tabular}[c]{@{}c@{}}Duración \\ subida\\ de potencia \\ (min)\end{tabular}} &
       \textbf{\begin{tabular}[c]{@{}c@{}}Rampa media \\ de potencia\\ en la subida \\ (\%/min)\end{tabular}} \\ \hline
-    \cellcolor[HTML]{FFFFFF}\begin{tabular}[c]{@{}c@{}}142,65 MWe\\ 96,3\% nuclear\end{tabular} &
+    \cellcolor[HTML]{FFFFFF}\begin{tabular}[c]{@{}c@{}}142,65 MWe\\ 96,3\%\tablefootnote{Por un error de diseño en la Central Nuclear de Zorita, el 100\% de turbina corresponde al 96,3\% de potencia del reactor.} nuclear\end{tabular} &
       \begin{tabular}[c]{@{}c@{}}53 MWe\\ 47,5\% nuclear\end{tabular} &
       16,5 mins &
       2,96 \%/min &
