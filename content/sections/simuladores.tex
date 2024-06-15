@@ -1,19 +1,104 @@
 \newpage
 \section{SIMULADORES} \label{simuladores}
 
+Ante el creciente interés internacional por el empleo de la energía nuclear para satisfacer las grandes necesidades energéticas a las que se enfrenta la sociedad actual, la educación y formación de personal cualificado son cruciales para garantizar la operación segura y fiable de las centrales nucleares. Los simuladores para la educación y formación nuclear son una herramienta muy efectiva para el aprendizaje de múltiples habilidades y conocimientos necesarios tanto en el ámbito académico como profesional del sector nuclear.
+
+Los avances en la tecnología informática han permitido el desarrollo de simuladores de alta precisión y fiabilidad tanto a escala real como a escalas más pequeñas y simples. Los simuladores más simples, en comparación con los simuladores de alcance total, permiten a los aprendices captar más rápidamente los fundamentos de operación mediante el aprendizaje práctico, sin perder igualmente los detalles de los complejos procesos tecnológicos de la planta. La combinación de la instrucción teórica sobre la física y la tecnología nuclear, junto con el aprendizaje práctico mediante la experiencia en un simulador, ha demostrado ser un \textbf{método de aprendizaje avanzado y efectivo} que fortalece la comprensión de los principios fundamentales de la tecnología nuclear. 
+
+Las diferencias en el alcance, los modelos de simulación, las interfaces del instructor y del aprendiz y otras muchas características, permiten el uso de estos simuladores para la formación de una amplia variedad de personal. Muchas necesidades educativas y de formación técnica pueden ser atendidas utilizando varios tipos de simuladores orienteados a objetivos instructivos específicos.
+
+\subsection{Tipos de simuladores}
+
+En primer lugar, es importante tener en cuenta los siguientes dos grandes objetivos generales del empleo de estos simuladores:
+
+\begin{enumerate}
+  \item \underline{Educación nuclear:} Adquisición de conocimientos para la comprensión detallada de los conceptos, fenómenos y tecnologías relacionados con la energía nuclear.
+  \item \underline{Formación nuclear:} Desarrollo de capacidades para la mejora de las habilidades, actitudes y comportamientos dentro del entorno específico de una central nuclear.
+\end{enumerate}
+
+En base a las definiciones anteriores, el \acrshort{oiea} clasifica los simuladores de reactores nucleares en los siguientes tipos:
+
+\begin{enumerate}
+  \item \underline{Simuladores básicos de educación y formación:} Comúnmente denominados \textbf{simuladores de principios básicos}, tienen como principal objetivo ayudar a los usuarios a comprender los procesos físicos fundamentales, la operación básica, el diseño de sistemas y los procedimientos operativos generales de las centrales nucleares. Estos simuladores no están vinculados necesariamente a una central nuclear concreta, sino a un tipo de diseño de reactor específico (\acrshort{pwr}, \acrshort{bwr}, \acrfull{candu}, reactores avanzados, etc.). Son ampliamente utilizados en programas de educación básica y superior, y pueden ser de dos tipos:
+  \begin{itemize}
+    \item \textbf{Simuladores de tareas parciales:} Abordan una parte específica de las operaciones de la planta, centrándose en sistemas, componentes o fenómenos concretos (por ejemplo, en la ruptura de tubos del generador de vapor o en el arranque y operación de los generadores diesel...). Se emplean cuando se desea facilitar el aprendizaje en aspectos muy concretos.
+    
+    \item \textbf{Simuladores de planta completa:} Ofrecen una visión general del comportamiento de la central nuclear, con un enfoque en los sistemas principales, con o sin los sistemas auxiliares. Se emplean cuando se desea proporcionar una comprensión general del comportamiento de la planta y los procesos principales (por ejemplo, el comportamiento en estado estable o transitorio de la planta, el sistema refrigeración del reactor, el sistema de vapor principal...).
+  \end{itemize}
+  \item \underline{Simuladores de formación profesional:} Abordan la totalidad de componentes y sistemas de la planta; sus funciones, procesos de operación integrales y los efectos internos en múltipes parámetros del sistema durante la operación en condiciones normales, transitorias y de accidente. Abarcan, a su vez, cuatro tipologías distintas de simuladores:
+  \begin{itemize}
+    \item \textbf{Simuladores de aula específicos de la planta:} Son simuladores con paneles virtuales y/o una interfaz del operador (sin paneles de hardware). Los gráficos se muestran en monitores estándar, monitores táctiles o pantallas proyectadas. El alcance de modelado de este tipo de simuladores es similar al de un simulador de alcance total, pero sin los paneles físicos, consolas e instrumentos asociados. La profundidad y fidelidad del modelado no necesariamente es tan alta como la de un simulador de alcance total. Para estos simuladores, el modelado de procesos en tiempo real puede no ser requerido. Pueden ser, a su vez, de dos tipos:
+    \begin{itemize}
+      \item \textbf{Simuladores de tareas parciales:} Como se ha comentado anteriormente, simulan componentes, sistemas y fenómenos específicos de la planta.
+      \item \textbf{Simuladores de planta completa:} Simulan la el comportamiento de la planta en su totalidad tanto en condiciones de operación normal como en transitorios o accidentes.
+    \end{itemize}
+    \item \textbf{Simuladores de mantenimiento o de componentes:} Se centran en capacitar al personal para la realización de tareas relacionadas con componentes o sistemas muy específicos de la planta, como el ensamblaje y desensamblaje de componentes o la operación de una máquina de recarga de combustible. Para estos simuladores, no se requiere el modelado de procesos en tiempo real.
+    \item \textbf{Simuladores de ingeniería:} Simuladores en tiempo real utilizados para demostrar el comportamiento de una central nuclear en operación normal, transitorios o accidentes con más detalle que los simuladores básicos de educación y formación. Se utilizan principalmente para la optimización del diseño de la planta y la generación de documentos de Análisis de Seguridad de la Planta. También pueden ser utilizados para la formación profesional del personal de la central sobre la dinámica de la planta y la comprensión de escenarios o condiciones de accidentes severos en relación con los límites de seguridad del diseño.
+    \item \textbf{Simuladores de alcance total:} Se trata de herramientas muy potentes vinculadas a una central nuclear concreta. Operan en tiempo real y se utilizan principalmente para la licencia de operadores y para la formación de otros empleados de la central. Su objetivo es desarrollar los conocimientos, las habilidades, los reflejos y las actitudes necesarias para demostrar su capacitación para operar la central nuclear de forma segura. Consisten en una réplica exacta de la sala de control principal de la central nuclear en cuestión y constan de un modelo matemático completo de todos los sistemas y modos de operación de la central (\cite{international2019iaea}).
+  \end{itemize}
+\end{enumerate}
+
+En el siguiente diagrama, se muestra de forma visual la clasificación anteriormente explicada de forma detallada:
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{content/figures/clasificacion_simuladores.pdf}
+  \caption{Clasificación de los simuladores de centrales nucleares (\cite{international2019iaea}).}
+  \label{fig:clasificacion_simuladores}
+\end{figure}
+
 \subsection{Simuladores de SMRs}
 
-IAEA - Simulador SMR: https://www.iaea.org/topics/nuclear-power-reactors/nuclear-reactor-simulators-for-education-and-training/integral-pressurized-water-reactor-simulator
+Debido al papel fundamental que tienen los \acrshortpl{smr} en la transición energética de múltiples países del mundo, se han desarrollado ---y se siguen desarrollando--- simuladores para la formación específica en estos reactores avanzados. La filosofía de estos simuladores es análoga a la de los simuladores de las centrales nucleares convencionales, solo que incluyen las propiedades, sistemas, componentes y  modos de operación avanzados correspondientes. Además, al ser más recientes, se diseñan con los códigos, algoritmos, modelos y métodos de simulación y computación más actualizados posibles. 
 
-¿Cómo ayudan los simuladores a los reactores SMR?\newline
-(https://www.tecnatom.es/blog/smr-reactores-modulares-pequenos-el-futuro-de-la-energia-nuclear/)
-Un simulador permite la familiarización con el diseño, con la operación normal, así como en la operación en condiciones anormales de operación como en la evolución y mitigación de diversas secuencias accidentales, mejorando así tanto la eficiencia como la seguridad en la operación de los SMR.
+A continuación, se exponen brevemente dos ejemplos destacables: el \textit{E2 Center} y los simuladores de \acrshortpl{smr} de Tecnatom. Aun así, existen muchos otros simuladores de este tipo, como el \textit{BWRX-300 Simulator} de Hitachi, el \textit{SMART Reactor Simulator}, el simulador de \textit{Terrapower} y otros simuladores desarrollados por empresas especializadas en simulación industrial, como \textit{CORYS} o \textit{L3Harris}, entre otras.
 
-En Tecnatom llevamos décadas ofreciendo nuestras soluciones de simulación en el sector nuclear a nivel mundial y, concretamente, hemos tenido algunas experiencias relacionadas con los reactores SMR. Una de las más destacadas ha sido el desarrollo para la Agencia Internacional de la Energía Atómica (IAEA) de su simulador de principios básicos de SMR de agua a presión integrado (iPWR) genérico.
+\subsubsection{E2 Center}
 
-Un SMR iPWR consiste básicamente en un reactor de agua a presión con una potencia de 45 MW eléctricos, sin lazos primarios y con los generadores de vapor y el propio presionador integrados en la estructura de la vasija. El alcance del simulador incluye el ciclo agua-vapor para la generación de vapor (150 MW térmicos), los sistemas de seguridad y mitigación de accidentes, así como la contención.
+El \textit{E2 Center} es un entorno de aprendizaje innovador que emplea un modelado informático de última generación para la simulación de sala de control del VOYGR-12, un \acrlong{smr} de 12 unidades de 77 MWe cada una (total de 924 MWe), desarrollado por NuScale.
 
-Los SMR tendrán un papel fundamental en la transición energética y para ello será decisivo que éstos operen de manera segura y eficiente, para lo que los simuladores de entrenamiento serán de gran utilidad.
+El sistema consta de múltiples interfaces que permiten a los operadores de la sala de control ingresar múltiples parámetros, ejecutar una variedad de escenarios y observar la consecuente respuesta de la central. Cada estación de trabajo puede ver el estado de cualquiera de las 12 unidades que componen la planta. Asimismo, presenta características avanzadas de automatización que facilitan el control de la central por parte de los operadores, y muestra de forma muy visual los avisos, alarmas y procedimientos a seguir tanto en operación normal como en transitorios.
+
+NuScale se encarga de la construcción e instalación del centro, proporciona un manual de usuario y una guía de ejercicios para el cliente, y brinda el soporte técnico necesario. Actualmente, este simulador se ha implementado en 6 ubicaciones distintas: 4 pertenecientes a EEUU, una en Bucarest (Rumanía) y otra en Seúl (Corea del Sur).
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.9\textwidth]{content/figures/e2_center_bucarest.png}
+  \caption{E2 Center de la Universidad Politécnica de Bucarest (\cite{e2_center_romania}).}
+  \label{fig:e2_center_bucarest}
+\end{figure}
+
+\subsubsection{Simuladores de SMRs de Tecnatom}
+
+En 2017, Tecnatom desarrolló un simulador de \acrshortpl{smr} de tipo \acrshort{pwr}, denominados \acrfullpl{ipwr}, en los que todos los componentes del circuito primario se encuentran integrados en el interior de la vasija del reactor, tal y como se detalla en el apartado \ref{seguridad}. Se trata de un simulador \textit{online} de descarga gratuita en el que, a parte de familiarizarse con la arquitectura integral del reactor, el usuario puede poner a prueba los distintos sistemas de seguridad avanzados de los que dispone el reactor ---la mayoría de ellos pasivos---, mediante la simulación de múltiples tipos de accidentes distintos (\cite{ipwr_iaea}).
+
+Actualmente, Tecnatom está desarrollando un simulador de \acrshort{smr} para el \textit{Institute of Energy Technology (IFE)} de Noruega, con el objetivo de posibilitar la operación y la monotorización de una sala de control multi-unidad (con capacidad de control de hasta 12 módulos pertenecientes a la misma planta). Este simulador permitirá la simulación a tiempo real del comportamiento de cada una de las unidades tanto en condiciones normales de operación como en situaciones de fallos y emergencias (\cite{tecnatom_smr_simulator}). 
+
+
+\subsection{Uso de simuladores en la enseñanza}
+
+La experiencia confirma que el uso de simuladores de centrales nucleares es muy positivo en la formación tanto de estudiantes universitarios como de profesionales nucleares. El aprendizaje activo y práctico es más efectivo que la enseñanza basada únicamente en clases teóricas, ya que pone en juego múltiples acciones y habilidades: ver y escuchar, reflexionar y actuar, memorizar y visualizar o dibujar, desarrollar analogías y construir modelos matemáticos, razonar lógica e intuitivamente, etc.
+
+A continuación se detallan las principales ventajas del uso de los dos principales tipos de simuladores en la enseñanza:
+
+\begin{itemize}
+  \item \underline{Simuladores básicos de educación y formación:}
+  \begin{itemize}
+    \item Son medios económicamente rentables que cubren con los objetivos y necesidades de la formación nuclear.
+    \item Permiten una instrucción individualizada e, incluso, la autoformación.
+    \item Pueden adaptarse fácilmente a los diversos objetivos y necesidades de los usuarios.
+    \item Facilitan una comprensión básica de los conceptos de diseño y operación de las centrales nucleares.
+    \item Favorecen el aprendizaje sobre las respuestas de la planta frente a fenómenos relacionados con fallos, transitorios y accidentes.
+    \item Posibilitan la repetición de los distintos escenarios tantas veces como sea necesario para garantizar una correcta adquisición de conocimientos y competencias.
+  \end{itemize}
+  \item \underline{Simuladores de formación profesional:}
+  \begin{itemize}
+    \item Suponen una reducción del riesgo para los equipos y para el personal de la planta al mejorar las habilidades de los operadores.
+    \item Proporcionan formación para distintas áreas de la central ---como el personal de ingeniería o de gestión--- a parte de los operadores.
+    \item Permiten actuar sobre múltiples actuadores y variables para modificar el comportamiento de la planta y poder analizar así su impacto.
+    \item Desarrolla la capacidad de los aprendices para responder rápidamente a un accidente y poder así prevenir o mitigar las consecuencias del mismo. Se somete a los aprendices a todo tipo de situaciones anormales y complejas, poniéndoels a prueba en el trabajo bajo presión (\cite{international2019iaea}).
+  \end{itemize} 
+\end{itemize}
 
 \subsection{La Central Nuclear José Cabrera y el SGIZ}
 
@@ -23,9 +108,36 @@ Tal y como se ha comentado en la introducción del proyecto, se pretende profund
 
 La Central Nuclear José Cabrera está situada en Almonacid de Zorita (Guadalajara) y fue la primera central nuclear española en operación.
 
-Se trata de un \textbf{reactor de agua a presión (\acrshort{pwr})} de un lazo\footnote{Los lazos son los circuitos acoplados a la vasija del reactor que cuentan con un generador de vapor y una bomba para impulsar al refrigerante. El circuito primario de las centrales nucleares convencionales de gran escala suele contar con una sola vasija y un solo presionador, junto con 3 o 4 lazos (cada uno con una bomba y un generador de vapor).} diseñado por Westinghouse. Este tipo de reactores emplea agua ligera como refrigerante y moderador, trabajando con neutrones en el rango térmico para maximizar la tasa de fisión del $U^{235}$, presente en un 3,3\% ---en el caso de la central nuclear de Zorita--- del Uranio Enriquecido (UE) empleado como combustible.
+Se trata de un \textbf{reactor de agua a presión (\acrshort{pwr})} de un lazo\footnote{Los lazos son los circuitos acoplados a la vasija del reactor que cuentan con un generador de vapor y una bomba para impulsar al refrigerante. El circuito primario de las centrales nucleares convencionales de gran escala suele contar con una sola vasija y un solo presionador, junto con 3 o 4 lazos (cada uno con una bomba y un generador de vapor).} diseñado por Westinghouse. Este tipo de reactores emplea agua ligera como refrigerante y moderador, trabajando con neutrones en el rango térmico para maximizar la tasa de fisión del $U^{235}$, presente en un 3,3\% ---en el caso de la central nuclear de Zorita--- del uranio enriquecido empleado como combustible.
 
-La central comenzó a construirise en julio de 1965. Tras 36 meses de construcción, el 31 de marzo de 1968 se realizó la prueba funcional en caliente y en junio de ese mismo año se hizo la carga del núcleo, alcanzando su primera criticidad. La red eléctrica española comenzó a recibir los primeros kilovatios-hora de origen nuclear el 14 de julio de 1968 y, desde entonces, se inició un aumento gradual de potencia que llevó a la explotación comercial de la central, con una \textbf{potencia eléctrica instalada de 160 MWe} y una \textbf{potencia térmica de 510 MWt}. El titular de su explotación fue Unión Fenosa Generación (actualmente Naturgy). Durante 39 años de operación comercial produjo 36.515 millones de kWh, empleando a 300 trabajadores de forma directa y a unos 6.000 de forma indirecta.
+Como en toda central nuclear convencional, el cuerpo principal de la planta, estaba formado por los siguientes edificios principales:
+
+\begin{itemize}
+  \item El \textbf{edificio del reactor}, que contenía todo el circuito primario de refrigeración: la vasija del reactor, una motobomba centrífuga, un generador de vapor de eje vertical de tubos en ``U'' y un presionador.
+  
+  El edificio de contención de Zorita constaba de una base y muro cilíndrico fabricados con hormigón armado y de una cúpula hemisférica de acero. La base y la superfície interior del muro estaban recubiertas de forma continua por una membrana de acero de 6,35 mm de espesor, la cual, en unión con la cúpula, proporcionaba gran estanqueidad al edificio. 
+
+  El núcleo cosntaba de 69 elementos de combustible de 14 x 14 varillas cada uno, de las cuales 179 eran barras de combustible de zircaloy.
+
+  \item El \textbf{edificio de servicios auxiliares}, contiguo al edificio del reactor, donde se encontraba la sala de control, desde donde se llevaba a cabo la supervisión y el control, tanto del reactor como del turbogenerador. Cabe mencionar que los sistemas de regulación proporcionaban un control automático de la instalación, actuando mediante una combinación coordinada del veneno químico (el ácido bórico) y las barras de control mecánico.
+
+  \item El \textbf{edificio de turbinas}, compuesto por los dos cuerpos ---de alta y de baja presión--- de turbinas,  el alternador, los recalentadores, el condensador y el equipo auxiliar correspondiemnte.
+  
+  \item Por último, un elemento característico era la \textbf{chimenea} de 60 metros de altura, por la cual se evacuaban ---conforme a los límites legales impuestos--- los gases radiactivos de desecho.
+\end{itemize}
+
+Obviamente, además de los sistemas de control y protección del reactor, y del sistema de vigilancia radiológica, la planta contaba con todos los sistemas de seguridad conocidos y operativos en aquel entonces, entre los que destacan:
+
+\begin{itemize}
+  \item El \underline{sistema de inyección de seguridad}, que en casos accidentales estaba preparado para inyectar agua borada en la vasija del reactor con posibilidad de recirculación del refrigerante.
+  \item Un \underline{sistema de recirculación de aire}, con enfriamiento y filtración del aire interior del recinto de contención que funcionaría en el caso de tener que aislar el edificio del reactor por haberse contaminado.
+  \item Un \underline{sistema de aspersión de agua} situado en el exterior de la cúpula.
+\end{itemize}
+
+
+los sistemas de inyección de seguridad, de recirculación del aire, de aspersión de la cúpula
+
+La central comenzó a construirise en julio de 1965. Tras 36 meses de construcción, el 31 de marzo de 1968 se realizó la prueba funcional en caliente y en junio de ese mismo año se hizo la carga del núcleo, alcanzando su primera criticidad. La red eléctrica española comenzó a recibir los primeros kilovatios-hora de origen nuclear el 14 de julio de 1968 y, desde entonces, se inició un aumento gradual de potencia que llevó a la explotación comercial de la central, con una \textbf{potencia eléctrica neta instalada de 150 MWe} y una \textbf{potencia térmica de 510 MWt}. El titular de su explotación fue Unión Fenosa Generación (actualmente Naturgy). Durante 39 años de operación comercial produjo 36.515 millones de kWh, empleando a 300 trabajadores de forma directa y a unos 6.000 de forma indirecta.
 
 \begin{figure}[h]
     \centering
@@ -38,7 +150,7 @@ El cese definitivo de explotación de la central fue declarado por el Ministerio
 
 La alternativa escogida fue un desmantelamiento total e inmediato en un horizonte temporal de unos ocho años. Las actividades de desmantelamiento comprenden también la segmentación mediante técnicas de corte especiales de grandes sistemas y componentes radiológicamente significativos, como el generador de vapor y la vasija del reactor, así como la descontaminación y demolición de edificios y la restauración final del emplazamiento. 
 
-Actualmente, la instalación se encuentra en la fase de restauración, en la cual se pretende devolver al emplazamiento a sus condiciones previas a la construcción de la central, saneando todo el terreno en cuestión. Los elementos de combustible irradiado de la central se están almacenando temporalmente en el \acrfull{ati} de la instalación, en el que también se han depositado algunos residuos generados durante el desmantelamiento (\cite{enresa_desmantelamiento_zorita}).
+Actualmente, la instalación se encuentra en la \textbf{fase de restauración}, en la cual se pretende devolver al emplazamiento a sus condiciones previas a la construcción de la central, saneando todo el terreno en cuestión. Los elementos de combustible irradiado de la central se están almacenando temporalmente en el \acrfull{ati} de la instalación, en el que también se han depositado algunos residuos generados durante el desmantelamiento (\cite{enresa_desmantelamiento_zorita}).
 
 En la siguiente tabla se resume lo más importante de lo expuesto anteriormente sobre la central nuclear de Zorita:
 
@@ -57,7 +169,7 @@ En la siguiente tabla se resume lo más importante de lo expuesto anteriormente 
       \textbf{Potencia eléctrica} &
       \multicolumn{2}{c|}{\cellcolor[HTML]{ECF4FF}\textbf{Refrigeración}} &
       \multicolumn{2}{c|}{\cellcolor[HTML]{ECF4FF}\textbf{Autorización construcción}} \\ \hline
-    \multicolumn{1}{|c|}{510 MWt}         & 160 MWe         & \multicolumn{2}{c|}{Abierta - Río Tajo}                & \multicolumn{2}{c|}{24 de junio de 1964}  \\ \hline
+    \multicolumn{1}{|c|}{510 MWt}         & 150 MWe         & \multicolumn{2}{c|}{Abierta - Río Tajo}                & \multicolumn{2}{c|}{24 de junio de 1964}  \\ \hline
     \rowcolor[HTML]{ECF4FF} 
     \multicolumn{2}{|c|}{\cellcolor[HTML]{ECF4FF}\textbf{Autorización de puesta en marcha}} &
       \multicolumn{2}{c|}{\cellcolor[HTML]{ECF4FF}\textbf{Cese de explotación}} &
@@ -69,9 +181,52 @@ En la siguiente tabla se resume lo más importante de lo expuesto anteriormente 
     \label{tabla:resumen_zorita}
     \end{table}
 
+\newpage
 \subsubsection{Comparación de la Central Nuclear de Zorita con el reactor AP300} \label{comparacion_zorita_ap300}
 
-Pendiente...
+Llegados a este punto, se han expuesto detalladamente tanto las características del \acrshort{smr} AP300 como las de la Central Nuclear José Cabrera, por lo que se recogen a continuación las similitudes y diferencias entre ambas plantas:
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{|
+  >{\columncolor[HTML]{CBE5CB}}c |
+  >{\columncolor[HTML]{FFCCC9}}c 
+  >{\columncolor[HTML]{FFCCC9}}c |}
+  \hline
+  \cellcolor[HTML]{ECF4FF} &
+    \multicolumn{2}{c|}{\cellcolor[HTML]{ECF4FF}\textbf{DIFERENCIAS}} \\ \cline{2-3} 
+  \multirow{-2}{*}{\cellcolor[HTML]{ECF4FF}\textbf{SIMILITUDES}} &
+    \multicolumn{1}{c|}{\cellcolor[HTML]{FFCE93}\textbf{AP300}} &
+    \cellcolor[HTML]{FFCE93}\textbf{Central Nuclear de Zorita} \\ \hline
+  \cellcolor[HTML]{CBE5CB}Tipo: \acrshort{pwr} &
+    \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}\begin{tabular}[c]{@{}c@{}}Generación III+ \\ (Tecnología muy avanzada)\end{tabular}} &
+    \begin{tabular}[c]{@{}c@{}}Generación I \\ (Tecnología antigua, en\\ algunos casos obselta)\end{tabular} \\ \hline
+  \begin{tabular}[c]{@{}c@{}}Potencia eléctrica\\ propia de los \acrshortpl{smr} \\ (entre 10 y 300 MWe)\end{tabular} &
+    \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}\begin{tabular}[c]{@{}c@{}}Potencia de 300 MWe\\ y 900 MWt\end{tabular}} &
+    \begin{tabular}[c]{@{}c@{}}Potencia de 150 MWe\\ y 510 MWt\end{tabular} \\ \hline
+  Diseño Westinghouse &
+    \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}\begin{tabular}[c]{@{}c@{}}Ciclos de operación\\ de 4 años\end{tabular}} &
+    \begin{tabular}[c]{@{}c@{}}Ciclos de operación\\ de 15 meses\end{tabular} \\ \hline
+  \begin{tabular}[c]{@{}c@{}}Combustible: Uranio\\ de bajo \\ enriquecimiento\end{tabular} &
+    \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}\begin{tabular}[c]{@{}c@{}}Elementos de combustible\\ de 12 x 12 varillas\end{tabular}} &
+    \begin{tabular}[c]{@{}c@{}}Elementos de combustible\\ de 14 x 14 varillas\end{tabular} \\ \hline
+  \cellcolor[HTML]{CBE5CB} &
+    \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}\begin{tabular}[c]{@{}c@{}}Sistemas de seguridad \\ mayoritariamente pasivos\end{tabular}} &
+    \begin{tabular}[c]{@{}c@{}}Sistemas de seguridad\\ dependientes de \\ alimentación eléctrica \\ exterior\end{tabular} \\ \cline{2-3} 
+  \cellcolor[HTML]{CBE5CB} &
+    \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}\begin{tabular}[c]{@{}c@{}}Edificio del reactor\\ ultracompacto, con el \\ tanque del sistema de \\ enfriamiento pasivo de \\ la contención en la parte \\ superior del mismo \\ (ver figura \ref{fig:ap300_inside_nsss})\end{tabular}} &
+    \begin{tabular}[c]{@{}c@{}}Edificio de contención \\ característico, con una cúpula \\ hemisférica de acero\\ (ver figura \ref{fig:zorita})\end{tabular} \\ \cline{2-3} 
+  \multirow{-3}{*}{\cellcolor[HTML]{CBE5CB}1 solo lazo} &
+    \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}\begin{tabular}[c]{@{}c@{}}Capacidades avanzadas \\ de seguimiento de carga\\  con tasas de potencia\\ del $\pm 5\%/min$\end{tabular}} &
+    \begin{tabular}[c]{@{}c@{}}Diseñado para operar\\ fundamentalmente a \\ potencia nominal, \\ con capacidades de \\ variación de potencia \\ del $\pm 3\%/min$\end{tabular} \\ \hline
+  \end{tabular}
+  \caption{Tabla comparativa de las similitudes y diferencias más importantes entre el AP300 y la Central Nuclear de Zorita.}
+  \label{tab:comparacion_ap300_zorita}
+  \end{table}
+
+En resumen, puede observarse que la central nuclear de Zorita presenta muchas características idénticas o muy similares al AP300. Aun así, la principal diferencia entre ambas tecnologías radica en la generación o época de implementación de cada una. Esto último conlleva una importante desactualización por parte de la central nuclear de Zorita con respecto al diseño, los materiales, los sistemas de seguridad, protección y control avanzados que tiene el AP300.
+
+Es importante destacar que ambas centrales presentan unas tasas de variación de potencia muy similares, aunque ---a diferencia de Zorita--- el AP300 se ha diseñado intencionadamente para realizar seguimiento de carga, por lo que está más preparado para operar en este modo de forma adecuada.
 
 \subsubsection{El Simulador Gráfico Interactivo de Zorita (SGIZ)}
 
@@ -79,4 +234,11 @@ El \acrshort{sgiz} es un simulador gráfico interactivo de alcance total de la C
 
 En abril de 2008 se firmó el convenio de colaboración entre Unión Fenosa y la UPM para la creación del Aula ``José Cabrera'', donde se instaló el \acrshort{sgiz}. Este aula se ubica en el Departamento de Ingeniería Nuclear de la ETSII-UPM y está dedicada a la enseñanza de la Tecnología de la Operación de las Centrales Nucleares.
 
-El simulador proporciona las respuestas de la planta durante la operación normal, transitorios y condiciones de accidente, basadas en el código TRAC y un conjunto de pantallas ilustrativas en tiempo real, así como un conjunto de alarmas en un panel similar al de la sala de control real de la central nuclear, permitiendo la operación automática y manual en tiempo real de los componentes del sistema completo tanto en condiciones normales como de emergencia.
+El simulador proporciona las respuestas de la planta durante la operación normal, transitorios y condiciones de accidente, basadas en el código \acrshort{trac} y un conjunto de pantallas ilustrativas en tiempo real, así como un conjunto de alarmas en un panel similar al de la sala de control real de la central nuclear, permitiendo la operación automática y manual en tiempo real de los componentes del sistema completo tanto en condiciones normales como de emergencia.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.9\textwidth]{content/figures/sgiz.jpg}
+  \caption{Simulador Gráfico Interactivo de Zorita (ETSII - UPM).}
+  \label{fig:sgiz}
+\end{figure}

@@ -8,7 +8,7 @@ Tradicionalmente, por razones técnicas y económicas, las centrales nucleares s
 Sin embargo, últimamente ha aumentado el interés en la capacidad de seguimiento de carga de las plantas nucleares, principalmente, en los siguientes dos casos concretos:
 
 \begin{itemize}
-  \item \textbf{Redes eléctricas donde la energía nuclear representa una gran parte de la generación energética total}, como es el caso de Francia (63 \%), Ontario (51 \%), Ucrania (56 \%), Carolina del Sur (55 \%), Illinois (52 \%)\dots En estos casos interesa que esta fuente de energía, al ser mayoritaria, tenga capacidad de adaptación a las habituales fluctuaciones de la demanda eléctrica diarias y a lo largo de las distintas épocas del año.
+  \item \textbf{Redes eléctricas donde la energía nuclear representa una gran parte de la generación energética total}, como es el caso de Francia (63 \%), Ontario (51 \%), Ucrania (56 \%), Carolina del Sur (55 \%), Illinois (52 \%)\dots  En estos casos interesa que esta fuente de energía, al ser mayoritaria, tenga capacidad de adaptación a las habituales fluctuaciones de la demanda eléctrica diarias y a lo largo de las distintas épocas del año.
   \item \textbf{Redes eléctricas donde las fuentes de energía renovable intermitentes ---como la solar y la eólica--- constituyen una parte importante de la producción eléctrica total} y presentan importantes variaciones en la producción. Algunos casos en los que se da esta segunda situación son Alemania, España, Ontario, Nueva York, California\dots (\cite{ANS_2019}).
 \end{itemize} 
 
@@ -44,13 +44,20 @@ Por lo general, se definen tres tipos de maniobras de seguimiento de carga:
 
 Vale la pena tener en cuenta los órdenes de magnitud que muestran cuantitativamente la capacidad de seguimiento de carga de la mayoría de centrales nucleares de gran escala. Estas, se diseñan con una capacidad de seguimiento de carga similar a la de las centrales de carbón, con unas rampas de potencia de entre 1 - 5 \%/min y tiempos de arranque hasta alcanzar la potencia total estable del orden de entre un día y varios días. Estas capacidades de seguimiento de carga son mucho más lentas que las de los generadores de las turbinas de gas, que tienen tiempos de arranque de menos de 1 hora y pueden aumentar la potencia a una tasa del 10-20\%/min (\cite{stanford_load_following}).
 
-Centrando ahora la atención en los \acrlongpl{smr}, cabe mencionar que, debido a la incorporación de técnicas de modulación de potencia mejoradas y al diseño de sistemas de control avanzados, tienen mejores capacidades de seguimiento de carga que los hace muy adecuados para operar junto con fuentes de energía renovable intermitentes, contribuyendo así a la estabilidad y flexibilidad del sistema eléctrico. 
+Centrando ahora la atención en los \acrlongpl{smr}, destacan sus capacidades avanzadas de seguimiento de carga, las cuales son debidas a diversos aspectos intrínsecos a su tecnología o incorporados intencionadamente para dicho fin:
+\begin{itemize}
+  \item \textbf{Su pequeño tamaño permite ajustes más rápidos en la producción eléctrica} en comparación con los reactores de gran escala. Esto se debe principalmente a que la inercia térmica de un reactor más pequeño es menor, lo que permite cambios más rápidos en la potencia del mismo. Además, un menor tamaño del reactor implica que los problemas derivados por la distribución heterogénea del flujo neutrónico a lo largo del núcleo son menos graves que en los reactores más grandes. Aun así, este desequilibrio axial del flujo neutrónico se pocura mitigar con venenos consumibles (como el $Gd_2O_3$), venenos solubles (ácido bórico) y con el uso de múltiples bancos de barras de control, incluidas las denominadas ``barras de control grises''\footnote{Las ``barras de control grises'' ---fabricadas por acero y una aleación de Ag, In y Cd---, están diseñadas para absorber una menor cantidad de neutrones, lo cual reduce la deformación de la distribución del flujo neutrónico que se da cuando las barras de control estándar o ``negras'' ---fabricadas $B_4C$ y una aleación de Ag, In y Cd--- se insertan o se retiran del núcleo.}.
+  \item Emplean \textbf{sistemas de control avanzados y sensores integrados}, que proporcionan información en tiempo real sobre las condiciones de la red y facilitan regulaciones rápidas de la producción.
+  \item El empleo de \textbf{sistemas de seguridad pasivos} reducen la necesidad de componentes mecánicos activos y permiten transiciones más suaves entre distintos niveles de potencia.
+  \item A parte de los puntos anteriores, algunos diseños incorporan características específicamente destinadas a mejorar estas capacidades de seguimiento de carga. Por ejemplo, el empleo de \textbf{diseños de combustible avanzados} que pueden tolerar fluctuaciones de potencia más altas y permitir una operación más estable durante el seguimiento de carga. O el \textbf{uso de materiales y técnicas de mantenimiento avanzados} para mejorar la resistencia y durabilidad de los componentes frente a la corrosión, la fatiga térmica y el desgaste, que se ven acelerados por los cambios de potencia del núcleo.
+  \item Por último, \textbf{los \acrlongpl{smr} con varios módulos tienen una flexibilidad adicional}, pudiendo ajustar la producción de energía de forma más precisa y gradual (\cite{smr_load_following_capabilities}).
+\end{itemize}
 
 En concreto, los niveles de potencia de los pequeños reactores modulares pueden variar entre el \textbf{15 - 100 \%}, con rampas de potencia típicas de \textbf{2 - 5 \%/min}, logrando rampas de potencia de \textbf{10 - 20 \%/min} en algunos diseños (\cite{ANS_2019}). 
 
-\begin{table}[h]
+\begin{table}[!h]
   \centering
-  \resizebox{0.8\textwidth}{!}{%
+  \resizebox{0.92\textwidth}{!}{%
   \begin{tabular}{|
     >{\columncolor[HTML]{FFCCC9}}c |c|c|c|}
     \hline
@@ -99,16 +106,18 @@ En concreto, los niveles de potencia de los pequeños reactores modulares pueden
   Las ventajas que presenta este método es que no hace uso de materiales que puedan desgastarse y que proporciona una potencia homogénea en todo el reactor. Sin embargo, si los cambios de potencia ---y, por tanto, de temparatura--- son muy bruscos, será necesario un presionador lo suficientemente grande como para adaptar la presión del circuito primario a los cambios del nivel de agua producidos (\cite{seguimiento_carga_josep_rey}).
 \end{itemize}
 
+Es importante destacar que la capacidad de seguimiento de carga de la central se ve significativamente influenciada por el momento del ciclo en el que se encuentre la misma. Hacia el final del ciclo, debido al mayor quemado del combustible, su reactividad es menor, lo cual disminuye, por ejemplo, la velocidad de subida de potencia al extraer parcialmente las barras de control o diluir el ácido bórico, en caso de que nos interese incrementar la potencia. Asimismo, en esas condiciones existe muy poco margen de variación de la concentración de ácido bórico, lo que también hace menos flexible el seguimiento de carga (\cite{apuntes_centrales}).
+
 En la figura \ref{fig:seguimiento_carga_barras_y_boro} se muestra una operación de variación de potencia en que se emplean los dos primeros métodos explicados.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.7\textwidth]{content/figures/seguimiento_carga_barras_y_boro.png}
+  \includegraphics[width=0.6\textwidth]{content/figures/seguimiento_carga_barras_y_boro.png}
   \caption{Ejemplo de variación de potencia mediante la inserción del banco de barras de control D y la variación de la concentración de ácido bórico en un reactor \acrshort{pwr} (\cite{NEA_2011_load_following}).}
   \label{fig:seguimiento_carga_barras_y_boro}
 \end{figure}
 
-Tal y como se ha comentado al inicio de este subapartado, es preferible mantener el reactor operando constantemente a su máxima potencia, evitando así el ciclado térmico de los componentes del núcleo del reactor y del circuito primario. Por eso, los diseños de \acrshort{smr} más recientes apuestan principalmente por mantener siempre el circuito primario de la planta a plena potencia y seguir la curva de carga utilizando la energía ---tanto térmica como eléctrica--- del lado secundario para la cogeneración Una opción muy atractiva es la \textbf{derivación de vapor/turbina}. Cuando la demanda de electricidad en la red eléctrica cambia, el operador de la central puede ajustar la cantidad de vapor que pasa a través de la turbina principal utilizando válvulas de derivación. Al abrirlas, parte del vapor se desvía y no pasa por la turbina, lo que reduce la cantidad de energía que se convierte en electricidad (\cite{ANS_2019}). Este vapor puede emplearse para disintos fines, como calefacción urbana, desalación, producción de hidrógeno, etc. tal y como se detalla en el apartado de \textit{Cogeneración (\ref{cogeneracion})}. 
+Tal y como se ha comentado al inicio de este subapartado, es preferible mantener el reactor operando constantemente a su máxima potencia, evitando así el ciclado térmico de los componentes del núcleo del reactor y del circuito primario. Por eso, los diseños de \acrshort{smr} más recientes apuestan principalmente por mantener siempre el circuito primario de la planta a plena potencia y seguir la curva de carga utilizando la energía ---tanto térmica como eléctrica--- del lado secundario para la cogeneración Una opción muy atractiva es la \textbf{derivación de vapor sin pasar por la turbina}. Cuando la demanda de electricidad en la red eléctrica cambia, el operador de la central puede ajustar la cantidad de vapor que pasa a través de la turbina principal utilizando válvulas de derivación. Al abrirlas, parte del vapor se desvía y no pasa por la turbina, lo que reduce la cantidad de energía que se convierte en electricidad (\cite{ANS_2019}). Este vapor puede emplearse para disintos fines, como calefacción urbana, desalación, producción de hidrógeno, etc. tal y como se detalla en el apartado de \textit{Cogeneración (\ref{cogeneracion})}. 
 
 \subsubsection{Efectos del xenón ante variaciones de potencia}
 
@@ -123,11 +132,11 @@ El $Xe^{135}$ aparece directamente como un producto de fisión y por desintegrac
   \label{fig:esquema_xenon}
 \end{figure}
 
-Asumiendo que las desintegraciones del $Te^{135}$ y del $Sb^{135}$ son instantáneas ---y se combinan los rendimientos de fisión en los denominados \textit{rendimientos de fisión acumulados ($\gamma$)}---, que el decaimiento del $Cs^{135}$ es despreciable y que la absorción del $I^{135}$ es despreciable comparada con su decaimiento, se obtiene el esquema simplificado de aparición y desaparición del $Xe^{135}$ mostrado en la figura \ref{fig:esquema_xenon_simplificado}, con la siguiente evolución temporal:
+Asumiendo que las desintegraciones del $Te^{135}$ y del $Sb^{135}$ son instantáneas ---y se combinan los rendimientos de fisión en los denominados \textit{rendimientos de fisión acumulados ($\gamma$)}---, que el decaimiento del $Cs^{135}$ es despreciable y que la absorción del $I^{135}$ es despreciable comparada con su decaimiento, se obtiene el esquema simplificado de aparición y desaparición del $Xe^{135}$ mostrado en la figura \ref{fig:esquema_xenon_simplificado}, con la evolución temporal de la ecuación \ref{evolucion_xenon}:
 
-\begin{figure}[h]
+\begin{figure}[!h]
   \centering
-  \includegraphics[width=0.7\textwidth]{content/figures/esquema_xenon_simplificado.png}
+  \includegraphics[width=0.6\textwidth]{content/figures/esquema_xenon_simplificado.png}
   \caption{Esquema simplificado de aparición y desparación del $Xe^{135}$ (\cite{apuntes_centrales}).}
   \label{fig:esquema_xenon_simplificado}
 \end{figure}
@@ -138,7 +147,7 @@ Asumiendo que las desintegraciones del $Te^{135}$ y del $Sb^{135}$ son instantá
 
 En lo que respecta al seguimiento de carga, interesa conocer la evolución del xenón tras los cambios de potencia. 
 
-En primer lugar, hay que tener en cuneta que el principal término fuente del $Xe^{135}$ es el decaimiento del $I^{135}$ y que el principal término sumidero es la captura. Analizando la ecuación \ref{evolucion_xenon} puede observarse que una disminución del flujo neutrónico ($\upsilon$) ---en el caso de una disiminución de potencia del reactor--- implica la reducción del término sumidero de  $Xe^{135}$, lo que conlleva un incremento en la cantidad del mismo no indefinido, ya que pasado un tiempo el xenón alcanza un nuevo estado de equilibrio. Por otro lado, un aumento en el flujo neutrónico ---en el caso de un aumento dee la potencia del reactor--- conlleva una consecuente disminución en la cantidad de $Xe^{135}$. Estas fluctuaciones en la cantidad de xenón inducen transitorios de reactividad que
+En primer lugar, hay que tener en cuneta que el principal término fuente del $Xe^{135}$ es el decaimiento del $I^{135}$ y que el principal término sumidero es la captura. Analizando la ecuación \ref{evolucion_xenon} puede observarse que una disminución del flujo neutrónico ($\phi$) ---en el caso de una disiminución de potencia del reactor--- implica la reducción del término sumidero de  $Xe^{135}$, lo que conlleva un incremento en la cantidad del mismo no indefinido, ya que pasado un tiempo el xenón alcanza un nuevo estado de equilibrio. Por otro lado, un aumento en el flujo neutrónico ---en el caso de un aumento dee la potencia del reactor--- conlleva una consecuente disminución en la cantidad de $Xe^{135}$. Estas fluctuaciones en la cantidad de xenón inducen transitorios de reactividad que
 originan oscilaciones espacio-temporales del flujo neutrónico en reactores con flujos elevados.
 
 \begin{figure}[h]
@@ -187,19 +196,19 @@ A continuación se detallan los pasos a seguir en el transcurso de la simulació
   \item Los sistemas involucrados en un transitorio de variación de carga son, principalmente, el circuito primario y el secundario. Por tanto, es suficiente con abrir las siguientes dos pantallas:
   \begin{itemize}
     \item \textbf{Pantalla NSSS-SI-AFW:} Circuito primario. Principales componentes de interés: lazo del primario, reactor, presionador (PZR) y generador de vapor (GV).
-    \item \textbf{Pantalla MS-MSR-GS-TU-OPC-LO:} Circuito secundario. Principales componentes de interés: controlador del límite de carga y válvulas de regulación (1, 2, 3 y 4).
+    \item \textbf{Pantalla MS-MSR-GS-TU-OPC-LO:} Circuito secundario. Componentes de interés: controlador del límite de carga y válvulas de regulación (1, 2, 3 y 4).
     \end{itemize}
 
   \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.9\textwidth]{content/figures/pantalla1_simulacion1.JPG}
+    \includegraphics[width=0.85\textwidth]{content/figures/pantalla1_simulacion1.JPG}
     \caption{Pantalla NSSS-SI-AFW correspondiente al momento inicial de la simulación.}
     \label{fig:pantalla1_simulacion1}
   \end{figure}
 
   \begin{figure}[h!]
     \centering
-    \includegraphics[width=\textwidth]{content/figures/pantalla2_simulacion2.JPG}
+    \includegraphics[width=0.75\textwidth]{content/figures/pantalla2_simulacion2.JPG}
     \caption{Pantallas MS-MSR-GS-TU-OPC-LO correspondiente a una fase intermedia de la simulación.}
     \label{fig:pantalla2_simulacion1}
   \end{figure}
@@ -252,7 +261,7 @@ A continuación se detallan los pasos a seguir en el transcurso de la simulació
         \item Presión de la cámara de impulsos
       \end{itemize}
     \end{itemize}
-  
+  \vspace{1cm}
   \item Responder a las siguientes cuestiones sobre las gráficas previamente obtenidas:
   \begin{itemize}
     \item \underline{Cuestión gráficas 1 y 2:} ¿A qué se deben los ligeros picos de potencia que se dan en la curva de \textit{potencia nuclear}? ¿Tienen alguna relación con los picos que se dan en la curva de \textit{temperatura media}?
@@ -293,8 +302,7 @@ A continuación se detallan los pasos a seguir en el transcurso de la simulació
 
     \begin{figure}[h]
       \centering
-      \includegraphics[width=0.67\textwidth]{content/figures/seguimiento_carga_smr.png}
-      \vspace{-0.1cm}
+      \includegraphics[width=0.75\textwidth]{content/figures/seguimiento_carga_smr.png}
       \caption{Estudio del seguimiento de carga (100 - 20 - 100\%) de un \acrshort{smr} de 335 MWe, adaptándose a las horas de máxima producción solar de los distintos meses del año en Seúl. Tasa de variación de carga: 1,25\%/min. \textbf{Color amarillo} = máxima potencia (335 MWe). \textbf{Color azul} = 67 MWe (20\% de potencia). \textbf{Color violeta} = rampas de potencia (\cite{SMRs_load_following_PV}).}
       \label{fig:seguimiento de carga_smr}
     \end{figure} 
@@ -311,12 +319,10 @@ A continuación se detallan los pasos a seguir en el transcurso de la simulació
 \paragraph{Respuestas a las cuestiones planteadas}
 
 A continuación se muestran las gráficas obtenidas en la simulación, junto con las respuestas a las cuestiones planteadas. El objetivo de las cuestiones es apoyar el análisis de las gráficas. 
-\newline
+
 \begin{figure}[!h]
-  \vspace{-0.4cm}
   \centering
-  \includegraphics[width=0.75\textwidth]{content/figures/sim1_potencias.pdf}
-  \vspace{-0.3cm}
+  \includegraphics[width=0.85\textwidth]{content/figures/sim1_potencias.pdf}
   \caption{\textit{Gráfica 1} - Variaciones de potencia.}
   \label{fig:sim1_potencias}
 \end{figure}
@@ -324,7 +330,7 @@ A continuación se muestran las gráficas obtenidas en la simulación, junto con
 \begin{figure}[!h]
   \centering
   \vspace{-0.3cm}
-  \includegraphics[width=0.75\textwidth]{content/figures/sim1_temperaturas.pdf}
+  \includegraphics[width=0.62\textwidth]{content/figures/sim1_temperaturas.pdf}
   \vspace{-0.3cm}
   \caption{\textit{Gráfica 2} - Variaciones de temperatura.}
   \label{fig:sim1_temperaturas}
@@ -332,18 +338,20 @@ A continuación se muestran las gráficas obtenidas en la simulación, junto con
 
 \underline{Cuestión gráficas 1 y 2:} Al cerrar las válvulas de control de la turbina para disminuir la potencia, se reduce el gasto de vapor y el foco frío de la planta se hace menos eficiente. Esto provoca ``saturaciones'' en el circuito primario que originan picos de aumento de temperatura. Como el coeficiente de temperatura del moderador es negativo, estos aumentos de temperatura conllevan picos de disminución de la potencia. Cuando se aumenta la potencia en la turbina sucede lo contrario. Cabe destacar que estos picos se amplifican cuando trabajamos a potencias bajas ---en este caso, alrededor del 50\%--- ya que se trata de una zona de menor estabilidad para el sistema de control del reactor.
 
-\underline{Observación adicional:} La \textit{gráfica 1} muestra perfectamente el comportamiento \textit{reactor sigue a turbina}. Primero disminuye la potencia de la turbia y, pasados unos instantes, disminuye la potencia nuclear, y así sucesivamente.
+\underline{Observaciones adicionales:} En primer lugar, la \textit{gráfica 1} muestra perfectamente el comportamiento \textit{reactor sigue a turbina}. Primero disminuye la potencia de la turbia y, pasados unos instantes, disminuye la potencia nuclear, y así sucesivamente.
+
+En segundo lugar, los picos de temperatura ocasionados por el cierre o apertura de las válvulas de regulación de la turbina se podrían amortiguar e, incluso, mitigar empleando la técnica de derivación del vapor sin pasar por la turbina. Este vapor ---al mismo tiempo que se lleva a cabo el seguimento de carga--- podría emplearse para las aplicaciones de cogeneración detalladas en el apartado \ref{cogeneracion}.
 
 \begin{figure}[!h]
   \centering
-  \includegraphics[width=0.75\textwidth]{content/figures/sim1_valvulas_control.pdf}
+  \includegraphics[width=0.63\textwidth]{content/figures/sim1_valvulas_control.pdf}
   \caption{\textit{Gráfica 3} - Posición de las válvulas de admisión de vapor a la turbina.}
   \label{fig:sim1_valvulas_control}
 \end{figure}
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.75\textwidth]{content/figures/sim1_vapor.pdf}
+  \includegraphics[width=0.67\textwidth]{content/figures/sim1_vapor.pdf}
   \caption{\textit{Gráfica 4} - Caudal de vapor que entra a la turbina.}
   \label{fig:sim1_vapor}
 \end{figure}
@@ -352,12 +360,11 @@ A continuación se muestran las gráficas obtenidas en la simulación, junto con
 
 \begin{figure}[!h]
   \centering
-  \includegraphics[width=0.8\textwidth]{content/figures/sim1_barras_control.pdf}
+  \includegraphics[width=0.67\textwidth]{content/figures/sim1_barras_control.pdf}
   \caption{\textit{Gráfica 5} - Inserción de las barras de control en el núcleo de reactor.}
   \label{fig:sim1_barras_control}
 \end{figure}
 
-\newpage
 \underline{Cuestión gráfica 5:} El sistema de control automático del reactor responde a las diferencias superiores a 0.83ºC entre la $T_{med}$ y la $T_{ref}$. Si la $T_{med}$ supera en 0,83ºC a la $T_{ref}$, se insertan las barras de control, insertando así reactividad negativa, pues el primario está dando una potencia mayor que la demandada por el secundario. En el caso contrario, se extraen las barras de control. De esta manera, se ajusta la temperatura real con la de referencia, ajustando al mismo tiempo la potencia nuclear con la nueva potencia demandada en la turbina.
 
 \underline{Observación adicional:} Comparando esta curva de inserción de barras con la de la \textit{potencia nuclear}, se observa que tienen un comportamiento prácticamente idéntico, lo que refleja la rápida respuesta del sistema automático de inserción de barras de control.
@@ -373,16 +380,16 @@ A continuación se muestran las gráficas obtenidas en la simulación, junto con
 
 \underline{Observación adicional:} La curva demuestra el lento aumento en la concentración de boro cuando así se requiere, pues tarda una cantidad considerable de tiempo en aumentar muy ligeramente su concentración.
 
-\begin{figure}[h]
+\begin{figure}[!h]
   \centering
-  \includegraphics[width=0.96\textwidth]{content/figures/sim1_gen_vapor_camara_imp.pdf}
+  \includegraphics[width=\textwidth]{content/figures/sim1_gen_vapor_camara_imp.pdf}
   \caption{\textit{Gráfica 7} - Propiedades del generador de vapor y la cámara de impulsos.}
   \label{fig:sim1_gen_vapor_camara_imp}
 \end{figure}
 
 \begin{figure}[!h]
   \centering
-  \includegraphics[width=0.8\textwidth]{content/figures/sim1_presionador.pdf}
+  \includegraphics[width=0.73\textwidth]{content/figures/sim1_presionador.pdf}
   \caption{\textit{Gráfica 8} - Propiedades del presionador.}
   \label{fig:sim1_presionador}
 \end{figure}
@@ -406,7 +413,7 @@ Estos aumentos y disminuciones de la presión del presionador pueden provocar la
 
 Por último, es importante remarcar que el análisis realizado para responder a esta cuestión se ha hecho para el caso de la bajada de carga, pero todos los fenómenos descritos ocurren exactamente al revés cuando se produce una subida de potencia, tal y como se observa en las gráficas obtenidas.
 
-\underline{Tabla de resultados y cuestión SMRs}: Tal y como se ha comentado en el \textit{procedimiento} de la simulación (apartado \ref{procedimiento}), la Central Nuclear de Zorita permite una correcta adaptación automática a variaciones de potencia entre el 15 y el 100\% cuando se emplean tasas de variación de carga de alrededor del 3\%/min, permitiendo llevar a cabo una maniobra considerablemente rápida de seguimiento de carga. Los valores obtenidos en la \textit{tabla de resultados} (tabla \ref{tab:resultados_simulacion1_solucion}) y las curvas de potencia de la \textit{gráfica de la simulación de larga duración} (figura \ref{fig:sim2_potencias}) lo demuestran. De hecho, en esta última gráfica obtenida en el \acrshort{sgiz} (figura \ref{fig:sim2_potencias}), se oberva una maniobra de seguimiento de carga análoga ---pero con mayores tasas de variación de potencia--- a la gráfica obtenida en un estudio real sobre el seguimiento de carga con \acrlongpl{smr} (figura \ref{fig:seguimiento de carga_smr}). Además, tal y como se observa en la tabla de \textit{capacidad de seguimiento de carga de los \acrshortpl{smr}} (tabla \ref{tab:capacidad_seguimiento_de_carga_smrs}), los \acrshortpl{smr} de tipo \acrshort{pwr} tienen aproximadamente el mismo rango permitido y las mismas rampas de potencia, por lo que se puede decir que \textbf{el \acrshort{sgiz} permite realizar una aproximación realista de lo que sería una operación de seguimiento de carga en un \acrshort{smr} de tipo \acrshort{pwr}}, como lo es el AP300, por ejemplo. Aún así, es importante destacar que, a diferencia de las centrales nucleares convencionales ---o de la misma central de José Cabrera---, destinadas prinicpalmente a operar como centrales base, los \acrshortpl{smr} se diseñan con el objetivo de facilitar la adaptación a redes eléctricas con fuertes penetraciones de energías renovables intermitentes. Por tanto, una maniobra de seguimiento de carga como esta supone forzar considerablemente la central nuclear en cuestión ---tal y como demuestran las inestabilidades de la gráfica \ref{fig:sim2_potencias} a potencias muy bajas---, mientras que los pequeños reactores modulares se conciben para realizar a menudo esta operación sin que ello supongo ninguna desestabilización del sistema ni ningún daño para sus equipos.
+\underline{Tabla de resultados y cuestión SMRs}: Tal y como se ha comentado en el \textit{procedimiento} de la simulación (apartado \ref{procedimiento}), la Central Nuclear de Zorita permite una correcta adaptación automática a variaciones de potencia entre el 15 y el 100\% cuando se emplean tasas de variación de carga de alrededor del 3\%/min, permitiendo llevar a cabo una maniobra considerablemente rápida de seguimiento de carga. Los valores obtenidos en la \textit{tabla de resultados} (tabla \ref{tab:resultados_simulacion1_solucion}) y las curvas de potencia de la \textit{gráfica de la simulación de larga duración} (figura \ref{fig:sim2_potencias}) lo demuestran. De hecho, en esta última gráfica obtenida en el \acrshort{sgiz} (figura \ref{fig:sim2_potencias}), se oberva una maniobra de seguimiento de carga análoga ---pero con mayores tasas de variación de potencia--- a la gráfica obtenida en un estudio real sobre el seguimiento de carga con \acrlongpl{smr} (figura \ref{fig:seguimiento de carga_smr}). Además, tal y como se observa en la tabla de \textit{capacidad de seguimiento de carga de los \acrshortpl{smr}} (tabla \ref{tab:capacidad_seguimiento_de_carga_smrs}), los \acrshortpl{smr} de tipo \acrshort{pwr} tienen aproximadamente el mismo rango permitido y las mismas rampas de potencia, por lo que se puede decir que \textbf{el \acrshort{sgiz} permite realizar una aproximación realista de lo que sería una operación de seguimiento de carga en un \acrshort{smr} de tipo \acrshort{pwr}}, como lo es el AP300, por ejemplo. Aun así, es importante destacar que, a diferencia de las centrales nucleares convencionales ---o de la misma central de José Cabrera---, destinadas prinicpalmente a operar como centrales base, los \acrshortpl{smr} se diseñan con el objetivo de facilitar la adaptación a redes eléctricas con fuertes penetraciones de energías renovables intermitentes. Por tanto, una maniobra de seguimiento de carga como esta supone forzar considerablemente la central nuclear en cuestión ---tal y como demuestran las inestabilidades de la gráfica \ref{fig:sim2_potencias} a potencias muy bajas---, mientras que los pequeños reactores modulares se conciben para realizar a menudo esta operación sin que ello supongo ninguna desestabilización del sistema ni ningún daño para sus equipos.
 
 \begin{table}[h]
   \centering
@@ -434,6 +441,15 @@ Por último, es importante remarcar que el análisis realizado para responder a 
   \label{tab:resultados_simulacion1_solucion}
   \end{table}
 
-\subsubsection{\textit{Feedback} de la práctica}
+\subsubsection{\textit{Feedback} de la práctica} \label{feedback_practica}
 
+La implementación de la simulación anterior como práctica de la asignatura de \textit{Tecnologías Avanzadas en Reactores Nucleares} tuvo lugar por primera vez el jueves 23 de mayo de 2024. Se llevó a cabo en dos turnos de 2 horas y de 14 alumnos de máster cada uno. Las explicaciones de la misma fueron realizadas por el técnico de laboratorio encargado del \acrshort{sgiz} y por el autor del presente proyecto.
+
+Al tratarse de una práctica nueva, se envió tras su finalización un formulario a todos los alumnos asistentes para que proporcionaran el \textit{feedback} necesario. Los resultados detallados de la encuesta se muestran en el anexo \ref{resultados_encuesta_practica}. En resumen, el grado de satisfacción general con la práctica realizada fue elevado. La simulación realizada ---junto con las explicaciones correspondientes--- ayudó a los alumnos a comprender mejor las características y el funcionamiento general de los principales componentes y sistemas del reactor durante la operación del mismo. Asimismo, permitió profundizar en una característica importante de los \acrshortpl{smr}: el seguimiento de carga. 
+
+Un aspecto a mejorar en el que coincidieron todos los alumnos fue la fecha de realización de la misma. Al ser a finales de curso se juntó con entregas de trabajos y exámenes, por lo que para próximas ocasiones debería realizarse antes, óptimamente justo después de ver los \acrshortpl{smr}. Por otro lado, algunos comentaron que la práctica se centraba en un aspecto muy concreto de uno de los temas estudiados en la asignatura, por lo que no tenía una gran relación con la asignatura en su conjunto. Propusieron que podría reestructurarse en cuanto al contenido para que se trabajase un abanico más amplio de características de los reactores avanzados. Además, les pareció una práctica muy interesante para implementarse en la asignatura de 4º de grado de \textit{Centrales Nucleares}.
+
+Por último, manifestaron un contento común en lo referente a la realización de sesiones prácticas en el \acrshort{sgiz}, ya que ayuda a ver y aplicar de primera mano los conceptos explicados de forma teórica en el aula. \textit{``Toda actividad que sea salir de las clases y de la teoría, ayuda a entender mejor las cosas''}, afirmó un alumno. 
+
+\newpage
 \subsection{Simulación de una maniobra de seguimiento de carga de larga duración}
