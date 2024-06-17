@@ -112,6 +112,27 @@
 % ---------------------------------------------- % 
 
 
+% ------------- Diagramas de Gantt ------------- %
+% Se importan distintos paquetes y se realizan diferentes ajustes para representar insertar diagramas de Gantt en el documento:
+\usepackage{pgfgantt}
+\usepackage{geometry} 
+\usepackage{pdflscape} 
+\usepackage{ragged2e}
+\usepackage{translator}
+\ganttset{calendar week text={\small{\startday/\startmonth}}}
+\newcommand\textganttbar[5][]{%
+    \ganttbar[#1,bar/.append style={alias=tmp}]{#2}{#4}{#5}
+    \path 
+    let
+    \p1=(tmp.west),\p2=(tmp.east),
+    \n1={\x2-\x1},\n2={width("#3")},
+    \n3={ifthenelse(\n1>\n2,90,270)}
+    in
+    node [anchor=\n3,font=\footnotesize] at (tmp.north) {#3};
+}
+% ---------------------------------------------- % 
+
+
 % --------------- Bibliografía ----------------- %
 % El manejo de la bibliografía se realiza mediante el paquete biblatex:
 \usepackage[backend=bibtex, style=authoryear, sorting=nyt, citestyle=authoryear, maxcitenames=2, maxbibnames=5, giveninits=true, uniquename=init]{biblatex} 
