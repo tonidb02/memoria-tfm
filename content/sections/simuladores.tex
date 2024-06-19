@@ -34,7 +34,7 @@ En base a las definiciones anteriores, el \acrshort{oiea} clasifica los simulado
     \end{itemize}
     \item \textbf{Simuladores de mantenimiento o de componentes:} Se centran en capacitar al personal para la realización de tareas relacionadas con componentes o sistemas muy específicos de la planta, como el ensamblaje y desensamblaje de componentes o la operación de una máquina de recarga de combustible. Para estos simuladores, no se requiere el modelado de procesos en tiempo real.
     \item \textbf{Simuladores de ingeniería:} Simuladores en tiempo real utilizados para demostrar el comportamiento de una central nuclear en operación normal, transitorios o accidentes con más detalle que los simuladores básicos de educación y formación. Se utilizan principalmente para la optimización del diseño de la planta y la generación de documentos de Análisis de Seguridad de la Planta. También pueden ser utilizados para la formación profesional del personal de la central sobre la dinámica de la planta y la comprensión de escenarios o condiciones de accidentes severos en relación con los límites de seguridad del diseño.
-    \item \textbf{Simuladores de alcance total:} Se trata de herramientas muy potentes vinculadas a una central nuclear concreta. Operan en tiempo real y se utilizan principalmente para la licencia de operadores y para la formación de otros empleados de la central. Su objetivo es desarrollar los conocimientos, las habilidades, los reflejos y las actitudes necesarias para demostrar su capacitación para operar la central nuclear de forma segura. Consisten en una réplica exacta de la sala de control principal de la central nuclear en cuestión y constan de un modelo matemático completo de todos los sistemas y modos de operación de la central (\cite{international2019iaea}).
+    \item \textbf{Simuladores de alcance total:} Se trata de herramientas muy potentes vinculadas a una central nuclear concreta. Operan en tiempo real y se utilizan principalmente para la licencia de operadores y para la formación de otros empleados de la central. Su objetivo es desarrollar los conocimientos, las habilidades, los reflejos y las actitudes necesarias para demostrar su capacitación para operar la central nuclear de forma segura. Constan de un modelo matemático completo de todos los sistemas y modos de operación de la central. Pueden ser \textbf{de réplica exacta de la sala de control} principal de la central nuclear en cuestión o \textbf{gráficos interactivos}, análogos a los anteriores, pero totalmente operados mediante ordenadores (\cite{international2019iaea}).
   \end{itemize}
 \end{enumerate}
 
@@ -51,7 +51,7 @@ En el siguiente diagrama, se muestra de forma visual la clasificación anteriorm
 
 Debido al papel fundamental que tienen los \acrshortpl{smr} en la transición energética de múltiples países del mundo, se han desarrollado ---y se siguen desarrollando--- simuladores para la formación específica en estos reactores avanzados. La filosofía de estos simuladores es análoga a la de los simuladores de las centrales nucleares convencionales, solo que incluyen las propiedades, sistemas, componentes y  modos de operación avanzados correspondientes. Además, al ser más recientes, se diseñan con los códigos, algoritmos, modelos y métodos de simulación y computación más actualizados posibles. 
 
-A continuación, se exponen brevemente dos ejemplos destacables: el \textit{E2 Center} y los simuladores de \acrshortpl{smr} de Tecnatom. Aun así, existen muchos otros simuladores de este tipo, como el \textit{BWRX-300 Simulator} de Hitachi, el \textit{SMART Reactor Simulator}, el simulador de \textit{Terrapower} y otros simuladores desarrollados por empresas especializadas en simulación industrial, como \textit{CORYS} o \textit{L3Harris}, entre otras.
+A continuación, se exponen brevemente dos ejemplos destacables: el \textit{E2 Center} y los simuladores de \acrshortpl{smr} de Tecnatom ---\textbf{simuladores básicos de educación de planta completa}---. Aun así, existen muchos otros simuladores de este tipo, como el \textit{BWRX-300 Simulator} de Hitachi, el \textit{SMART Reactor Simulator}, el simulador de \textit{Terrapower} y otros simuladores desarrollados por empresas especializadas en simulación industrial, como \textit{CORYS} o \textit{L3Harris}, entre otras.
 
 \subsubsection{E2 Center}
 
@@ -96,7 +96,7 @@ A continuación se detallan las principales ventajas del uso de los dos principa
     \item Suponen una reducción del riesgo para los equipos y para el personal de la planta al mejorar las habilidades de los operadores.
     \item Proporcionan formación para distintas áreas de la central ---como el personal de ingeniería o de gestión--- a parte de los operadores.
     \item Permiten actuar sobre múltiples actuadores y variables para modificar el comportamiento de la planta y poder analizar así su impacto.
-    \item Desarrolla la capacidad de los aprendices para responder rápidamente a un accidente y poder así prevenir o mitigar las consecuencias del mismo. Se somete a los aprendices a todo tipo de situaciones anormales y complejas, poniéndoels a prueba en el trabajo bajo presión (\cite{international2019iaea}).
+    \item Desarrolla la capacidad de los aprendices para responder rápidamente a un accidente y poder así prevenir o mitigar las consecuencias del mismo. Se somete a los aprendices a todo tipo de situaciones anormales y complejas, poniéndoles a prueba en el trabajo bajo presión (\cite{international2019iaea}).
   \end{itemize} 
 \end{itemize}
 
@@ -110,38 +110,37 @@ La Central Nuclear José Cabrera está situada en Almonacid de Zorita (Guadalaja
 
 Se trata de un \textbf{reactor de agua a presión (\acrshort{pwr})} de un lazo\footnote{Los lazos son los circuitos acoplados a la vasija del reactor que cuentan con un generador de vapor y una bomba para impulsar al refrigerante. El circuito primario de las centrales nucleares convencionales de gran escala suele contar con una sola vasija y un solo presionador, junto con 3 o 4 lazos (cada uno con una bomba y un generador de vapor).} diseñado por Westinghouse. Este tipo de reactores emplea agua ligera como refrigerante y moderador, trabajando con neutrones en el rango térmico para maximizar la tasa de fisión del $U^{235}$, presente en un 3,3\% ---en el caso de la central nuclear de Zorita--- del uranio enriquecido empleado como combustible.
 
-Como en toda central nuclear convencional, el cuerpo principal de la planta, estaba formado por los siguientes edificios principales:
+Como en toda central nuclear convencional, el cuerpo principal de la planta estaba formado por los siguientes edificios principales (\cite{documentacion_sgiz}):
 
 \begin{itemize}
   \item El \textbf{edificio del reactor}, que contenía todo el circuito primario de refrigeración: la vasija del reactor, una motobomba centrífuga, un generador de vapor de eje vertical de tubos en ``U'' y un presionador.
   
   El edificio de contención de Zorita constaba de una base y muro cilíndrico fabricados con hormigón armado y de una cúpula hemisférica de acero. La base y la superfície interior del muro estaban recubiertas de forma continua por una membrana de acero de 6,35 mm de espesor, la cual, en unión con la cúpula, proporcionaba gran estanqueidad al edificio. 
 
-  El núcleo cosntaba de 69 elementos de combustible de 14 x 14 varillas cada uno, de las cuales 179 eran barras de combustible de zircaloy.
+  El núcleo cosntaba de 69 elementos de combustible de $14 \times 14$ varillas cada uno, de las cuales 179 eran barras de combustible de zircaloy.
 
-  \item El \textbf{edificio de servicios auxiliares}, contiguo al edificio del reactor, donde se encontraba la sala de control, desde donde se llevaba a cabo la supervisión y el control, tanto del reactor como del turbogenerador. Cabe mencionar que los sistemas de regulación proporcionaban un control automático de la instalación, actuando mediante una combinación coordinada del veneno químico (el ácido bórico) y las barras de control mecánico.
+  \item El \textbf{edificio de servicios auxiliares}, contiguo al edificio del reactor, donde se encontraba la sala de control, desde donde se llevaba a cabo la supervisión y el control, tanto del reactor como del turbogenerador. Los sistemas de regulación proporcionaban un control automático de la instalación, actuando mediante una combinación coordinada del veneno químico (el ácido bórico) y las barras de control mecánico.
 
-  \item El \textbf{edificio de turbinas}, compuesto por los dos cuerpos ---de alta y de baja presión--- de turbinas,  el alternador, los recalentadores, el condensador y el equipo auxiliar correspondiemnte.
+  \item El \textbf{edificio de turbinas}, compuesto por los dos cuerpos ---de alta y de baja presión--- de turbinas,  el alternador, los recalentadores, el condensador y los equipos auxiliares.
   
-  \item Por último, un elemento característico era la \textbf{chimenea} de 60 metros de altura, por la cual se evacuaban ---conforme a los límites legales impuestos--- los gases radiactivos de desecho.
+  \item Por último, un elemento característico era la \textbf{chimenea} de 60 metros de altura por la cual se evacuaban ---conforme a los límites legales impuestos--- gases radiactivos de desecho.
 \end{itemize}
 
-Obviamente, además de los sistemas de control y protección del reactor, y del sistema de vigilancia radiológica, la planta contaba con todos los sistemas de seguridad conocidos y operativos en aquel entonces, entre los que destacan:
+Obviamente, además de los sistemas de fluidos de operación normal ---sistema de control químico y volumétrico, sistema de eliminación del calor residual, etc.---, de los sistemas de control y protección del reactor, y del sistema de vigilancia radiológica, la planta contaba con los sistemas de seguridad conocidos y operativos en aquel entonces, entre los que destacan (\cite{documentacion_sgiz}):
 
 \begin{itemize}
-  \item El \underline{sistema de inyección de seguridad}, que en casos accidentales estaba preparado para inyectar agua borada en la vasija del reactor con posibilidad de recirculación del refrigerante.
-  \item Un \underline{sistema de recirculación de aire}, con enfriamiento y filtración del aire interior del recinto de contención que funcionaría en el caso de tener que aislar el edificio del reactor por haberse contaminado.
-  \item Un \underline{sistema de aspersión de agua} situado en el exterior de la cúpula.
+  \item El \underline{\acrlong{sis}}, que en casos accidentales estaba preparado para inyectar agua borada en la vasija del reactor con posibilidad de recirculación del refrigerante.
+  \item Un \underline{\acrlong{svc}}, con enfriamiento, filtración y recirculación del aire interior del recinto de contención que funcionaría en el caso de tener que aislar el edificio del reactor por haberse contaminado.
+  \item El \underline{Sistema de Aspersión de de la cúpula de la Contención}, capaz de suministrar y distribuir uniformemente agua de refrigeración sobre la cúpula.
+  \item El \underline{\acrlong{sre}}, diseñado para refrigerar los equipos que deben funcionar en caso de \acrshort{loca} o de pérdida suministro eléctrico exterior, además de algunos equipos de refrigeración en operación normal: intercambiadores de calor del \acrlong{src}, unidades de \acrshort{hvac} del edificio auxiliar, etc.
+  \item El \underline{\acrlong{saaa}}, encargado de suministrar agua al circuito secundario cuando el \acrlong{saap} no está disponible.
 \end{itemize}
-
-
-los sistemas de inyección de seguridad, de recirculación del aire, de aspersión de la cúpula
 
 La central comenzó a construirise en julio de 1965. Tras 36 meses de construcción, el 31 de marzo de 1968 se realizó la prueba funcional en caliente y en junio de ese mismo año se hizo la carga del núcleo, alcanzando su primera criticidad. La red eléctrica española comenzó a recibir los primeros kilovatios-hora de origen nuclear el 14 de julio de 1968 y, desde entonces, se inició un aumento gradual de potencia que llevó a la explotación comercial de la central, con una \textbf{potencia eléctrica neta instalada de 150 MWe} y una \textbf{potencia térmica de 510 MWt}. El titular de su explotación fue Unión Fenosa Generación (actualmente Naturgy). Durante 39 años de operación comercial produjo 36.515 millones de kWh, empleando a 300 trabajadores de forma directa y a unos 6.000 de forma indirecta.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=\textwidth]{content/figures/zorita.jpg}
+    \includegraphics[width=1\textwidth]{content/figures/zorita.jpg}
     \caption{Central Nuclear José Cabrera (\cite{sne_recursos_prensa}).}
     \label{fig:zorita}
 \end{figure}
@@ -154,7 +153,7 @@ Actualmente, la instalación se encuentra en la \textbf{fase de restauración}, 
 
 En la siguiente tabla se resume lo más importante de lo expuesto anteriormente sobre la central nuclear de Zorita:
 
-\begin{table}[h]
+\begin{table}[!h]
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{|cc|cl|cc|}
     \hline
@@ -200,7 +199,7 @@ Llegados a este punto, se han expuesto detalladamente tanto las características
     \cellcolor[HTML]{FFCE93}\textbf{Central Nuclear de Zorita} \\ \hline
   \cellcolor[HTML]{CBE5CB}Tipo: \acrshort{pwr} &
     \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}\begin{tabular}[c]{@{}c@{}}Generación III+ \\ (Tecnología muy avanzada)\end{tabular}} &
-    \begin{tabular}[c]{@{}c@{}}Generación I \\ (Tecnología antigua, en\\ algunos casos obselta)\end{tabular} \\ \hline
+    \begin{tabular}[c]{@{}c@{}}Entre generación I y II \\ (Tecnología antigua, en\\ algunos casos obselta)\end{tabular} \\ \hline
   \begin{tabular}[c]{@{}c@{}}Potencia eléctrica\\ propia de los \acrshortpl{smr} \\ (entre 10 y 300 MWe)\end{tabular} &
     \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}\begin{tabular}[c]{@{}c@{}}Potencia de 300 MWe\\ y 900 MWt\end{tabular}} &
     \begin{tabular}[c]{@{}c@{}}Potencia de 150 MWe\\ y 510 MWt\end{tabular} \\ \hline
@@ -208,8 +207,8 @@ Llegados a este punto, se han expuesto detalladamente tanto las características
     \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}\begin{tabular}[c]{@{}c@{}}Ciclos de operación\\ de 4 años\end{tabular}} &
     \begin{tabular}[c]{@{}c@{}}Ciclos de operación\\ de 15 meses\end{tabular} \\ \hline
   \begin{tabular}[c]{@{}c@{}}Combustible: Uranio\\ de bajo \\ enriquecimiento\end{tabular} &
-    \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}\begin{tabular}[c]{@{}c@{}}Elementos de combustible\\ de 12 x 12 varillas\end{tabular}} &
-    \begin{tabular}[c]{@{}c@{}}Elementos de combustible\\ de 14 x 14 varillas\end{tabular} \\ \hline
+    \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}\begin{tabular}[c]{@{}c@{}}Elementos de combustible\\ de $12 \times 12$ varillas\end{tabular}} &
+    \begin{tabular}[c]{@{}c@{}}Elementos de combustible\\ de $14 \times 14$ varillas\end{tabular} \\ \hline
   \cellcolor[HTML]{CBE5CB} &
     \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}\begin{tabular}[c]{@{}c@{}}Sistemas de seguridad \\ mayoritariamente pasivos\end{tabular}} &
     \begin{tabular}[c]{@{}c@{}}Sistemas de seguridad\\ dependientes de \\ alimentación eléctrica \\ exterior\end{tabular} \\ \cline{2-3} 
@@ -230,15 +229,24 @@ Es importante destacar que ambas centrales presentan unas tasas de variación de
 
 \subsubsection{El Simulador Gráfico Interactivo de Zorita (SGIZ)}
 
-El \acrshort{sgiz} es un simulador gráfico interactivo de alcance total de la Central Nuclear de Zorita. Durante los años de operación de la central, se empleó para el entrenamiento de los operadores de la sala de control, para comprender y analizar la dinámica de la planta y para desarrollar y validar sus procedimientos operativos de emergencia.
+El \acrshort{sgiz} es un \textbf{simulador gráfico interactivo de alcance total} de la Central Nuclear de Zorita. Durante los años de operación de la central, se empleó para el entrenamiento de los operadores de la sala de control, para comprender y analizar la dinámica de la planta y para desarrollar y validar sus procedimientos operativos de emergencia.
 
-En abril de 2008 se firmó el convenio de colaboración entre Unión Fenosa y la UPM para la creación del Aula ``José Cabrera'', donde se instaló el \acrshort{sgiz}. Este aula se ubica en el Departamento de Ingeniería Nuclear de la ETSII-UPM y está dedicada a la enseñanza de la Tecnología de la Operación de las Centrales Nucleares.
+En abril de 2008 se firmó el convenio de colaboración entre Unión Fenosa y la UPM para la creación del Aula ``José Cabrera'', donde se instaló el \acrshort{sgiz}. Este aula se ubica en el Departamento de Ingeniería Nuclear de la ETSII-UPM y está dedicada a la enseñanza de la tecnología de la operación de las centrales nucleares.
 
 El simulador proporciona las respuestas de la planta durante la operación normal, transitorios y condiciones de accidente, basadas en el código \acrshort{trac} y un conjunto de pantallas ilustrativas en tiempo real, así como un conjunto de alarmas en un panel similar al de la sala de control real de la central nuclear, permitiendo la operación automática y manual en tiempo real de los componentes del sistema completo tanto en condiciones normales como de emergencia.
 
-\begin{figure}[h]
+Existen tres modos de simulación en el \acrshort{sgiz}:
+
+\begin{enumerate}
+  \item \textbf{Modo de ejecución a tiempo real con alarmas activadas:} Es el modo de operación más empleado, ya que se ajusta a los períodos reales en los que suceden los distintos acontecimientos en la operación de la central.
+  \item \textbf{Modo de ejecución a tiempo real sin alarmas:} Las alarmas pueden observarse en la pantalla de ``alarmas'' de la simulación, pero el panel con sus respectivas bocinas se encuentra desactivado. Es un modo de operación adecuado para experiencias ya conocidas en las que se quiere prescindir de la molestia que puede provocar el ruido de las alarmas.
+  \item \textbf{Modo de ejecución rápido (FAST) sin alarmas:} El código se ejecuta a una velocidad muy superior al tiempo real, en concreto, 20 veces más rápido. Resulta especialmente útil para simulaciones de larga duración.
+\end{enumerate}
+
+
+\begin{figure}[!h]
   \centering
-  \includegraphics[width=0.9\textwidth]{content/figures/sgiz.jpg}
+  \includegraphics[width=0.8\textwidth]{content/figures/sgiz.jpg}
   \caption{Simulador Gráfico Interactivo de Zorita (ETSII - UPM).}
   \label{fig:sgiz}
 \end{figure}

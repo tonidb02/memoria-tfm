@@ -16,6 +16,20 @@
 \setcounter{table}{0}
 \setcounter{figure}{0}
 
+\subsection{Gráficas obtenidas en la segunda simulación larga fallida} \label{graficas_erroneas}
+
+\textit{Simulación de 6 horas y 40 minutos realizada en el \acrshort{sgiz} el 30 de abril de 2024.}
+
+A continuación, se muestran algunas de las gráficas obtenidas en la simulación fallida explicada en el apartado \ref{sim_larga_fallida}, con una estabilización incorrecta a partir de las 4 horas:
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{content/figures/sim2_peque.png}
+    \caption{Gráficas imperfectas de la segunda simulación larga fallida.}
+    \label{fig:sim2_peque}
+\end{figure}
+
+\newpage
 \subsection{Resultados de la encuesta de la práctica} \label{resultados_encuesta_practica}
 
 Tal y como se comenta en el apartado \ref{feedback_practica}, tras la realización de la práctica de seguimiento de carga en el \acrshort{sgiz} por parte de 28 alumnos de la asignatura de \textit{Tecnologías Avanzadas en Reactores Nucleares} del máster, se envió una encuesta para obtener retroalimentación sobre la sesión. A continuación, se muestran los resultados detallados de las 12 respuestas obtenidas:
@@ -107,52 +121,50 @@ Todas las gráficas de las simulaciones realizadas en el \acrshort{sgiz} han sid
 
 \begin{code}[H]
 \begin{lstlisting}[firstnumber=1, breakindent=55pt]
-  # Importación de las librerías necesarias:
+  # Importación de las librerías necesarias
   import matplotlib.pyplot as plt
   import numpy as np
   import pandas as pd
-  
+
   # Obtención de datos:
-  gen_vapor_camara_imp=pd.read_excel("simulacion2.xlsx","gen_vapor_camara_imp")
+  gen_vapor_camara_imp=pd.read_excel("simulacion3.xlsx","gen_vapor_camara_imp")
   df_gen_vapor_camara_imp=pd.DataFrame=gen_vapor_camara_imp
-  
+
   tiempo=[]
   for i in range(0,len(df_gen_vapor_camara_imp.tiempo)):
       tiempo.append(df_gen_vapor_camara_imp.tiempo[i].strftime('%H:%M:%S'))
-  
+    
   pres_cam_imp=[]
   for i in range(0,len(df_gen_vapor_camara_imp.pres_cam_imp)):
       pres_cam_imp.append(df_gen_vapor_camara_imp.pres_cam_imp[i])
-  
+
   presion_gen_vapor=[]
-  for i in range(0,len(df_gen_vapor_camara_imp.presion_gen_vapor)):
+  for i in range(0,len(df_gen_vapor_camara_imp.               presion_gen_vapor)):
       presion_gen_vapor.append(df_gen_vapor_camara_imp.presion_gen_vapor[i])
-  
-      nivel_gen_vapor=[]
+
+  nivel_gen_vapor=[]
   for i in range(0,len(df_gen_vapor_camara_imp.nivel_gen_vapor)):
       nivel_gen_vapor.append(df_gen_vapor_camara_imp.nivel_gen_vapor[i])
-  
+
   # Creación del gráfico
-  plt.plot(tiempo, pres_cam_imp, label='Presión de la cámara de impulsos $(kg/cm^2)$', color='lightcoral')
+  plt.plot(tiempo, presion_camara_impulsos, label='Presión de la cámara de impulsos $(kg/cm^2)$', color='lightcoral')
   plt.plot(tiempo, presion_gen_vapor, label='Presión del generador de vapor $(kg/cm^2)$', color='sandybrown')
   plt.plot(tiempo, nivel_gen_vapor, label='Nivel del generador de vapor R.E. $(cm)$', color='mediumseagreen')
-  
-  # Creación de leyendas y título
+
+  # Creación de la leyenda y el título
   plt.legend(loc='best')
   plt.xlabel('Tiempo (hh:mm:ss)', family='Times New Roman', size=12)
   plt.title('COMPORTAMIENTO GENERADOR DE VAPOR Y CÁMARA DE IMPULSOS', fontname='Times New Roman', size=18, weight='bold')
   plt.grid(True, color='lightgrey')
   plt.yticks(np.arange(-10,50,5))
-  plt.xlim([0, 24034.625])
-  plt.xticks(np.arange(0,24034.625,1800))
-  plt.xticks(rotation = 30)
-  
+  plt.xlim([0, len(tiempo)])
+  plt.xticks(np.arange(0,len(tiempo),360))
+  plt.xticks(rotation = 10)
+
   # Mostrar el gráfico
   plt.show()
 \end{lstlisting}
 \vspace{-5pt}
-\caption{Ejemplo del código utilizado para generar las gráficas de las simulaciones.}
+\caption{Ejemplo del código utilizado para generar las gráficas de las simulaciones. Este en concreto corresponde al código de la figura \ref{fig:sim3_gen_vapor_camara_imp}.}
 \label{cod:codigo_graficas}
 \end{code}
-
-
