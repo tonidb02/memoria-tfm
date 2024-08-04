@@ -39,11 +39,16 @@
 \section*{AGRADECIMIENTOS} % Se añade un asterisco a \section para que el título no esté numerado.
 \addcontentsline{toc}{section}{AGRADECIMIENTOS} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
 
-Agradezco a \dots
+Quiero agradecer, en primer lugar, el apoyo continuo e incondicional de mi familia durante la elaboración de este proyecto, durante estos 4 años de carrera y, al fin y al cabo, durante toda mi vida. Lo que he recibido ---y sigo recibiendo--- de ellos no tiene precio.
 
-Gracias a \dots
+En segundo lugar, doy gracias a mi tutor, Gonzalo Jiménez, por la confianza depositada en mí para la realización de este TFG. Gracias por todos los consejos, explicaciones, ánimos y correcciones que me ha ido dando y que han ido consolidando la base del proyecto.
+Gracias también a David Piedra, el técnico del SGIZ y cotutor de este trabajo. Agradezco su paciencia y dedicación para introducirme en la operación del simulador y todo el tiempo que ha dedicado para la resolución de problemas o dudas que han ido surgiendo durante la realización de las simulaciones.
 
-A \dots \ por \dots
+Asimismo, quisiera agradecer a todos los profesores que he tenido durante el grado en la ETSII. De cada uno de ellos he aprendido múltiples y variados conocimientos y habilidades que me han ayudado a crecer y a formarme como ingeniero industrial. De un modo especial, agradezco a los profesores del Departamento de Ingeniería Nuclear, que han acrecentado muy eficazmente mi motivación por el apasionante mundo de la energía nuclear.
+
+Por último, quiero dar las gracias a mis amigos de la uni, por su gran apoyo incluso en los momentos más difíciles. Gracias a Carlos, Pablo, Chema, Víctor, Álvaro, Nico, Ana, Mario, Guille, Juan, Edu\dots Y cómo no, a todos mis amigos del piso de Madrid, de modo especial a los de Turma: Miguel, David, Sergio, Berni, Pepito, Nacho, Marco, Pau, Walter y Pablo. Por su ejemplo, alegría y por los grandes momentos que hemos vivido juntos.
+
+Gracias a todos.
 
 \afterpage{\blankpage} % Se añade una página en blanco después de los agradecimientos.
 
@@ -53,13 +58,78 @@ A \dots \ por \dots
 \markright{RESUMEN} % Al utilizar \section* se ha de añadir manualmente el título del apartado al encabezado.
 \addcontentsline{toc}{section}{RESUMEN} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
 
-Este resumen deberá tener una extensión máxima de cinco páginas y habrá de constituir una síntesis de los puntos más importantes del proyecto. El resumen debe permitir al lector: 
+Ante la crisis energética global a la que se enfrenta la sociedad actual, la energía nuclear y, en concreto, los \textit{Small Modular Reactors}, están tomando a nivel mundial un papel cada vez más relevante para favorecer la reducción de costes energéticos, la independencia energética, la garantía de suministro y la lucha contra el cambio climático.
+
+Este Trabajo Fin de Grado se centra en el estudio de estos pequeños reactores modulares, por una parte, mediante un análisis del estado del arte de los mismos y, por otra parte, mediante la realización de múltiples simulaciones en el Simulador Gráfico Interactivo de Zorita que hay en la Escuela Técnica Superior de Ingenieros Industriales de Madrid.
+
+\subsection*{\textit{Small Modular Reactors}}
+
+En primer lugar, se analiza el estado del arte de los pequeños reactores modulares: su historia, sus características, sus ventajas y desventajas, sus aplicaciones y los distintos tipos existentes.
+
 \begin{itemize}
-    \item tener una visión general del trabajo realizado
-    \item lograr una comprensión global del proyecto. No importa cuán complejo sea el tema tratado, el resumen debe explicar lo más claramente posible en qué consiste
+    \item Se comprueba que, fruto de su compacta configuración y la incorporación de los sistemas de seguridad pasivos más avanzados, presentan importantes ventajas en lo relativo a la seguridad tanto en condiciones de operación normal como en transitorios indeseados.
+    \item Además, frente a la mayor inversión inicial necesaria y al gran reto tecnológico que supone un diseño adecuado de los distintos módulos, se demuestra que la modularización de estos reactores pequeños aumenta la maniobrabilidad y productividad a la hora de fabricar sus componentes y construirlos.
+    \item Se analizan también los combustibles avanzados empleados, con lo que se comprenden las diversas formas existentes de inducir las reacciones de fisión en cadena necesarias para el funcionamiento de la planta, permitiendo algunas de ellas el reciclado del combustible ``gastado''.
+    \item Junto con las ventajas relativas al tiempo de construcción fruto del diseño integral y modular de los mismos, existen importantes ventajas económicas. Se realiza un estudio económico ---en el que se comparan los costes de estos pequeños reactores con los de las grandes centrales nucleares convencionales--- y se llega a la siguiente conclusión: pese a que los costes de la primera unidad construida de un tipo de SMR siempre son más elevados, la modularidad, el diseño simplificado y la estandarización en la fabricación de los mismos resulta en una importante reducción del coste por unidad de energía producida.
+    \item A todo esto se suma la gran versatilidad que tienen estos pequeños reactores modulares para ser empleados en aplicaciones tan necesarias como el seguimiento de carga, la cogeneración, el abastecimiento eléctrico de zonas remotas e, incluso, la exploración espacial. La primera aplicación mencionada ---el seguimiento de carga---, es la que se analiza con mayor profundidad en el proyecto. Sin embargo, se muestra brevemente que el campo de aplicación del resto de utilidades mencionadas es igualmente muy amplio y de gran interés actual.
+    \item En relación al anterior punto, es tan grande el interés que múltiples países muestran con respecto a esta tecnología, que existen en todo el mundo más de 80 diseños de SMRs comerciales en distintas fases de desarrollo. Se  realiza una clasificación detallado de todos estos diseños en sus tipologías correspondientes para facilitar la comprensión del amplio abanico de posibilidades a la hora de fabricar un SMR.
+    
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=\textwidth]{content/figures/rollsroyce_smr.jpg}
+        \caption{SMR de 470 MWe desarrollado por Rolls Royce (\cite{rolls_royce_smr}).}
+        \label{fig:rollsroyce_smr}
+    \end{figure}
+
+    \item Por último, se analiza un caso concreto de SMR: el AP300 de Westinghouse. Se trata de un reactor de 300 MWe con muchas características análogas al reactor del simulador con el que se trabaja: la Central Nuclear José Cabrera. El estudio del AP300 facilita la profundización en el funcionamiento, los sistemas de seguridad, la regulación, los tiempos y los costes de este tipo de reactores.
 \end{itemize}
 
-Además, el resumen debe crear interés en el lector para que éste lea todo el contenido del trabajo. Incluir al final Palabras clave y Códigos UNESCO.
+
+\subsection*{Simuladores}
+
+Antes de realizar las simulaciones, se estudian y clasifican los distintos tipos de simuladores nucleares.
+
+\begin{itemize}
+    \item Existen todo tipo de simuladores focalizados en objetivos, usuarios, tipos de tecnología, alcance y niveles de complejidad concretos. Dentro de la clasificación realizada, el SGIZ se encuentra dentro de los simuladores de alcance total de tipo gráfico interactivo en tiempo real para la formación profesional.
+    \item Concretamente, en el campo de los SMR, se están desarrollando múltiples simuladores para el aprendizaje del manejo y el funcionamiento de los mismos, incluyendo SMRs multiunidad. De toda la oferta disponible, el breve estudio de los simuladores de este tipo ofrecidos por NuScale y por Tecnatom, demuestra que son herramientas idóneas para la formación en este campo.
+    \item La investigación llevada a cabo sobre el uso de simuladores en la enseñanza permite obtener una amplia lista de ventajas. Todas ellas giran en torno a una misma realidad: el aprendizaje activo y práctico es más efectivo que la enseñanza basada únicamente en clases teóricas, por lo que los simuladores son una herramienta clave para complementar la teoría en la que se fundamentan.
+    \item Finalmente, se detallan las características de la Central Nuclear de José Cabrera, junto con un análisis comparativo con el SMR anteriormente mencionado: el AP300.
+\end{itemize}
+
+
+\subsection*{Simulaciones de seguimiento de carga}
+
+Las simulaciones realizadas comprenden la parte más interesante y desafiante del proyecto, ya que este trabajo es el primer proyecto realizado en el SGIZ dedicado al estudio de múltiples maniobras de seguimiento de carga en SMRs.
+
+\begin{itemize}
+    \item En el estudio previo a las simulaciones para el conocimiento teórico de lo que se pretende simular ---el seguimiento de carga---, se pone de manifiesto que, pese a que las centrales nucleares de gran escala actuales pueden realizar ese tipo de maniobras, los SMRs tienen capacidades avanzadas de seguimiento de carga que los hace idóneos para operar junto con fuentes de energía renovable intermitente, favoreciendo así la estabilidad y flexibilidad del sistema eléctrico.
+    \item Las simulaciones realizadas son de distintas duraciones y se enmarcan en contextos reales distintos. Destacan las siguientes 3 simulaciones llevadas a cabo con éxito:
+    \begin{enumerate}
+        \item Maniobra de seguimiento de carga 100 - 50 - 100\% de potencia de corta duración (45 minutos). Esa simulación ha sido diseñada e implementada como práctica académica de la asignatura de Tecnologías Avanzadas en Reactores Nucleares a los alumnos del Máster en Ciencia y Tecnología Nuclear.
+        \item Maniobra de larga duración (9 horas y 45 minutos) de adaptación a la generación solar (100 - 20 - 100\% de potencia).
+        \item Maniobra de larga duración (15 horas y 15 minutos) de adaptación a la curva de demanda eléctrica. A continuación se muestra una de las gráficas obtenidas en esta simulación a modo de ejemplo:
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=\textwidth]{content/figures/sim4_potencias.pdf}
+            \caption{Curvas de potencia de la maniobra de adaptación a la curva de demanda eléctrica llevada a cabo en el SGIZ el 17 de junio de 2024.}
+            \label{fig:sim4_potencias}
+            \vspace{-0.7cm}
+        \end{figure}
+    \end{enumerate}
+\end{itemize}
+En resumen, son múltiples los conocimientos, resultados y conclusiones obtenidos a partir de estas simulaciones, las cuales permiten ---entre muchas otras cosas--- adentrarse en profundidad en el apasionante mundo de la operación de los pequeños reactores modulares.
+
+\newpage
+\textbf{Códigos UNESCO}
+    \begin{itemize}
+        \item 332004 - Reactores de Fisión Nuclear
+        \item 332006 - Pruebas Nucleares
+        \item 120326 - Simulación
+    \end{itemize}
+
+ \textbf{Palabras clave:} Energía nuclear, \textit{Small Modular Reactors}, Simulación, Seguimiento de carga, Simuladores nucleares, Simulador Gráfico Interactivo de Zorita (SGIZ), Central Nuclear José Cabrera.
+
+
 
 \afterpage{\blankpage} % Se añade una página en blanco después del resumen.
 

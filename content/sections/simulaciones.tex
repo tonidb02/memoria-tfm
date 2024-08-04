@@ -3,13 +3,13 @@
 
 \subsection{El seguimiento de carga} \label{seguimiento_de_carga}
 
-Tradicionalmente, por razones técnicas y económicas, las centrales nucleares se han empleado para la generación de energía eléctrica como \textbf{centrales base}\footnote{Se denomina ``centrales base'' a aquellas plantas generadoras de elevada potencia cuya función es suministrar energía eléctrica de forma permanente, ofreciendo así un abastecimiento base fiable que cubra gran parte de la demanda eléctrica. Operan durante largos períodos continuos, evitando en la medida de lo posible cualquier interrupción. Se incluye en este grupo a las centrales térmicas ---carbón, gas natural\dots---, nucleares e hidráulicas con gran capacidad de generación.}. Desde el punto de vista técnico, es complicado equilibrar las poblaciones neutrónicas del núcleo del reactor, mantener constante la eliminación de calor residual del núcleo y garantizar la integridad física de los componentes estructurales, cuando se dan variaciones de temperatura derivadas de las variaciones de potencia requeridas para el seguimiento de carga. Desde el punto de vista económico, debido a los elevados costes de capital inicial y a los reducidos costes de combustible, las centrales nucleares suministran electricidad al menor precio posible cuando mantienen un elevado \gls{factor de carga}, por lo que interesa que funcionen a plena potencia (\cite{stanford_load_following}).
+Tradicionalmente, por razones técnicas y económicas, las centrales nucleares se han empleado para la generación de energía eléctrica como \textbf{centrales base}\footnote{Se denomina ``centrales base'' a aquellas plantas generadoras de elevada potencia cuya función es suministrar energía eléctrica de forma permanente, ofreciendo así un abastecimiento base fiable que cubra gran parte de la demanda eléctrica. Operan durante largos períodos continuos, evitando en la medida de lo posible cualquier interrupción. Se incluye en este grupo a las centrales térmicas ---carbón, gas natural\dots---, nucleares e hidráulicas con gran capacidad de generación.}. Desde el punto de vista técnico, es complicado equilibrar las poblaciones neutrónicas del núcleo del reactor, mantener constante la eliminación de calor residual del núcleo y garantizar la integridad física de los componentes estructurales, cuando se dan variaciones de temperatura derivadas de las variaciones de potencia requeridas para un seguimiento de carga continuado y con variaciones rápidas de demanda. Desde el punto de vista económico, debido a los elevados costes de capital inicial y a los reducidos costes de combustible, las centrales nucleares suministran electricidad al menor precio posible cuando mantienen un elevado \gls{factor de carga}, por lo que interesa que funcionen a plena potencia (\cite{stanford_load_following}).
 
 Sin embargo, últimamente ha aumentado el interés en la capacidad de seguimiento de carga de las plantas nucleares, principalmente, en los siguientes dos casos concretos:
 
 \begin{itemize}
   \item \textbf{Redes eléctricas donde la energía nuclear representa una gran parte de la generación energética total}, como es el caso de Francia (63 \%), Ontario (51 \%), Ucrania (56 \%), Carolina del Sur (55 \%), Illinois (52 \%)\dots  En estos casos interesa que esta fuente de energía, al ser mayoritaria, tenga capacidad de adaptación a las habituales fluctuaciones de la demanda eléctrica diarias y a lo largo de las distintas épocas del año.
-  \item \textbf{Redes eléctricas donde las fuentes de energía renovable intermitentes ---como la solar y la eólica--- constituyen una parte importante de la producción eléctrica total} y presentan importantes variaciones en la producción. Algunos casos en los que se da esta segunda situación son Alemania, España, Ontario, Nueva York, California\dots (\cite{ANS_2019}).
+  \item \textbf{Redes eléctricas donde las fuentes de energía renovable intermitentes ---como la solar y la eólica--- constituyen una parte importante de la producción eléctrica total} y presentan importantes variaciones en la producción. Es lo que sucede en Alemania, España, Ontario, Nueva York, California\dots (\cite{ANS_2019}).
 \end{itemize} 
 
 \subsubsection{Tipos de maniobras de seguimiento de carga}
@@ -82,14 +82,14 @@ En concreto, los niveles de potencia de los pequeños reactores modulares pueden
   Es importante tener en cuenta que las maniobras de variación de potencia se realizan de acuerdo con el criterio \textit{\textbf{reactor sigue a turbina}}, por lo que se actúa sobre la turbina y no directamente sobre el reactor. La potencia que suministra la turbina depende del gasto másico de vapor y del salto entálpico ---que, a su vez, depende de las condiciones termodinámicas del vapor a la entrada y a la salida de la turbina---. Por tanto, para variar la potencia es necesario modificar el gasto de vapor, lo cual se realiza actuando sobre las válvulas de regulación de la turbina. Estas, se abren o se cierran ---dejando pasar un mayor o menor gasto de vapor--- según se quiera aumentar o reducir la potencia, respectivamente (\cite{apuntes_centrales}). Como consecuencia de esta maniobra, se producen cambios en otras magnitudes, que serán las señales de actuación sobre distintos sistemas de control, que procurarán acomodar la planta a la nueva situación mediante los siguientes mecanismos:
 
 \begin{itemize}
-  \item \underline{Variación en la concentración de ácido bórico:}\footnote{El ácido bórico es lo que se denomina un ``veneno soluble'' que se disuelve en el refrigerante del reactor y se emplea como un método de control de potencia. El boro es un elemento con elevada sección eficaz de absorción, lo cual disminuye el factor de utilización térmica y ---por la regla de los 4 factores--- disminuye la \gls{reactividad} del núcleo, disminuyendo de esta manera la potencia generada.} Se emplea en los reactores \acrshort{pwr} y el principal problema de este mecanismo es que se trata de un proceso lento que requiere de varios minutos para tener efecto. Por ello, este método se emplea para los cambios de potencia programados y no para cambios rápidos, para los cuales son más apropiados los dos métodos que se detallan a continuación. Obviamente, también puede usarse este método para variaciones de potencia no programadas, siempre y cuando el tiempo requerido para las mismas sea, al menos, de unos minutos.
+  \item \underline{Variación en la concentración de ácido bórico:} Se emplea en los reactores \acrshort{pwr} y el principal problema de este mecanismo es que se trata de un proceso lento que requiere de varios minutos para tener efecto. Por ello, este método se emplea para los cambios de potencia programados y no para cambios rápidos, para los cuales son más apropiados los dos métodos que se detallan a continuación. Obviamente, también puede usarse este método para variaciones de potencia no programadas, siempre y cuando el tiempo requerido para las mismas sea, al menos, de unos minutos.
   
   \item \underline{Empleo de bancos especiales de las barras de control:} 
   Se trata, concretamente, de los bancos de barras de control A, B, C y D, los cuales se denominan ``bancos de control u operación''.
 
   Están presentes en todos los tipos de reactores, siendo la forma más común de ajustar la potencia. Las ventajas que presenta el empleo de las barras de control es que ofrecen una respuesta rápida y pueden adaptarse a sistemas de control automático. Sin embargo, producen una distorsión en la distribución del flujo neutrónico y, por tanto, de la potencia, ya que se agota más el combustible en la parte inferior del reactor que en la parte superior, por donde se insertan dichas barras en el caso de los \acrshortpl{pwr}. Este problema puede corregirse variando la concentración de ácido bórico y retirando después las barras de control (\cite{apuntes_centrales}).
 
-  \item \underline{Empleo del coeficiente de temperatura del moderador:} Este coeficiente representa la variación de la \gls{reactividad} con la temperatura del moderador: 
+  \item \underline{Empleo del coeficiente de temperatura del moderador:} Este coeficiente representa la variación de la \gls{reactividad}\footnote{Capacidad que tiene el reactor de multiplicar la población neutrónica. Según el valor de la reactividad $(\rho)$, el sistema será subcrítico $(\rho<0)$, crítico $(\rho=0)$ o supercrítico $(0<\rho<1)$. Siempre se busca alcanzar y mantener la criticidad $(\rho=0)$ para que la reacción de fisión nuclear en cadena se automantenga de forma controlada.} con la temperatura del moderador: 
   
   \begin{equation}
     \alpha_{mod}=\frac{\partial \rho}{\partial T_{mod}}
@@ -112,7 +112,7 @@ En la figura \ref{fig:seguimiento_carga_barras_y_boro} se muestra una operación
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.6\textwidth]{content/figures/seguimiento_carga_barras_y_boro.png}
+  \includegraphics[width=0.7\textwidth]{content/figures/seguimiento_carga_barras_y_boro.png}
   \caption{Ejemplo de variación de potencia mediante la inserción del banco de barras de control D y la variación de la concentración de ácido bórico en un reactor \acrshort{pwr} (\cite{NEA_2011_load_following}).}
   \label{fig:seguimiento_carga_barras_y_boro}
 \end{figure}
@@ -152,8 +152,8 @@ originan oscilaciones espacio-temporales del flujo neutrónico en reactores con 
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.65\textwidth]{content/figures/variaciones_potencia_xenon.png}
-  \caption{Variaciones de la cantidad de $Xe^{135}$ al producirse variaciones en el flujo neutrónico (\cite{apuntes_centrales}).}
+  \includegraphics[width=0.62\textwidth]{content/figures/variaciones_potencia_xenon.png}
+  \caption{Variaciones de la cantidad de $Xe^{135}$ al producirse variaciones en el flujo neutrónico (\cite{intro_nuclear_engineering}).}
   \label{fig:variaciones_potencia_xenon}
 \end{figure}
 
@@ -492,7 +492,7 @@ En este caso, la simulación se ha podido llevar a cabo con normalidad y las gr�
 \paragraph{Lección aprendida}
 
 \begin{itemize}
-  \item El modo de ejecución a tiempo real con alarmas activadas tiene ---por cómo está programado el sistema--- un periodo máximo de graficación de 4 horas. 
+  \item El modo de ejecución a tiempo real con alarmas activadas tiene programado un periodo máximo de graficación de 4 horas, fallo que ha sido notificado a la empresa desarrolladora.
 \end{itemize}
 
 \newpage
@@ -625,6 +625,7 @@ En tercer lugar, las gráficas \ref{fig:sim3_barras_control} y \ref{fig:sim3_bor
   
   \begin{table}[h]
     \centering
+    \resizebox{0.65\textwidth}{!}{%
     \begin{tabular}{c|c|c|c|}
     \cline{2-4}
      &
@@ -656,11 +657,12 @@ En tercer lugar, las gráficas \ref{fig:sim3_barras_control} y \ref{fig:sim3_bor
       -15361,73 &
       \cellcolor[HTML]{FFFFC7}\textbf{-1792} \\ \hline
     \end{tabular}
+    }
     \caption{Resumen de los cálculos de reactividad realizados para la obtención de la variación en la reactividad total entre el punto inicial y final de la``estabilización'' al 20\% de potencia.}
     \label{tab:calculos_reactividad}
     \end{table}
   
-    \item De los resultados obtenidos, se observa que la reactividad negativa introducida por barras de control, boro y xenón en el punto inicial analizado es inferior a la reactividad negativa global en el punto final. Este comportamiento no es para nada el esperado, ya que ---a temperatura constante y \acrshort{bol}--- lo propio sería que la reactividad negativa total introducida por estos medios fuera la misma en el punto inicial y final, con una variación prácticamente nula. El hecho más probable de ser el causante de este resultado inesperado es la leve extracción de barras de control que se ha realizado entre ambos puntos del análisis (tan solo 16 pasos). Podría deberse a un \textbf{error en la simulación o a que no se está teniendo en cuenta algún otro factor importante} en la aportación de reactividad.
+    \item De los resultados obtenidos, se observa que la reactividad negativa introducida por barras de control, boro y xenón en el punto inicial analizado es inferior a la reactividad negativa global en el punto final. Este comportamiento no es para nada el esperado, ya que ---a temperatura constante y \acrshort{bol}--- lo propio sería que la reactividad negativa total introducida por estos medios fuera la misma en el punto inicial y final, con una variación prácticamente nula. El hecho más probable de ser el causante de este resultado inesperado es la leve extracción de barras de control que se ha realizado entre ambos puntos del análisis (tan solo 16 pasos). Tras investigar el asunto, parece que los desarrolladores del simulador optaron por emplear un modelo con cinética puntual que no permite el cálculo de los efectos del xenón en transitorios largos. Esto se debe a la mayor simplicidad y velocidad de cálculo para aquella época frente al modelado 3D.
 \end{itemize}
 
 

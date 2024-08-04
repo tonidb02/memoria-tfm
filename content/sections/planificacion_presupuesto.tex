@@ -25,9 +25,9 @@ La descomposición de este trabajo fin de grado puede realizarse dividiendo el m
     \rowcolor[HTML]{CBCEFB} 
     \textbf{Actividad}                                           & \textbf{Días}             & \textbf{Inicio}                   & \textbf{Final}                    \\ \hline
     \rowcolor[HTML]{FFCCC9} 
-    \textbf{TRABAJO FIN DE GRADO}                                & \textbf{143}              & \textbf{1-2-2024}                 & \textbf{23-6-2024}                \\ \hline
+    \textbf{TRABAJO FIN DE GRADO}                                & \textbf{218}              & \textbf{1-2-2024}                 & \textbf{6-9-2024}                \\ \hline
     \rowcolor[HTML]{FFCE93} 
-    \textbf{Dirección del proyecto}                              & 143                       & 1-2-2024                          & 23-6-2024                         \\ \hline
+    \textbf{Dirección del proyecto}                              & 218                       & 1-2-2024                          & 6-9-2024                         \\ \hline
     \rowcolor[HTML]{CBE5CB} 
     \textbf{Reunión inicial}                                     & 1                         & 1-2-2024                          & \cellcolor[HTML]{CBE5CB}1-2-2024  \\ \hline
     \rowcolor[HTML]{CBE5CB} 
@@ -46,9 +46,9 @@ La descomposición de este trabajo fin de grado puede realizarse dividiendo el m
     \rowcolor[HTML]{CBE5CB} 
     \textbf{Presupuesto}                                         & 1                         & 20-6-2024                         & 20-6-2024                         \\ \hline
     \rowcolor[HTML]{CBE5CB} 
-    \textbf{Revisión}                                            & 4                         & 20-6-2024                         & 23-6-2024                         \\ \hline
+    \textbf{Revisión}                                            & 34                         & 21-6-2024                         & 25-7-2024                         \\ \hline
     \rowcolor[HTML]{CBE5CB} 
-    \textbf{Entrega}                                             & 1                         & 23-6-2024                         & 23-6-2024                         \\ \hline
+    \textbf{Entrega}                                             & 1                         & 6-9-2024                         & 6-9-2024                         \\ \hline
     \rowcolor[HTML]{FFCE93} 
     \textbf{Estudios previos}                                    & 48                        & 1-2-2024                          & 20-3-2024                         \\ \hline
     \rowcolor[HTML]{CBE5CB} 
@@ -126,7 +126,7 @@ La descomposición de este trabajo fin de grado puede realizarse dividiendo el m
   Seguidamente, se muestra el diagrama de Gantt, donde las flechas indican que la actividad predecesora debe realizarse necesariamente antes que la siguiente actividad:
 
   \begin{figure}[!h]
-    \centering
+    \resizebox{1.4\textwidth}{!}{%
     \begin{ganttchart}[
     x unit=0.062cm, % distancia entre cada unidad horizontal (días).
     y unit chart=0.6cm, % altura de cada unidad vertical.
@@ -140,7 +140,7 @@ La descomposición de este trabajo fin de grado puede realizarse dividiendo el m
     group peaks height=.1, % distintos parámetros para el formato de los grupos.
     time slot format=isodate, % formato de las fechas.
     ] 
-    {2024-01-22}{2024-06-30} % inicio y final del eje temporal (año-mes-día).
+    {2024-01-22}{2024-09-15} % inicio y final del eje temporal (año-mes-día).
     
     % Títulos:
     \gantttitlecalendar{year, month=shortname} % Títulos con el año y el mes (en formato "shortname", es decir, jun en lugar de junio, jul en lugar de julio, etc.).
@@ -153,9 +153,9 @@ La descomposición de este trabajo fin de grado puede realizarse dividiendo el m
     % El resto del diagrama se construye de la misma manera que el diagrama anterior (figura 8.1), cuyo código esta comentado.
     
     % Duración total:
-    \ganttgroup{Trabajo Fin de Grado}{2024-02-01}{2024-06-23} \\
+    \ganttgroup{Trabajo Fin de Grado}{2024-02-01}{2024-09-06} \\
     
-    \ganttgroup{Dirección del proyecto}{2024-02-01}{2024-06-23} \\
+    \ganttgroup{Dirección del proyecto}{2024-02-01}{2024-09-06} \\
     \ganttbar[bar/.append style={fill=orange!50}]{Reunión inicial}{2024-02-01}{2024-02-01} \\
     \ganttbar[bar/.append style={fill=orange!50}]{Planificación}{2024-02-01}{2024-02-05} \\
     \ganttbar[bar/.append style={fill=orange!50}]{Segunda reunión}{2024-02-07}{2024-02-07} \\
@@ -163,8 +163,8 @@ La descomposición de este trabajo fin de grado puede realizarse dividiendo el m
     \ganttbar[bar/.append style={fill=orange!50}]{Tercera reunión}{2024-05-20}{2024-05-20} \\
     \ganttbar[bar/.append style={fill=orange!50}]{Última reunión}{2024-06-19}{2024-06-19} \\
     \ganttbar[bar/.append style={fill=orange!50}]{Presupuesto}{2024-06-20}{2024-06-20} \\
-    \ganttbar[bar/.append style={fill=orange!50}]{Revisión}{2024-06-20}{2024-06-23} \\
-    \ganttbar[bar/.append style={fill=orange!50}]{Entrega}{2024-06-23}{2024-06-23} \\
+    \ganttbar[bar/.append style={fill=orange!50}]{Revisión}{2024-06-21}{2024-07-25} \\
+    \ganttbar[bar/.append style={fill=orange!50}]{Entrega}{2024-09-06}{2024-09-06} \\
 
     % Relaciones de dependencia:
     \ganttlink[link bulge=4]{elem2}{elem3} 
@@ -210,8 +210,8 @@ La descomposición de este trabajo fin de grado puede realizarse dividiendo el m
     % Relaciones de dependencia:
     \ganttlink[link bulge=4]{elem28}{elem29}
     \ganttlink[link bulge=4]{elem29}{elem30} 
-  
     \end{ganttchart}
+    }
     \caption{Diagrama de Gantt de este Trabajo Fin de Grado.}
     \label{fig:ganttauto}
     \end{figure}
@@ -222,10 +222,10 @@ La descomposición de este trabajo fin de grado puede realizarse dividiendo el m
     El presupuesto del proyecto puede dividirse en las siguientes dos principales categorías:
 
     \begin{itemize}
-      \item \textbf{Personal:} Tal y como se muestra en el diagrama de Gantt, la duración total del proyecto ha sido de 143 días (unos 5 meses). Considerando que, de media, cada día equivale a 3 horas de trabajo, resulta un total de 429 horas. Dentro del coste de los recursos humanos involucrados en el trabajo se distingue entre los siguientes dos casos:
+      \item \textbf{Personal:} Tal y como se muestra en el diagrama de Gantt, la duración total del proyecto ha sido de 218 días (unos 7 meses). Considerando que, de media, cada día equivale a 2 horas de trabajo, resulta un total de 436 horas. Dentro del coste de los recursos humanos involucrados en el trabajo se distingue entre los siguientes dos casos:
       \begin{itemize}
         \item \underline{Coste laboral del tutor y el cotutor:} El coste de una hora de trabajo del tutor y del cotutor es de 40€/h.
-        \item \underline{Coste laboral del alumno:} El coste promedio de un ingeniero junior es de unos 15€/h.
+        \item \underline{Coste laboral del alumno:} El coste promedio de un ingeniero junior es de unos 10€/h.
       \end{itemize} 
       \item \textbf{Equipos:} Los recursos materiales empleados para el proyecto son los siguientes:
       \begin{itemize}
@@ -240,44 +240,45 @@ La descomposición de este trabajo fin de grado puede realizarse dividiendo el m
       \centering
       \resizebox{\textwidth}{!}{%
       \begin{tabular}{|ccccc|}
-      \hline
-      \rowcolor[HTML]{ECF4FF} 
-      \multicolumn{5}{|c|}{\cellcolor[HTML]{ECF4FF}1. Descripción del Trabajo Fin de Grado}                                                                   \\ \hline
-      \multicolumn{1}{|c|}{\cellcolor[HTML]{FFCCC9}Título} &
-        \multicolumn{4}{c|}{\begin{tabular}[c]{@{}c@{}}SIMULACIÓN DEL SEGUIMIENTO DE CARGA CON \\ \textit{SMALL MODULAR REACTORS} MEDIANTE EL\\ SIMULADOR GRÁFICO INTERACTIVO\end{tabular}} \\ \hline
-      \multicolumn{1}{|c|}{\cellcolor[HTML]{FFCCC9}Duración} & \multicolumn{4}{c|}{143 días ($\sim$ 5 meses) = 429 horas}                                      \\ \hline
-      \rowcolor[HTML]{ECF4FF} 
-      \multicolumn{5}{|c|}{\cellcolor[HTML]{ECF4FF}2. Presupuesto total del Trabajo Fin de Grado}                                                             \\ \hline
-      \multicolumn{5}{|c|}{}                                                                                                                                  \\ \hline
-      \rowcolor[HTML]{ECF4FF} 
-      \multicolumn{5}{|c|}{\cellcolor[HTML]{ECF4FF}3. Desglose de costes}                                                                                     \\ \hline
-      \rowcolor[HTML]{FFCE93} 
-      \multicolumn{5}{|c|}{\cellcolor[HTML]{FFCE93}Personal}                                                                                                  \\ \hline
-      \rowcolor[HTML]{ACEBAB} 
-      \multicolumn{1}{|c|}{\cellcolor[HTML]{ACEBAB}Apellidos, Nombre} &
-        \multicolumn{1}{c|}{\cellcolor[HTML]{ACEBAB}Papel en el Trabajo} &
-        \multicolumn{1}{c|}{\cellcolor[HTML]{ACEBAB}Honorarios (€/hora)} &
-        \multicolumn{1}{c|}{\cellcolor[HTML]{ACEBAB}Cantidad (h)} &
-        Coste (€) \\ \hline
-      \multicolumn{1}{|c|}{Jiménez Varas, Gonzalo}           & \multicolumn{1}{c|}{Tutor}   & \multicolumn{1}{c|}{40,00} & \multicolumn{1}{c|}{}    &         \\ \hline
-      \multicolumn{1}{|c|}{Piedra Ajates, David}             & \multicolumn{1}{c|}{Cotutor} & \multicolumn{1}{c|}{40,00} & \multicolumn{1}{c|}{}    &         \\ \hline
-      \multicolumn{1}{|c|}{Dies Beneytez, Antonio}           & \multicolumn{1}{c|}{Autor}   & \multicolumn{1}{c|}{10,00} & \multicolumn{1}{c|}{429} & 4290,00 \\ \hline
-      \rowcolor[HTML]{FFCE93} 
-      \multicolumn{5}{|c|}{\cellcolor[HTML]{FFCE93}Equipos}                                                                                                   \\ \hline
-      \rowcolor[HTML]{ACEBAB} 
-      \multicolumn{2}{|c|}{\cellcolor[HTML]{ACEBAB}Descripción} &
-        \multicolumn{1}{c|}{\cellcolor[HTML]{ACEBAB}\begin{tabular}[c]{@{}c@{}}Coste de \\ amortización (€/mes)\end{tabular}} &
-        \multicolumn{1}{c|}{\cellcolor[HTML]{ACEBAB}Cantidad (meses)} &
-        Coste (€) \\ \hline
-      \multicolumn{2}{|c|}{Ordenador personal}                                              & \multicolumn{1}{c|}{11,90} & \multicolumn{1}{c|}{5}   & 59,50  \\ \hline
-      \multicolumn{2}{|c|}{Ordenadores y sala del SGIZ}                                     & \multicolumn{1}{c|}{40,00} & \multicolumn{1}{c|}{5}   & 200,00  \\ \hline
-      \rowcolor[HTML]{ECF4FF} 
-      \multicolumn{5}{|c|}{\cellcolor[HTML]{ECF4FF}4. Resumen de costes}                                                                                      \\ \hline
-      \multicolumn{4}{|c|}{Personal}                                                                                                                &         \\ \hline
-      \multicolumn{4}{|c|}{Equipos}                                                                                                                 &         \\ \hline
-      \multicolumn{4}{|c|}{IVA}                                                                                                                     & 21\%    \\ \hline
-      \multicolumn{1}{|c|}{\cellcolor[HTML]{ACEBAB}Total}    & \multicolumn{4}{c|}{X EUROS CON XX CÉNTIMOS DE EURO}                                                                          \\ \hline
-      \end{tabular}
+        \hline
+        \rowcolor[HTML]{ECF4FF} 
+        \multicolumn{5}{|c|}{\cellcolor[HTML]{ECF4FF}1. Descripción del Trabajo Fin de Grado}                                                                    \\ \hline
+        \multicolumn{1}{|c|}{\cellcolor[HTML]{FFCCC9}Título} &
+          \multicolumn{4}{c|}{\begin{tabular}[c]{@{}c@{}}SIMULACIÓN DEL SEGUIMIENTO DE CARGA CON \\ SMALL MODULAR REACTORS MEDIANTE EL\\ SIMULADOR GRÁFICO INTERACTIVO\end{tabular}} \\ \hline
+        \multicolumn{1}{|c|}{\cellcolor[HTML]{FFCCC9}Duración} & \multicolumn{4}{c|}{218 días (7 meses) = 436 horas}                                       \\ \hline
+        \rowcolor[HTML]{ECF4FF} 
+        \multicolumn{5}{|c|}{\cellcolor[HTML]{ECF4FF}2. Presupuesto total del Trabajo Fin de Grado}                                                              \\ \hline
+        \multicolumn{5}{|c|}{8.135,19 €}                                                                                                                         \\ \hline
+        \rowcolor[HTML]{ECF4FF} 
+        \multicolumn{5}{|c|}{\cellcolor[HTML]{ECF4FF}3. Desglose de costes}                                                                                      \\ \hline
+        \rowcolor[HTML]{FFCE93} 
+        \multicolumn{5}{|c|}{\cellcolor[HTML]{FFCE93}Personal}                                                                                                   \\ \hline
+        \rowcolor[HTML]{ACEBAB} 
+        \multicolumn{1}{|c|}{\cellcolor[HTML]{ACEBAB}Apellidos, Nombre} &
+          \multicolumn{1}{c|}{\cellcolor[HTML]{ACEBAB}Papel en el Trabajo} &
+          \multicolumn{1}{c|}{\cellcolor[HTML]{ACEBAB}Honorarios (€/hora)} &
+          \multicolumn{1}{c|}{\cellcolor[HTML]{ACEBAB}Cantidad (h)} &
+          Coste (€) \\ \hline
+        \multicolumn{1}{|c|}{Jiménez Varas, Gonzalo}           & \multicolumn{1}{c|}{Tutor}   & \multicolumn{1}{c|}{40,00} & \multicolumn{1}{c|}{25}  & 1.000,00 \\ \hline
+        \multicolumn{1}{|c|}{Piedra Ajates, David}             & \multicolumn{1}{c|}{Cotutor} & \multicolumn{1}{c|}{40,00} & \multicolumn{1}{c|}{25}  & 1.000,00 \\ \hline
+        \multicolumn{1}{|c|}{Dies Beneytez, Antonio}           & \multicolumn{1}{c|}{Autor}   & \multicolumn{1}{c|}{10,00} & \multicolumn{1}{c|}{436} & 4.360,00 \\ \hline
+        \rowcolor[HTML]{FFCE93} 
+        \multicolumn{5}{|c|}{\cellcolor[HTML]{FFCE93}Equipos}                                                                                                    \\ \hline
+        \rowcolor[HTML]{ACEBAB} 
+        \multicolumn{2}{|c|}{\cellcolor[HTML]{ACEBAB}Descripción} &
+          \multicolumn{1}{c|}{\cellcolor[HTML]{ACEBAB}\begin{tabular}[c]{@{}c@{}}Coste de \\ amortización (€/mes)\end{tabular}} &
+          \multicolumn{1}{c|}{\cellcolor[HTML]{ACEBAB}Cantidad (meses)} &
+          Coste (€) \\ \hline
+        \multicolumn{2}{|c|}{Ordenador personal}                                              & \multicolumn{1}{c|}{11,9} & \multicolumn{1}{c|}{7}   & 83,3   \\ \hline
+        \multicolumn{2}{|c|}{Ordenadores y sala del SGIZ}                                     & \multicolumn{1}{c|}{40,00} & \multicolumn{1}{c|}{7}   & 280,00   \\ \hline
+        \rowcolor[HTML]{ECF4FF} 
+        \multicolumn{5}{|c|}{\cellcolor[HTML]{ECF4FF}4. Resumen de costes}                                                                                       \\ \hline
+        \multicolumn{4}{|c|}{Personal}                                                                                                                & 6.360,00 \\ \hline
+        \multicolumn{4}{|c|}{Equipos}                                                                                                                 & 363,3   \\ \hline
+        \multicolumn{4}{|c|}{IVA}                                                                                                                     & 21\%     \\ \hline
+        \multicolumn{1}{|c|}{\cellcolor[HTML]{ACEBAB}Total} &
+          \multicolumn{4}{c|}{\begin{tabular}[c]{@{}c@{}}OCHO MIL CIENTO TREINTA Y CINCO EUROS\\ CON DIECINUEVE CÉNTIMOS DE EURO\end{tabular}} \\ \hline
+        \end{tabular}
       }
       \caption{Presupuesto del Trabajo Fin de Grado.}
       \label{tab:presupuesto}

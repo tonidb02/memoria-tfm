@@ -63,14 +63,14 @@ NuScale se encarga de la construcción e instalación del centro, proporciona un
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.9\textwidth]{content/figures/e2_center_bucarest.png}
+  \includegraphics[width=0.75\textwidth]{content/figures/e2_center_bucarest.png}
   \caption{E2 Center de la Universidad Politécnica de Bucarest (\cite{e2_center_romania}).}
   \label{fig:e2_center_bucarest}
 \end{figure}
 
 \subsubsection{Simuladores de SMRs de Tecnatom}
 
-En 2017, Tecnatom desarrolló un simulador de \acrshortpl{smr} de tipo \acrshort{pwr}, denominados \acrfullpl{ipwr}, en los que todos los componentes del circuito primario se encuentran integrados en el interior de la vasija del reactor, tal y como se detalla en el apartado \ref{seguridad}. Se trata de un simulador \textit{online} de descarga gratuita en el que, a parte de familiarizarse con la arquitectura integral del reactor, el usuario puede poner a prueba los distintos sistemas de seguridad avanzados de los que dispone el reactor ---la mayoría de ellos pasivos---, mediante la simulación de múltiples tipos de accidentes distintos (\cite{ipwr_iaea}).
+En 2017, Tecnatom desarrolló un simulador de \acrshortpl{smr} de tipo \acrshort{pwr}, denominados \acrfullpl{ipwr}, en los que todos los componentes del circuito primario se encuentran integrados en el interior de la vasija del reactor, tal y como se detalla en el apartado \ref{seguridad}. Se trata de un simulador \textit{online} de descarga gratuita bajo licencia del \acrshort{oiea} en el que, a parte de familiarizarse con la arquitectura integral del reactor, el usuario puede poner a prueba los distintos sistemas de seguridad avanzados de los que dispone el reactor ---la mayoría de ellos pasivos---, mediante la simulación de múltiples tipos de accidentes distintos (\cite{ipwr_iaea}).
 
 Actualmente, Tecnatom está desarrollando un simulador de \acrshort{smr} para el \textit{Institute of Energy Technology (IFE)} de Noruega, con el objetivo de posibilitar la operación y la monitorización de una sala de control multiunidad (con capacidad de control de hasta 12 módulos pertenecientes a la misma planta). Este simulador permitirá la simulación a tiempo real del comportamiento de cada una de las unidades tanto en condiciones normales de operación como en situaciones de fallos y emergencias (\cite{tecnatom_smr_simulator}). 
 
@@ -104,7 +104,7 @@ A continuación se detallan las principales ventajas del uso de los dos principa
 
 Tal y como se ha comentado en la introducción del proyecto, se pretende profundizar en el conocimiento de los \emph{\acrlongpl{smr}} mediante la simulación de la operación de una central nuclear con un comportamiento muy similar al de un \acrshort{smr}: la Central Nuclear de José Cabrera, también conocida como Central Nuclear de Zorita.
 
-\subsubsection{La Central Nuclear de Zorita}
+\subsubsection{La Central Nuclear José Cabrera}
 
 La Central Nuclear José Cabrera está situada en Almonacid de Zorita (Guadalajara) y fue la primera central nuclear española en operación.
 
@@ -119,7 +119,7 @@ Como en toda central nuclear convencional, el cuerpo principal de la planta esta
 
   El núcleo constaba de 69 elementos de combustible de $14 \times 14$ varillas cada uno, de las cuales 179 eran barras de combustible de zircaloy.
 
-  \item El \textbf{edificio de servicios auxiliares}, contiguo al edificio del reactor, donde se encontraba la sala de control, desde donde se llevaba a cabo la supervisión y el control, tanto del reactor como del turbogenerador. Los sistemas de regulación proporcionaban un control automático de la instalación, actuando mediante una combinación coordinada del veneno químico (el ácido bórico) y las barras de control mecánico.
+  \item El \textbf{edificio de servicios auxiliares}, contiguo al edificio del reactor, donde se encontraba la sala de control, desde donde se llevaba a cabo la supervisión y el control, tanto del reactor como del turbogenerador. Los sistemas de regulación proporcionaban un control automático de la instalación, actuando mediante una combinación coordinada del veneno químico (el ácido bórico\footnote{El ácido bórico es lo que se denomina un ``veneno soluble'' que se disuelve en el refrigerante del reactor y se emplea como un método de control de potencia. El boro es un elemento con elevada sección eficaz de absorción, lo cual disminuye el factor de utilización térmica y ---por la regla de los 4 factores--- disminuye la \gls{reactividad} del núcleo, disminuyendo de esta manera la potencia generada.}) y las barras de control mecánico.
 
   \item El \textbf{edificio de turbinas}, compuesto por los dos cuerpos ---de alta y de baja presión--- de turbinas,  el alternador, los recalentadores, el condensador y los equipos auxiliares.
   
@@ -131,7 +131,7 @@ Obviamente, además de los sistemas de fluidos de operación normal ---sistema d
 \begin{itemize}
   \item El \underline{\acrlong{sis}}, que en casos accidentales estaba preparado para inyectar agua borada en la vasija del reactor con posibilidad de recirculación del refrigerante.
   \item Un \underline{\acrlong{svc}}, con enfriamiento, filtración y recirculación del aire interior del recinto de contención que funcionaría en el caso de tener que aislar el edificio del reactor por haberse contaminado.
-  \item El \underline{Sistema de Aspersión de de la cúpula de la Contención}, capaz de suministrar y distribuir uniformemente agua de refrigeración sobre la cúpula.
+  \item El \underline{Sistema de Aspersión de de la cúpula de la Contención}, capaz de suministrar y distribuir uniformemente agua de refrigeración sobre la cúpula. Esto se realizaba mediante unas duchas dispuestas en forma de anillos que rociaban el exterior de la cúpula.
   \item El \underline{\acrlong{sre}}, diseñado para refrigerar los equipos que deben funcionar en caso de \acrshort{loca} o de pérdida suministro eléctrico exterior, además de algunos equipos de refrigeración en operación normal: intercambiadores de calor del \acrlong{src}, unidades de \acrshort{hvac} del edificio auxiliar, etc.
   \item El \underline{\acrlong{saaa}}, encargado de suministrar agua al circuito secundario cuando el \acrlong{saap} no está disponible.
 \end{itemize}
@@ -140,7 +140,7 @@ La central comenzó a construirse en julio de 1965. Tras 36 meses de construcci�
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=1\textwidth]{content/figures/zorita.jpg}
+    \includegraphics[width=\textwidth]{content/figures/zorita.jpg}
     \caption{Central Nuclear José Cabrera (\cite{sne_recursos_prensa}).}
     \label{fig:zorita}
 \end{figure}
@@ -198,8 +198,8 @@ Llegados a este punto, se han expuesto detalladamente tanto las características
     \multicolumn{1}{c|}{\cellcolor[HTML]{FFCE93}\textbf{AP300}} &
     \cellcolor[HTML]{FFCE93}\textbf{Central Nuclear de Zorita} \\ \hline
   \cellcolor[HTML]{CBE5CB}Tipo: \acrshort{pwr} &
-    \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}\begin{tabular}[c]{@{}c@{}}Generación III+ \\ (Tecnología muy avanzada)\end{tabular}} &
-    \begin{tabular}[c]{@{}c@{}}Entre generación I y II \\ (Tecnología antigua, en\\ algunos casos obsoleta)\end{tabular} \\ \hline
+    \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}\begin{tabular}[c]{@{}c@{}}Generación III+ \end{tabular}} &
+    \begin{tabular}[c]{@{}c@{}}Entre generación I y II \end{tabular} \\ \hline
   \begin{tabular}[c]{@{}c@{}}Potencia eléctrica\\ propia de los \acrshortpl{smr} \\ (entre 10 y 300 MWe)\end{tabular} &
     \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}\begin{tabular}[c]{@{}c@{}}Potencia de 300 MWe\\ y 900 MWt\end{tabular}} &
     \begin{tabular}[c]{@{}c@{}}Potencia de 150 MWe\\ y 510 MWt\end{tabular} \\ \hline
@@ -229,7 +229,7 @@ Es importante destacar que ambas centrales presentan unas tasas de variación de
 
 \subsubsection{El Simulador Gráfico Interactivo de Zorita (SGIZ)} \label{sgiz}
 
-El \acrshort{sgiz} es un \textbf{simulador gráfico interactivo de alcance total} de la Central Nuclear de Zorita. Durante los años de operación de la central, se empleó para el entrenamiento de los operadores de la sala de control, para comprender y analizar la dinámica de la planta y para desarrollar y validar sus procedimientos operativos de emergencia.
+El \acrshort{sgiz} es un \textbf{simulador gráfico interactivo de alcance total en tiempo real} de la Central Nuclear de Zorita. Durante los años de operación de la central, se empleó para el entrenamiento de los operadores de la sala de control, para comprender y analizar la dinámica de la planta y para desarrollar y validar sus procedimientos operativos de emergencia.
 
 En abril de 2008 se firmó el convenio de colaboración entre Unión Fenosa y la UPM para la creación del Aula ``José Cabrera'', donde se instaló el \acrshort{sgiz}. Este aula se ubica en el Departamento de Ingeniería Nuclear de la ETSII-UPM y está dedicada a la enseñanza de la tecnología de la operación de las centrales nucleares.
 
