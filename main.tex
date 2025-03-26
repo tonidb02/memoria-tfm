@@ -60,78 +60,7 @@ Gracias a todos.
 \phantomsection
 \addcontentsline{toc}{section}{RESUMEN} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
 
-Ante la crisis energética global a la que se enfrenta la sociedad actual, la energía nuclear y, en concreto, los \textit{Small Modular Reactors}, están tomando a nivel mundial un papel cada vez más relevante para favorecer la reducción de costes energéticos, la independencia energética, la garantía de suministro y la lucha contra el cambio climático.
-
-Este Trabajo Fin de Grado se centra en el estudio de estos pequeños reactores modulares, por una parte, mediante un análisis del estado del arte de los mismos y, por otra parte, mediante la realización de múltiples simulaciones en el Simulador Gráfico Interactivo de Zorita que hay en la Escuela Técnica Superior de Ingenieros Industriales de Madrid.
-
-\subsection*{\textit{Small Modular Reactors}}
-
-En primer lugar, se analiza el estado del arte de los pequeños reactores modulares: su historia, sus características, sus ventajas y desventajas, sus aplicaciones y los distintos tipos existentes.
-
-\begin{itemize}
-    \item Se comprueba que, fruto de su compacta configuración y la incorporación de los sistemas de seguridad pasivos más avanzados, presentan importantes ventajas en lo relativo a la seguridad tanto en condiciones de operación normal como en transitorios indeseados.
-    \item Además, frente a la mayor inversión inicial necesaria y al gran reto tecnológico que supone un diseño adecuado de los distintos módulos, se demuestra que la modularización de estos reactores pequeños aumenta la maniobrabilidad y productividad a la hora de fabricar sus componentes y construirlos.
-    \item Se analizan también los combustibles avanzados empleados, con lo que se comprenden las diversas formas existentes de inducir las reacciones de fisión en cadena necesarias para el funcionamiento de la planta, permitiendo algunas de ellas el reciclado del combustible ``gastado''.
-    \item Junto con las ventajas relativas al tiempo de construcción fruto del diseño integral y modular de los mismos, existen importantes ventajas económicas. Se realiza un estudio económico en el que se comparan los costes de estos pequeños reactores con los de las grandes centrales nucleares convencionales y se llega a la siguiente conclusión: pese a que los costes de la primera unidad construida de un tipo concreto de SMR siempre son más elevados, la modularidad, el diseño simplificado y la estandarización en la fabricación de los mismos resulta en una importante reducción del coste por unidad de energía producida.
-    \item A todo esto se suma la gran versatilidad que tienen estos pequeños reactores modulares para ser empleados en aplicaciones tan necesarias como el seguimiento de carga, la cogeneración, el abastecimiento eléctrico de zonas remotas e, incluso, la exploración espacial. La primera aplicación mencionada ---el seguimiento de carga---, es la que se analiza con mayor profundidad en el proyecto. Sin embargo, se muestra brevemente que el campo de aplicación del resto de utilidades mencionadas es igualmente muy amplio y de gran interés actual.
-    \item En relación al anterior punto, es tan grande el interés que múltiples países muestran con respecto a esta tecnología, que existen en todo el mundo más de 80 diseños de SMRs comerciales en distintas fases de desarrollo. Se  realiza una clasificación detallada de todos estos diseños en sus tipologías correspondientes para facilitar la comprensión del amplio abanico de posibilidades a la hora de fabricar un SMR.
-    
-    \item Por último, se analiza un caso concreto de SMR: el AP300 de Westinghouse. Se trata de un reactor de 300 MWe con muchas características análogas al reactor del simulador con el que se trabaja: la Central Nuclear José Cabrera. El estudio del AP300 facilita la profundización en el funcionamiento, los sistemas de seguridad, la regulación, los tiempos y los costes de este tipo de reactores.
-    \begin{figure}[h!]
-        \centering
-        \includegraphics[width=\textwidth]{content/figures/AP300_resumen.jpg}
-        \caption{\textit{Render} del AP300 (\cite{ap300_westinghouse}).}
-        \label{fig:ap300_westinghouse_resumen}
-    \end{figure}
-\end{itemize}
-
-\subsection*{Simuladores}
-
-Antes de realizar las simulaciones, se estudian y clasifican los distintos tipos de simuladores nucleares.
-
-\begin{itemize}
-    \item Existen todo tipo de simuladores focalizados en objetivos, usuarios, tipos de tecnología, alcance y niveles de complejidad concretos. Dentro de la clasificación realizada, el SGIZ se encuentra dentro de los simuladores de alcance total de tipo gráfico interactivo en tiempo real para la formación profesional.
-    \item Concretamente, en el campo de los SMR, se están desarrollando múltiples simuladores para el aprendizaje del manejo y el funcionamiento de los mismos, incluyendo SMRs multiunidad. De toda la oferta disponible, el breve estudio de los simuladores de este tipo ofrecidos por NuScale y por Tecnatom, demuestra que son herramientas idóneas para la formación en este campo.
-    \item La investigación llevada a cabo sobre el uso de simuladores en la enseñanza permite obtener una amplia lista de ventajas. Todas ellas giran en torno a una misma realidad: el aprendizaje activo y práctico es más efectivo que la enseñanza basada únicamente en clases teóricas, por lo que los simuladores son una herramienta clave para complementar la teoría en la que se fundamentan.
-    \item Finalmente, se detallan las características de la Central Nuclear de José Cabrera, junto con un análisis comparativo con el SMR anteriormente mencionado: el AP300.
-\end{itemize}
-
-
-\subsection*{Simulaciones de seguimiento de carga}
-
-Las simulaciones realizadas comprenden la parte más interesante y desafiante del proyecto, ya que este trabajo es el primer proyecto realizado en el SGIZ dedicado al estudio de múltiples maniobras de seguimiento de carga en SMRs.
-
-\begin{itemize}
-    \item En el estudio previo a las simulaciones para el conocimiento teórico de lo que se pretende simular ---el seguimiento de carga---, se pone de manifiesto que, pese a que las centrales nucleares de gran escala actuales pueden realizar ese tipo de maniobras, los SMRs tienen capacidades avanzadas de seguimiento de carga que los hace idóneos para operar junto con fuentes de energía renovable intermitentes, favoreciendo así la estabilidad y flexibilidad del sistema eléctrico.
-    \item Las simulaciones realizadas son de distintas duraciones y se enmarcan en contextos reales distintos. Algunas de ellas se han podido realizar con éxito y otras no, permitiendo estas últimas aprender sobre ciertos errores cometidos y algunas limitaciones del simulador. Entre las simulaciones exitosas realizadas, destacan las 3 siguientes:
-    \begin{enumerate}
-        \item Maniobra de seguimiento de carga 100 - 50 - 100\% de potencia de corta duración (45 minutos). Esta simulación ha sido diseñada e implementada como práctica académica de la asignatura de Tecnologías Avanzadas en Reactores Nucleares para los alumnos del Máster en Ciencia y Tecnología Nuclear.
-        \item Maniobra de larga duración (9 horas y 45 minutos) de adaptación a la generación solar (100 - 20 - 100\% de potencia).
-        \item Maniobra de larga duración (15 horas y 15 minutos) de adaptación a la curva de demanda eléctrica. A continuación se muestra, a modo de ejemplo, una de las gráficas obtenidas en esta simulación:
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=\textwidth]{content/figures/sim4_potencias.pdf}
-            \caption{Curvas de potencia de la maniobra de adaptación a la curva de demanda eléctrica llevada a cabo en el SGIZ el 17 de junio de 2024.}
-            \label{fig:sim4_potencias}
-            \vspace{-0.7cm}
-        \end{figure}
-    \end{enumerate}
-\end{itemize}
-
-A través de estas simulaciones, se profundiza en diversos conceptos clave de operación de centrales nucleares:
-
-\begin{itemize}
-    \item El funcionamiento general de la central en condiciones de operación normal.
-    \item El modo de realizar variaciones de potencia.
-    \item El comportamiento \textit{reactor sigue a turbina}.
-    \item El efecto del coeficiente de temperatura del moderador negativo.
-    \item El funcionamiento del sistema de control automático del reactor, actuando principalmente sobre las barras de control y el ácido bórico.
-    \item La evolución de las variables más importantes de diversos componentes de la planta.
-    \item Las tasas de variación de potencia permitidas, comparándolas con la capacidad de seguimiento de carga de los SMRs.
-    \item El efecto del xenón ante variaciones de potencia.
-\end{itemize}
-
-En resumen, son múltiples los conocimientos, resultados y conclusiones obtenidos a partir de las simulaciones, las cuales permiten ---entre muchas otras cosas--- adentrarse en profundidad en el apasionante mundo de la operación de los pequeños reactores modulares.
+Bla, bla, bla
 
 \vspace{0.6cm}
 \textbf{Códigos UNESCO}
