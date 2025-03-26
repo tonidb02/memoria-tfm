@@ -1,4 +1,4 @@
-\documentclass[a4paper, 11pt, spanish, twoside]{article}
+\documentclass[a4paper, 11pt, english, twoside]{article}
 
 \input{content/preamble.tex}
 
@@ -8,7 +8,9 @@
 %%%%%%%%%%%%%%%%%%% - PORTADA - %%%%%%%%%%%%%%%%%%
 \newpage
 \thispagestyle{empty}
-\includepdf{content/Portada_TFG_Antonio_Dies.pdf}
+\begin{landscape}
+    \includepdf[landscape=true]{content/Portada_TFM_Antonio_Dies.pdf}
+\end{landscape}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Las páginas anteriores al contenido del TFG (previas a la introducción) suelen numerarse en números romanos:
@@ -36,9 +38,9 @@
 \newpage
 \thispagestyle{plain} % Formato plano (sin encabezado/pie de página pero con número de página):
 
-\section*{AGRADECIMIENTOS} % Se añade un asterisco a \section para que el título no esté numerado.
+\section*{ACKNOWLEDGMENTS} % Se añade un asterisco a \section para que el título no esté numerado.
 \phantomsection
-\addcontentsline{toc}{section}{AGRADECIMIENTOS} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
+\addcontentsline{toc}{section}{ACKNOWLEDGMENTS} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
 
 Quiero agradecer, en primer lugar, el apoyo continuo e incondicional de mi familia durante la elaboración de este proyecto, durante estos 4 años de carrera y, al fin y al cabo, durante toda mi vida. Lo que he recibido ---y sigo recibiendo--- de ellos no tiene precio.
 
@@ -55,22 +57,22 @@ Gracias a todos.
 
 %%%%%%%%%%%%%% - RESUMEN - %%%%%%%%%%%%%
 \newpage
-\section*{RESUMEN} % Se añade un asterisco a \section para que el título no esté numerado.
-\markright{RESUMEN} % Al utilizar \section* se ha de añadir manualmente el título del apartado al encabezado.
+\section*{ABSTRACT} % Se añade un asterisco a \section para que el título no esté numerado.
+\markright{ABSTRACT} % Al utilizar \section* se ha de añadir manualmente el título del apartado al encabezado.
 \phantomsection
-\addcontentsline{toc}{section}{RESUMEN} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
+\addcontentsline{toc}{section}{ABSTRACT} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
 
 Bla, bla, bla
 
 \vspace{0.6cm}
-\textbf{Códigos UNESCO}
+\textbf{UNESCO codes}
     \begin{itemize}
         \item 332004 - Reactores de Fisión Nuclear
         \item 332006 - Pruebas Nucleares
         \item 120326 - Simulación
     \end{itemize}
 
- \textbf{Palabras clave:} Energía nuclear, \textit{Small Modular Reactors}, Simulación, Seguimiento de carga, Simuladores nucleares, Simulador Gráfico Interactivo de Zorita (SGIZ), Central Nuclear José Cabrera.
+ \textbf{Key words:} Energía nuclear, \textit{Small Modular Reactors}, Simulación, Seguimiento de carga, Simuladores nucleares, Simulador Gráfico Interactivo de Zorita (SGIZ), Central Nuclear José Cabrera.
 
 
 
@@ -79,7 +81,7 @@ Bla, bla, bla
 
 %%%%%%%%%%%%%%%%%%% - ÍNDICE - %%%%%%%%%%%%%%%%%%%
 \newpage
-\renewcommand*\contentsname{ÍNDICE} % Se modifica el nombre por defecto de la "Table Of Contents" (tabla de contenidos, índice) para pasar a llamarla "ÍNDICE".
+\renewcommand*\contentsname{INDEX} % Se modifica el nombre por defecto de la "Table Of Contents" (tabla de contenidos, índice) para pasar a llamarla "ÍNDICE".
 \tableofcontents % Se genera el índice de contenidos del documento que incorpora todos los títulos de \section, \subsection y \subsubsection (y también \paragraph, ver capítulo 1), así como los títulos añadidos con \addcontentsline (como el resumen ejecutivo, por ejemplo).
 \afterpage{\blankpage} % Se añade una página en blanco después del índice.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -94,25 +96,25 @@ Bla, bla, bla
 
 %%%%%%%%%%%%%% - ÍNDICE DE TABLAS - %%%%%%%%%%%%%%
 \newpage
-\renewcommand{\listtablename}{ÍNDICE DE TABLAS} % Se define el nombre del índice de tablas.
+\renewcommand{\listtablename}{LIST OF TABLES} % Se define el nombre del índice de tablas.
 \listoftables % Se genera automáticamente el índice con las distintas tablas del documento (entorno \table o \longtable).
 \phantomsection
-\addcontentsline{toc}{section}{ÍNDICE DE TABLAS} % Se añade manualmente el apartado al índice (Table Of Contents, TOC).
+\addcontentsline{toc}{section}{LIST OF TABLES} % Se añade manualmente el apartado al índice (Table Of Contents, TOC).
 
 
 %%%%%%%%%%%%% - ÍNDICE DE FIGURAS - %%%%%%%%%%%%%%
 \newpage
-\renewcommand{\listfigurename}{ÍNDICE DE FIGURAS} % Se define el nombre del índice de figuras.
+\renewcommand{\listfigurename}{LIST OF FIGURES} % Se define el nombre del índice de figuras.
 \listoffigures % Se genera automáticamente el índice con las distintas figuras del documento (entorno \figure).
 \phantomsection
-\addcontentsline{toc}{section}{ÍNDICE DE FIGURAS} % Se añade manualmente el apartado al índice (Table Of Contents, TOC).
+\addcontentsline{toc}{section}{LIST OF FIGURES} % Se añade manualmente el apartado al índice (Table Of Contents, TOC).
 
 %%%%%%%%%%%%% - ABREVIATURAS, UNIDADES Y ACRÓNIMOS - %%%%%%%%%%%%%%
 \newpage
-\printnoidxglossary[title={ABREVIATURAS, UNIDADES Y ACRÓNIMOS}]
-\addcontentsline{toc}{section}{ABREVIATURAS, UNIDADES Y ACRÓNIMOS}
+\printnoidxglossary[title={ABBREVIATIONS, UNITS AND ACRONYMS}]
+\addcontentsline{toc}{section}{ABBREVIATIONS, UNITS AND ACRONYMS}
 \newpage
 \printnoidxglossary[type=formel]
-\addcontentsline{toc}{section}{GLOSARIO}
+\addcontentsline{toc}{section}{GLOSSARY}
 
 \end{document}

@@ -12,7 +12,7 @@
 % ------------- Paquetes generales ------------- %
 % Se importan distintos paquetes de propósito general:
 \usepackage[utf8]{inputenc}
-\usepackage[spanish,es-tabla]{babel}
+\usepackage[english]{babel}
 \usepackage{float}
 \usepackage{caption}
 % ---------------------------------------------- %
@@ -94,7 +94,7 @@
 \fancyhf{\fontsize{2}{14}\selectfont}
 
 % Contenido del encabezado (\fancyhead):
-\fancyhead[RO]{Simulación de maniobras de seguimiento de carga con SMRs mediante el SGIZ} % Texto que se coloca en el encabezado de las páginas impares (O -> 'Odd', o impar) a la izquierda (R -> 'Odd')
+\fancyhead[RO]{Analysis of SBLOCA sequences with TRACE in APR1400 reactors} % Texto que se coloca en el encabezado de las páginas impares (O -> 'Odd', o impar) a la izquierda (R -> 'Odd')
 \fancyhead[LE]{\nouppercase{\rightmark}} % Texto que se coloca en el encabezado de las páginas pares (E -> 'Even', o par) a la izquierda (L -> 'Left'). \rightmark se utiliza para insertar automáticamente el título de la sección correspondiente, y \nouppercase para que no aparezca todo en mayúsculas (formato por defecto de \rightmark).
 
 % Contenido del pie de página (\fancyfoot):
@@ -152,7 +152,7 @@
 \DeclareNameAlias{sortname}{family-given}
 \renewcommand*{\nameyeardelim}{\addcomma\space}
 \setlength\bibitemsep{\baselineskip}
-\DefineBibliographyStrings{spanish}{%
+\DefineBibliographyStrings{english}{%
   andothers = {et\addabbrvspace al\adddot}
 }
 
@@ -282,7 +282,7 @@
    {6}{{{\color{codered}6}}}1 {7}{{{\color{codered}7}}}1 
    {8}{{{\color{codered}8}}}1 {9}{{{\color{codered}9}}}1}
 
-\DeclareCaptionType{code}[Código][ÍNDICE DE CÓDIGOS] % Se define el entorno "Código" (de forma que al introducir un fragmento de código en el documento aparezca como: Código 1.1: ...), y la lista con los distintos códigos ("Índice de códigos").
+\DeclareCaptionType{code}[Code][CODES INDEX] % Se define el entorno "Código" (de forma que al introducir un fragmento de código en el documento aparezca como: Código 1.1: ...), y la lista con los distintos códigos ("Índice de códigos").
 \counterwithin{code}{section} % Se numeran los códigos con respecto al capítulo en el que se encuentran.
 
 
@@ -291,7 +291,7 @@
 
 \usepackage{glossaries}
 
-\newglossary[ch1]{formel}{ch2}{ch3}{GLOSARIO}
+\newglossary[ch1]{formel}{ch2}{ch3}{GLOSSARY}
 
 \makenoidxglossaries
 
